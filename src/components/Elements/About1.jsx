@@ -42,7 +42,7 @@ class About1 extends React.Component {
                         <div className="section-head">
                             <div className="sx-separator-outer separator-left">
                                 <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ backgroundImage: 'url(' + bgimg2 + ')' }}>
-                                    <h3 className="sep-line-one">About us</h3>
+                                    <h3 className="sep-line-one">Why Pluxe Studio?</h3>
                                 </div>
                             </div>
                         </div>
@@ -51,10 +51,15 @@ class About1 extends React.Component {
                             <div className="row">
                                 <div className="col-lg-5 col-md-12 col-sm-12">
                                     <div className="about-home-left">
-                                        <h3 className="m-t0 sx-tilte">We are competitive in architecture solutions</h3>
-                                        <p>Landscape design is a process of developing practical and pleasing outdoor living space. there are six principles of design that have been used by artists for centuries throughout all art forms, painting and floral design.</p>
+                                        <h4 className="m-t0 sx-tilte">Our Unique Value Proposition:</h4>
+                                       <ul className="list-angle-right anchor-line">
+                                                                                <li><strong>	Luxury Without Excess – </strong>Sophisticated design curated with restraint and elegance.</li>
+                                                                                <li><strong>Sustainable by Design  – </strong> We minimize waste, use responsibly sourced materials, and prioritize wellness.</li>
+                                                                                <li><strong>	Client-Centric Approach – </strong>Every space we create is a reflection of you, not us.</li>
+                                                                                <li><strong>	Detail-Driven Execution  – </strong>From design to final styling, we manage it all seamlessly.</li>
+                                                                            </ul>
                                         <div className="text-left">
-                                            <NavLink to="/about-1" className="site-button-secondry btn-half"><span>Read More</span></NavLink>
+                                            <NavLink to="#contact" className="site-button-secondry btn-half"><span>Connect with us</span></NavLink>
                                         </div>
                                     </div>
                                 </div>
@@ -72,7 +77,7 @@ class About1 extends React.Component {
 
                                         </OwlCarousel>
                                         <div className="about-home-before">
-                                            <img src={require('./../../images/about-slider/1-ab.jpg')} alt="" />
+                                            <img src={require('./../../images/about-slider/6.jpg')} alt="" />
                                         </div>
                                     </div>
                                 </div>

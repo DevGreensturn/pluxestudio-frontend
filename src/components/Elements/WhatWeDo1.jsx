@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 var bgimg1 = require('./../../images/background/bg-5.png');
-var bgimg2 = require('./../../images/background/bg-2.jpg');
+var bgimg2 = require('./../../images/background/image.jpg');
 var bgimg3 = require('./../../images/background/cross-line2.png');
 
 class WhatWeDo1 extends React.Component {
@@ -38,7 +38,7 @@ class WhatWeDo1 extends React.Component {
                                     <div className="number-block-one animate-in-to-top">
                                         <img src={require('./../../images/pic2.jpg')} alt="" />
                                         <div className="figcaption bg-white text-center p-a20">
-                                            <h4 className="m-a0">Architectur</h4>
+                                            <h4 className="m-a0">Architecture</h4>
                                         </div>
                                         <div className="figcaption-number text-center sx-text-primary animate-in-to-top-content">
                                             <span>02</span>

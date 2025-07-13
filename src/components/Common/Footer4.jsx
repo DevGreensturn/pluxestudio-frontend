@@ -55,23 +55,32 @@ class FooterMain extends React.Component {
                 <div className="icon-xs"><i className="fa fa-phone" /></div>
                 <div className="icon-content">
                     <h5 className="m-t0">Phone number</h5>
-                    <p>(123) 456-78910</p>
+                    <p>+91  98714 41515</p>
                 </div>
             </div>
             <div className="sx-icon-box-wraper left p-b30">
                 <div className="icon-xs"><i className="fa fa-envelope" /></div>
                 <div className="icon-content">
                     <h5 className="m-t0">Email address</h5>
-                    <p>7xthemehelp@gmail.com</p>
+                    <p>info@pluxestudio.com</p>
                 </div>
             </div>
             <div className="sx-icon-box-wraper left">
                 <div className="icon-xs"><i className="fa fa-map-marker" /></div>
                 <div className="icon-content">
                     <h5 className="m-t0">Address info</h5>
-                    <p>09, Martin Street B190 Polo Alto, San Francisco</p>
+                    <p>13/33, Infocity 2, Gurugram - 122001</p>
                 </div>
             </div>
+             <div className="extra-cell">
+                                        <ul className="list-unstyled social-bx text-black d-flex flex-wrap align-content-center">
+                                            <li><a href="https://www.facebook.com/pluxestudio" target="_blank"><i className="fa fa-facebook" /></a></li>
+                                            <li><a href="https://www.instagram.com/pluxe_studio/" target="_blank"><i className="fa fa-instagram" /></a></li>
+                                            <li><a href="https://x.com/PluxeStudio" target="_blank"><i className="fa fa-twitter" /></a></li>
+                                            <li><a href="https://www.google.com" target="_blank"><i className="fa fa-pinterest" /></a></li>
+                                        </ul>
+                                    </div>
+
         </div>
     </div>
     </div>

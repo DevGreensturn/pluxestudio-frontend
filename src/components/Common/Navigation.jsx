@@ -30,24 +30,24 @@ class Navigation extends React.Component {
                 <ul className="nav navbar-nav">
                     <li className="active">
                         <NavLink to={""}>Home</NavLink>
-                        <ul className="sub-menu">
+                        {/* <ul className="sub-menu">
                             <li><NavLink to={"/"}>Home-1</NavLink></li>
                             <li><NavLink to={"/home-2"}>Home-2</NavLink></li>
                             <li><NavLink to={"/home-3"}>Home-3</NavLink></li>
                             <li><NavLink to={"/home-4"}>Home-4</NavLink></li>
                             <li><NavLink to={"/home-5"}>Home-5</NavLink></li>
                             <li><NavLink to={"/home-6"}>Home-6</NavLink></li>
-                        </ul>
+                        </ul> */}
                     </li>
                     <li><NavLink to={""}>About us</NavLink>
-                        <ul className="sub-menu">
+                        {/* <ul className="sub-menu">
                             <li><NavLink to={"/about-1"}>About 1</NavLink></li>
                             <li><NavLink to={"/about-2"}>About 2</NavLink></li>
-                        </ul>
+                        </ul> */}
                     </li>
                     <li>
-                        <NavLink to={""}>Pages</NavLink>
-                        <ul className="sub-menu">
+                        <NavLink to={""}>What we Do</NavLink>
+                        {/* <ul className="sub-menu">
                             <li>
                                 <NavLink to={""}>Services</NavLink>
                                 <ul className="sub-menu">
@@ -67,11 +67,11 @@ class Navigation extends React.Component {
                             <li><NavLink to={"/our-history"}>Our History</NavLink></li>
                             <li><NavLink to={"/icon-font"}>Fonts Icons</NavLink></li>
                             <li><NavLink to={"/error-404"}>Error 404</NavLink></li>
-                        </ul>
+                        </ul>*/}
                     </li>
-                    <li>
+                    <li> 
                         <NavLink to={""}>Projects</NavLink>
-                        <ul className="sub-menu">
+                        {/* <ul className="sub-menu">
                             <li><NavLink to={""}>Project Grid Type</NavLink>
                                 <ul className="sub-menu">
                                     <li><NavLink to={"/project-grid-3-columns"}>3 Columns</NavLink></li>
@@ -99,31 +99,31 @@ class Navigation extends React.Component {
                                     <li><NavLink to={"/project-detail2"}>Project Detail 2</NavLink></li>
                                 </ul>
                             </li>
-                        </ul>
+                        </ul> */}
                     </li>
-                    <li>
-                        <NavLink to={""}>Blog</NavLink>
-                        <ul className="sub-menu">
+                      {/* <li>
+                        <NavLink to={""}>FAQ</NavLink>
+                      <ul className="sub-menu">
                             <li><NavLink to={"/blog-grid"}>Blog Grid</NavLink></li>
                             <li><NavLink to={"/blog-listing"}>Blog Listing</NavLink></li>
                             <li><NavLink to={"/blog-masonry"}>Blog Masonry</NavLink></li>
                             <li><NavLink to={"/blog-single"}>Blog Single</NavLink></li>
                             <li><NavLink to={"/post-right-sidebar"}>Post Right Sidebar</NavLink></li>
-                        </ul>
-                    </li>
-                    <li>
+                        </ul> 
+                    </li>*/}
+                    {/* <li>
                         <NavLink to={""}>Shop</NavLink>
-                        <ul className="sub-menu">
+                        {/* <ul className="sub-menu">
                             <li><NavLink to={"/shop-grid"}>Shop Grid</NavLink></li>
                             <li><NavLink to={"/shop-list"}>Shop List</NavLink></li>
                             <li><NavLink to={"/shop-detail"}>Shop Detail</NavLink></li>
                             <li><NavLink to={"/shop-account"}>My Account</NavLink></li>
                             <li><NavLink to={"/shop-cart"}>Cart</NavLink></li>
                             <li><NavLink to={"/shop-checkout"}>Checkout</NavLink></li>
-                        </ul>
-                    </li>
-                    <li><NavLink to={"/faq"}>FAQ</NavLink></li>
-                    <li><NavLink to={"/contact-us"}>Contact us</NavLink></li>
+                        </ul> 
+                    </li> */}
+                    <li><NavLink to={"#faq"}>FAQ</NavLink></li>
+                    <li><NavLink to={"#contact"}>Contact us</NavLink></li>
                 </ul>
             </>
         );

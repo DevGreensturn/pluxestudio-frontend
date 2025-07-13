@@ -47,12 +47,12 @@ class Header3 extends React.Component {
             <>
                 <header className="site-header header-style-3 nav-wide header-fixed mobile-sider-drawer-menu">
                     <div className="sticky-header main-bar-wraper navbar-expand-lg">
-                        <div className="main-bar bg-white">
-                            <div className="container-fluid clearfix">
+                        <div className="main-bar bg-white ">
+                            <div className="container clearfix">
                                 <div className="logo-header">
                                     <div className="logo-header-inner logo-header-one">
                                         <NavLink to={"./"}>
-                                            <img src={this.state.logo} alt="Inteshape" />
+                                            <img src={this.state.logo} alt="Pluxe Studio" />
                                         </NavLink>
                                     </div>
                                 </div>
@@ -63,38 +63,27 @@ class Header3 extends React.Component {
                                     <span className="icon-bar icon-bar-two" />
                                     <span className="icon-bar icon-bar-three" />
                                 </button>
+                                
                                 {/* EXTRA NAV */}
                                 <div className="extra-nav">
-                                    <div className="extra-cell">
-                                        <NavLink to={"#"} onClick={this.handleSearchToggle}> 
-                                            <i className="fa fa-search" />
-                                        </NavLink>
-                                    </div>
-                                    <div className="extra-cell">
-                                        <ul className="list-unstyled social-bx text-black d-flex flex-wrap align-content-center">
-                                            <li><a href="https://www.facebook.com" target="_blank"><i className="fa fa-facebook" /></a></li>
-                                            <li><a href="https://www.instagram.com" target="_blank"><i className="fa fa-instagram" /></a></li>
-                                            <li><a href="https://twitter.com" target="_blank"><i className="fa fa-twitter" /></a></li>
-                                            <li><a href="https://www.google.com" target="_blank"><i className="fa fa-google" /></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                {/* EXTRA Nav */}
-                                {/* MAIN NAVIGATION */}
+                                        {/* MAIN NAVIGATION */}
                                 <div className="header-nav navbar-collapse collapse justify-content-center collapse">
                                     <Navigation />
                                 </div>
                                 {/* SITE SEARCH */}
-                                <div id="search" className={isSearchActive ? "open" : null}>
-                                    <span className="close" onClick={this.handleSearchToggle} />
-                                    <form role="search" id="searchform" action="/search" method="get" className="radius-xl">
-                                        <div className="input-group">
-                                            <input defaultValue="" name="q" type="search" placeholder="Type to search" />
-                                            <span className="input-group-btn"><button type="button" className="search-btn"><i className="fa fa-search arrow-animation" /></button></span>
-                                        </div>
-                                    </form>
+                                      <div className="extra-cell">
+                                
+                                                                        <div className="contact-slide-show">
+                                                                            <NavLink to={"#"} className="get-in-touch-btn from-top" onClick={this.handleQuoteToggle}>
+                                                                                Get in touch</NavLink></div>
+                                                                    </div>
+                                                                </div>
                                 </div>
-                            </div>
+                                {/* EXTRA Nav */}
+                            
+                                       
+                                                             
+                          
                         </div>
                     </div>
                 </header>
