@@ -1,53 +1,54 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, resolvePath } from 'react-router-dom';
 
 const services = [
     {
         count: '01',
-        title: 'Plans and Projects',
+        title: 'Bespoke Interior Design',
         flaticon: 'flaticon-sketch',
-        description: 'We provide a range of architectural 3D modeling services to our customers to aid the design, planning and...',
+        description: 'Custom interiors that echo your style and story—with rich palettes, layered textures, and premium finishes.',
     },
     {
         count: '02',
-        title: 'Interior',
+        title: 'Sustainable Design Solutions',
         flaticon: 'flaticon-stairs',
-        description: 'Analysis and planning services that help both the client and architects to work out the forthcoming project...',
+        description: 'Eco-friendly materials, green building practices, and energy-efficient systems that redefine responsible luxury.',
     },
     {
         count: '03',
-        title: 'Exterior',
+        title: 'Turnkey Project Execution',
         flaticon: 'flaticon-window',
-        description: 'We offer comprehensive Architectural Engineering Services including Interior design, Master planning, 3D modeling...',
+        description: 'From concept to completion—civil work, furniture, lighting, styling—executed with precision and peace of mind.',
     },
     {
         count: '04',
-        title: 'Architecture',
+        title: 'Space Planning & Renovation',
         flaticon: 'flaticon-skyline',
-        description: 'Project management is the process by which our team plans and executes your project. We will develop it...',
+        description: 'Maximizing comfort, utility, and elegance through intelligent layouts and smart refurbishments.',
     },
     {
         count: '05',
-        title: 'Furniture',
+        title: 'Material & Finish Consulting',
         flaticon: 'flaticon-bed',
-        description: 'Our team also provides consultations on all architectural issues, even if you need specific info about working...',
+        description: 'Advisory on sustainable high-end materials: reclaimed wood, natural stone, jute, low-VOC paints and more',
     },
     {
         count: '06',
-        title: 'Decoration',
+        title: 'Sourcing & Styling',
         flaticon: 'flaticon-door',
-        description: 'We combine Interior and Exterior Design services and often provide them as a single solution. It helps us...',
+        description: 'Curated art, décor, textiles, and signature pieces tailored to your theme—from boho-luxe to urban contemporary.',
     }
 ]
 
 var bgimg1 = require('./../../images/background/cross-line2.png');
-
+var bgimg2 = require('./../../images/background/pic.jpg');
 class Services1 extends React.Component {
+
     render() {
 
         return (
             <>
-                <div className="section-full mobile-page-padding p-t80  p-b50 bg-gray">
+                <div className="section-full mobile-page-padding p-t80  p-b50 bg-gray" style={{ backgroundImage: 'url(' + bgimg2 + ')', backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}}>
                     <div className="section-content">
                         <div className="container">
                             {/* TITLE START */}

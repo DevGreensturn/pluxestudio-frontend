@@ -69,7 +69,7 @@ class SimilarProjects extends React.Component {
                                         <div key={index} className="item">
                                             <div className="sx-box   image-single-carousel bg-cover" style={{ backgroundImage: 'url(' + item.image + ')' }}>
                                                 <div className="sx-info  p-t20 text-white">
-                                                    <h4 className="sx-tilte m-t0"><NavLink to={"/project-detail1"}>{item.title}</NavLink></h4>
+                                                    <h4 className="sx-tilte m-t0">{item.title}</h4>
                                                     <p>{item.description}</p>
                                                     <NavLink to={"/project-detail1"} className="site-button btn-half button-sm"><span>View All</span></NavLink>
                                                 </div>

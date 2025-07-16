@@ -20,14 +20,16 @@ class Faq extends React.Component {
                                                 <div className="acod-head acc-actives">
                                                     <h4 className="acod-title">
                                                         <a data-toggle="collapse" href="#collapseOne5" data-parent="#accordion5">
-                                                            How do we work?
+                                                            What services does Pluxe Studio offer?
                                                             <span className="indicator"><i className="fa fa-plus" /></span>
                                                         </a>
                                                     </h4>
                                                 </div>
                                                 <div id="collapseOne5" className="acod-body collapse show">
                                                     <div className="acod-content p-a15">
-                                                        <p>Progressively generate synergistic total linkage through cross media are intellectual capital. Enthusiastically parallel task team building e-tailers without standards compliant initiatives. Progressively monetize client cent outsourcing with excellent communities.</p>
+                                                        <p>We offer end-to-end luxury interior design services — from concept development to final execution, including furniture selection, lighting design, styling, and project management.
+
+</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -35,26 +37,30 @@ class Faq extends React.Component {
                                                 <div className="acod-head">
                                                     <h4 className="acod-title">
                                                         <a data-toggle="collapse" href="#collapseTwo5" className="collapsed" data-parent="#accordion5">
-                                                            What services do we offer?
+                                                           Do you work on residential or commercial projects?
                                                             <span className="indicator"><i className="fa fa-plus" /></span>
                                                         </a>
                                                     </h4>
                                                 </div>
                                                 <div id="collapseTwo5" className="acod-body collapse">
-                                                    <div className="acod-content p-a15"><p>Progressively generate synergistic total linkage through cross media are intellectual capital. Enthusiastically parallel task team building e-tailers without standards compliant initiatives. Progressively monetize client cent outsourcing with excellent communities.</p></div>
+                                                    <div className="acod-content p-a15"><p>Pluxe Studio specializes in both residential and boutique commercial interiors, with a strong focus on timeless design and curated detail.
+
+</p></div>
                                                 </div>
                                             </div>
                                             <div className="panel sx-panel">
                                                 <div className="acod-head">
                                                     <h4 className="acod-title">
                                                         <a data-toggle="collapse" href="#collapseThree5" className="collapsed" data-parent="#accordion5">
-                                                           Do you have a purchasing fee on the product?
+                                                           Is your design approach sustainable?
                                                             <span className="indicator"><i className="fa fa-plus" /></span>
                                                         </a>
                                                     </h4>
                                                 </div>
                                                 <div id="collapseThree5" className="acod-body collapse">
-                                                    <div className="acod-content p-a15"><p>Progressively generate synergistic total linkage through cross media are intellectual capital. Enthusiastically parallel task team building e-tailers without standards compliant initiatives. Progressively monetize client cent outsourcing with excellent communities.</p></div>
+                                                    <div className="acod-content p-a15"><p>Absolutely. We integrate eco-conscious materials, energy-efficient lighting, and mindful sourcing to deliver designs that are both elegant and responsible.
+
+</p></div>
                                                 </div>
                                             </div>
                                             <div className="panel sx-panel">
@@ -67,21 +73,21 @@ class Faq extends React.Component {
                                                     </h4>
                                                 </div>
                                                 <div id="collapseFour5" className="acod-body collapse">
-                                                    <div className="acod-content p-a15"><p>Progressively generate synergistic total linkage through cross media are intellectual capital. Enthusiastically parallel task team building e-tailers without standards compliant initiatives. Progressively monetize client cent outsourcing with excellent communities..</p></div>
+                                                    <div className="acod-content p-a15"><p>Timelines vary by project size, but most full-home designs take between 10 to 16 weeks from concept to completion.</p></div>
                                                 </div>
                                             </div>
                                             <div className="panel sx-panel">
                                                 <div className="acod-head">
                                                     <h4 className="acod-title">
                                                         <a data-toggle="collapse" href="#collapseFive5" className="collapsed" data-parent="#accordion5">
-                                                            What should I have at our first meeting for my project?
+                                                           How do I get started with Pluxe Studio?
                                                             <span className="indicator"><i className="fa fa-plus" /></span>
                                                         </a>
                                                     </h4>
                                                 </div>
                                                 <div id="collapseFive5" className="acod-body collapse">
                                                     <div className="acod-content p-a15">
-                                                    <p>Progressively generate synergistic total linkage through cross media are intellectual capital. Enthusiastically parallel task team building e-tailers without standards compliant initiatives. Progressively monetize client cent outsourcing with excellent communities.</p>
+                                                    <p>It begins with a personal consultation. Simply DM us or click “Book Consultation” to schedule a discovery call with our design team</p>
                                                     </div>
                                                 </div>
                                             </div>

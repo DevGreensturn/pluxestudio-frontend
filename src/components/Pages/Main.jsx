@@ -29,7 +29,7 @@ class Home6 extends React.Component {
                     <Projects5 />
                     
                     <Services1 />
-                    <ClientsLogo2 bgcolor="bg-white" />
+                    {/* <ClientsLogo2 bgcolor="bg-white" /> */}
 
                     <Testimonials2 separatoralignment="separator-center" />
                     <Faq />
