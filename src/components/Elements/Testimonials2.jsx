@@ -6,7 +6,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 const testimonials = [
     {
         image: require('./../../images/testimonials/pic1.jpg'),
-        reviewername: 'Rosalina D. William',
+        reviewername: 'A N Mishra',
         position: 'Architect',
         review: 'Great theme, just what we were looking for. Easy to install, easy to navigate. Well documented. Really enjoyed the support.'
     },
@@ -37,7 +37,8 @@ class Testimonials2 extends React.Component {
     render() {
         const options = {
             loop: true,
-            autoplay: false,
+        autoplay: false,
+
             margin: 30,
             nav: true,
             dots: false,

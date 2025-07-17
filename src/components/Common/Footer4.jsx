@@ -55,7 +55,7 @@ class FooterMain extends React.Component {
                 <div className="icon-xs"><i className="fa fa-phone" /></div>
                 <div className="icon-content">
                     <h5 className="m-t0">Phone number</h5>
-                    <p>+91  98714 41515</p>
+                    <p>+91  987 107 7515 </p>
                 </div>
             </div>
             <div className="sx-icon-box-wraper left p-b30">
