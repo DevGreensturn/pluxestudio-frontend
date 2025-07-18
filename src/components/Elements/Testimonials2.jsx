@@ -6,27 +6,27 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 const testimonials = [
     {
         image: require('./../../images/testimonials/pic1.jpg'),
-        reviewername: 'A N Mishra',
-        position: 'Architect',
-        review: 'Great theme, just what we were looking for. Easy to install, easy to navigate. Well documented. Really enjoyed the support.'
+        reviewername: 'Aarti Mehra',
+        position: 'Homeowner, New Delhi',
+        review: 'Elegant, warm, and perfectly styled — Pluxe turned my space into something truly personal'
     },
     {
         image: require('./../../images/testimonials/pic2.jpg'),
-        reviewername: 'Mitchal Jhon',
-        position: 'Architect',
+        reviewername: ' Neha Sinha ',
+        position: ' First-time Homebuyer, Gurugram',
         review: 'Amazing fast and reliable customer support! The team of willing to go mile for customer service! Thanks!'
     },
     {
         image: require('./../../images/testimonials/pic3.jpg'),
-        reviewername: 'Barney Smith',
-        position: 'Interior designer',
-        review: 'Great theme, just what we were looking for. Easy to install, easy to navigate. Well documented. Really enjoyed the support.'
+        reviewername: 'Rohan Kapoor',
+        position: 'Entrepreneur, Gurgaon',
+        review: 'Loved the professionalism and design sensibility. The transformation was beyond what I imagined.'
     },
     {
         image: require('./../../images/testimonials/pic4.jpg'),
-        reviewername: 'Rosalina D. William',
-        position: 'Architect',
-        review: 'Amazing fast and reliable customer support! The team of willing to go mile for customer service! Thanks!'
+        reviewername: 'Aditya Menon ',
+        position: 'Senior Consultant, Bangalore',
+        review: 'Refined design, smooth execution. Pluxe Studio delivered exactly what my home needed.'
     }
 ]
 

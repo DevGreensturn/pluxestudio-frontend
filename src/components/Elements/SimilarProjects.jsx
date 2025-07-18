@@ -71,7 +71,7 @@ class SimilarProjects extends React.Component {
                                                 <div className="sx-info  p-t20 text-white">
                                                     <h4 className="sx-tilte m-t0">{item.title}</h4>
                                                     <p>{item.description}</p>
-                                                    <NavLink to={"/project-detail1"} className="site-button btn-half button-sm"><span>View All</span></NavLink>
+                                                    <span>Know More</span>
                                                 </div>
                                             </div>
                                         </div>
