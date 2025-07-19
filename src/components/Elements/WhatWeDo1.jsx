@@ -38,7 +38,7 @@ class WhatWeDo1 extends React.Component {
                                     <div className="number-block-one animate-in-to-top">
                                         <img src={require('./../../images/pic2.jpg')} alt="" />
                                         <div className="figcaption bg-white text-center p-a20">
-                                            <h4 className="m-a0">Landscaping</h4>
+                                            <h4 className="m-a0">Terrace Landscaping</h4>
                                         </div>
                                         <div className="figcaption-number text-center sx-text-primary animate-in-to-top-content">
                                             <span>02</span>

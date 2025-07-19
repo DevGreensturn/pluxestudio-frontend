@@ -150,17 +150,17 @@ class Projects5 extends React.Component {
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div className="project-info p-a20 bg-gray">
+                                            {/* <div className="project-info p-a20 bg-gray">
                                                 <h4 className="sx-tilte m-tb0"><NavLink to={"/project-detail1"}>{item.title}</NavLink></h4>
                                                 <NavLink to={"#"}><i className="link-plus bg-primary" /></NavLink>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 ))}
                             </ul>
                             {/* GALLERY CONTENT END */}
                             <div className="text-center load-more-btn-outer" style={{ backgroundImage: 'url(' + bgimg2 + ')' }}>
-                                <button id="loadMorebtn-5" className="site-button-secondry btn-half"><span>Load More</span></button>
+                                <button id="loadMorebtn-5" className="site-button-secondry btn-half"><span>Enquire Now</span></button>
                             </div>
                         </div>
                         {/* GALLERY CONTENT END */}

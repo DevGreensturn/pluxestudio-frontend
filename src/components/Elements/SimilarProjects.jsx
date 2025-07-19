@@ -7,17 +7,17 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 const services = [
     {
         image: require('./../../images/gallery/pic1.jpg'),
-        title: 'Interior Work Avroko',
+        title: 'Interior Work - Gurugram ',
         description: 'Many of our projects cannot be featured in this section due to the Security levels of the space.'
     },
     {
         image: require('./../../images/gallery/pic2.jpg'),
-        title: 'Interior Work Avroko',
+        title: 'Modern Bath Experience - Chandigarh',
         description: 'Many of our projects cannot be featured in this section due to the Security levels of the space.'
     },
     {
         image: require('./../../images/gallery/pic3.jpg'),
-        title: 'Interior Work Avroko',
+        title: 'Kitchen - Delhi',
         description: 'Many of our projects cannot be featured in this section due to the Security levels of the space.'
     }
 ]
@@ -70,8 +70,8 @@ class SimilarProjects extends React.Component {
                                             <div className="sx-box   image-single-carousel bg-cover" style={{ backgroundImage: 'url(' + item.image + ')' }}>
                                                 <div className="sx-info  p-t20 text-white">
                                                     <h4 className="sx-tilte m-t0">{item.title}</h4>
-                                                    <p>{item.description}</p>
-                                                    <span>Know More</span>
+                                                    {/* <p>{item.description}</p> */}
+                                                    <span>Get Consultation</span>
                                                 </div>
                                             </div>
                                         </div>
