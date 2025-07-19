@@ -4,7 +4,7 @@ import { NavLink, resolvePath } from 'react-router-dom';
 const services = [
     {
         count: '01',
-        title: 'Bespoke Interior Design',
+        title: 'Bespoke Interior Designing',
         flaticon: 'flaticon-sketch',
         description: 'Custom interiors that echo your style and story—with rich palettes, layered textures, and premium finishes.',
     },
@@ -65,7 +65,7 @@ class Services1 extends React.Component {
                                     <div className="col-lg-4 col-md-6 col-sm-12 m-b30" key={index}>
                                         <div className="sx-icon-box-wraper  icon-count-2-outer">
                                             <div className="icon-count-2 bg-white">
-                                                <span className="icon-count-number">{item.count}</span>
+                                                {/* <span className="icon-count-number">{item.count}</span> */}
                                                 <div className="icon-xl inline-icon m-b5 scale-in-center">
                                                     <span className="icon-cell"><i className={item.flaticon} /></span>
                                                 </div>

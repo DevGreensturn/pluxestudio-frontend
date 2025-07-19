@@ -2,64 +2,19 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const filters = [
-    { label: "Architecture", filter: ".cat-1" },
-    { label: "Decore", filter: ".cat-2" },
-    { label: "Outdoor", filter: ".cat-3" },
-    { label: "Interiors", filter: ".cat-4" },
-    { label: "Residential", filter: ".cat-5" }
+    { label: "Bedroom", filter: ".cat-1" },
+    { label: "Kitchen", filter: ".cat-2" },
+    { label: "Living", filter: ".cat-3" },
+    { label: "Bath", filter: ".cat-4" },
+      { label: "Landscape", filter: ".cat-5" },
+        { label: "Commerical", filter: ".cat-6" }
 ];
 
 const projects = [
     {
-        image: require('./../../images/projects/portrait/4.jpg'),
+        image: require('./../../images/projects/portrait/1.jpg'),
         title: 'Life style building',
         filter: 'cat-1'
-    },
-    {
-        image: require('./../../images/projects/square/9.jpg'),
-        title: 'Modern Bathroom',
-        filter: 'cat-2'
-    },
-    {
-        image: require('./../../images/projects/square/10.jpg'),
-        title: 'Dream House',
-        filter: 'cat-3'
-    },
-    {
-        image: require('./../../images/projects/portrait/6.jpg'),
-        title: 'Bellevue Projects',
-        filter: 'cat-4'
-    },
-    {
-        image: require('./../../images/projects/square/7.jpg'),
-        title: 'Modish Interior',
-        filter: 'cat-5'
-    },
-    {
-        image: require('./../../images/projects/square/8.jpg'),
-        title: 'Chair',
-        filter: 'cat-4'
-    },
-    {
-        image: require('./../../images/projects/portrait/9.jpg'),
-        title: 'Dream Home',
-        filter: 'cat-3'
-    },
-    {
-        image: require('./../../images/projects/square/2.jpg'),
-        title: 'Vilters',
-        filter: 'cat-2'
-    },
-    {
-        image: require('./../../images/projects/portrait/2.jpg'),
-        title: 'Queens Museum',
-        filter: 'cat-3'
-    },
-
-    {
-        image: require('./../../images/projects/portrait/3.jpg'),
-        title: 'Living Room',
-        filter: 'cat-3'
     },
     {
         image: require('./../../images/projects/square/1.jpg'),
@@ -67,26 +22,102 @@ const projects = [
         filter: 'cat-1'
     },
     {
-        image: require('./../../images/projects/square/3.jpg'),
-        title: 'Life style building',
-        filter: 'cat-2'
-    },
-    {
-        image: require('./../../images/projects/portrait/4.jpg'),
-        title: 'Hotel Shears',
+        image: require('./../../images/projects/square/2.jpg'),
+        title: 'Dream House',
         filter: 'cat-1'
     },
     {
-        image: require('./../../images/projects/square/9.jpg'),
+        image: require('./../../images/projects/portrait/2.jpg'),
+        title: 'Bellevue Projects',
+        filter: 'cat-3'
+    },
+    {
+        image: require('./../../images/projects/square/3.jpg'),
+        title: 'Modish Interior',
+        filter: 'cat-1'
+    },
+    {
+        image: require('./../../images/projects/square/4.jpg'),
+        title: 'Chair',
+        filter: 'cat-3'
+    },
+    {
+        image: require('./../../images/projects/portrait/3.jpg'),
+        title: 'Dream Home',
+        filter: 'cat-2'
+    },
+    {
+        image: require('./../../images/projects/square/5.jpg'),
+        title: 'Vilters',
+        filter: 'cat-3'
+    },
+    {
+        image: require('./../../images/projects/square/6.jpg'),
+        title: 'Modern Bathroom',
+        filter: 'cat-4'
+    },
+    {
+        image: require('./../../images/projects/portrait/4.jpg'),
+        title: 'Queens Museum',
+        filter: 'cat-2'
+    },
+    {
+        image: require('./../../images/projects/square/7.jpg'),
+        title: 'Life style building',
+        filter: 'cat-4'
+    },
+    {
+        image: require('./../../images/projects/square/8.jpg'),
         title: 'Dream House',
+        filter: 'cat-2'
+    },
+    {
+        image: require('./../../images/projects/portrait/6.jpg'),
+        title: 'Hotel Shears',
+        filter: 'cat-5'
+    },
+    {
+        image: require('./../../images/projects/square/9.jpg'),
+        title: 'Life style building',
         filter: 'cat-2'
     },
     {
         image: require('./../../images/projects/square/10.jpg'),
         title: 'Life style building',
+        filter: 'cat-2'
+    },
+    {
+        image: require('./../../images/projects/portrait/7.jpg'),
+        title: 'Hotel Shears',
         filter: 'cat-3'
+    },
+    {
+        image: require('./../../images/projects/square/11.jpg'),
+        title: 'Life style building',
+        filter: 'cat-5'
+    },
+    {
+        image: require('./../../images/projects/square/12.jpg'),
+        title: 'Life style building',
+        filter: 'cat-5'
+    },
+    {
+        image: require('./../../images/projects/portrait/8.jpg'),
+        title: 'Hotel Shears',
+        filter: 'cat-2'
+    },
+    {
+        image: require('./../../images/projects/square/13.jpg'),
+        title: 'Life style building',
+        filter: 'cat-6'
+    },
+    {
+        image: require('./../../images/projects/square/14.jpg'),
+        title: 'Life style building',
+        filter: 'cat-6'
     }
-]
+];
+
 
 var bgimg1 = require('./../../images/background/cross-line2.png');
 var bgimg2 = require('./../../images/background/cross-line.png');
