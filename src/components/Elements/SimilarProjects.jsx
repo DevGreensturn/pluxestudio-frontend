@@ -12,7 +12,7 @@ const services = [
     },
     {
         image: require('./../../images/gallery/pic2.jpg'),
-        title: 'Modern Bath Experience - Chandigarh',
+        title: 'Modern Bath Experience - Noida',
         description: 'Many of our projects cannot be featured in this section due to the Security levels of the space.'
     },
     {
@@ -51,7 +51,7 @@ class SimilarProjects extends React.Component {
         };
         return (
             <>
-                <div className="section-full p-tb80 bg-gray inner-page-padding">
+                <div id ="Projects" className="section-full p-tb80 bg-gray inner-page-padding">
                     <div className="container">
                         <div className="section-content">
                             {/* TITLE START */}

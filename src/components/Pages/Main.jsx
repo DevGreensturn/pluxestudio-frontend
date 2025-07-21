@@ -21,21 +21,21 @@ class Home6 extends React.Component {
             <>
                 <Header />
                 <div className="page-content">
-                    <Slider6 />
-                    <About1 />
+                    <Slider6 id="Home" />
+                    <About1 id="About" />
                     <Statistics1 />
-                    <WhatWeDo1 />
-                    <SimilarProjects alignment="separator-center" title="Similar Project" />
-                    <Projects5 />
+                    <WhatWeDo1 id="WhatWeDo"/>
+                    <SimilarProjects alignment="separator-center" title="Similar Project"  id="Projects"/>
+                    <Projects5  />
                     
                     <Services1 />
                     {/* <ClientsLogo2 bgcolor="bg-white" /> */}
 
                     <Testimonials2 separatoralignment="separator-center" />
-                    <Faq />
+                    <Faq Id="Faq" />
                 </div>
 
-                <FooterMain />
+                <FooterMain id="Contact" />
             </>
         );
     };

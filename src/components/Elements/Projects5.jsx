@@ -191,7 +191,7 @@ class Projects5 extends React.Component {
                             </ul>
                             {/* GALLERY CONTENT END */}
                             <div className="text-center load-more-btn-outer" style={{ backgroundImage: 'url(' + bgimg2 + ')' }}>
-                                <button id="loadMorebtn-5" className="site-button-secondry btn-half"><span>Enquire Now</span></button>
+                               <a href="#Contact"><button id="loadMorebtn-5" className="site-button-secondry btn-half"><span>Enquire Now</span></button></a>
                             </div>
                         </div>
                         {/* GALLERY CONTENT END */}

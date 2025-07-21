@@ -9,7 +9,7 @@ class WhatWeDo1 extends React.Component {
     render() {
         return (
             <>
-                <div className="section-full  mobile-page-padding bg-white  p-t80 p-b30 bg-repeat overflow-hide" style={{ backgroundImage: 'url(' + bgimg1 + ')' }}>
+                <div id="WhatWeDo" className="section-full  mobile-page-padding bg-white  p-t80 p-b30 bg-repeat overflow-hide" style={{ backgroundImage: 'url(' + bgimg1 + ')' }}>
                     <div className="container right-half-bg-image-outer">
                         <div className="right-half-bg-image bg-parallax bg-fixed bg-top-right" data-stellar-background-ratio={0} style={{ backgroundImage: 'url(' + bgimg2 + ')' }} />
                         {/* TITLE START */}
@@ -38,7 +38,7 @@ class WhatWeDo1 extends React.Component {
                                     <div className="number-block-one animate-in-to-top">
                                         <img src={require('./../../images/pic2.jpg')} alt="" />
                                         <div className="figcaption bg-white text-center p-a20">
-                                            <h4 className="m-a0">Terrace Landscaping</h4>
+                                            <h4 className="m-a0"> Landscaping</h4>
                                         </div>
                                         <div className="figcaption-number text-center sx-text-primary animate-in-to-top-content">
                                             <span>02</span>
@@ -68,8 +68,12 @@ class WhatWeDo1 extends React.Component {
                                         <div className="large-title-info">
                                             <p>Vivid colors and abstract patterns, combined with unique uses of light, textures, and space, create an outdoor space that magnifies...</p>
                                             <div className="text-left">
-                                                <NavLink to={"/about-1"} className="site-button-link">Read More</NavLink>
-                                            </div>
+
+                                                 <div className="site-button-link">
+                                            <a href="https://wa.me/919871077515" className="get-in-touch-btn from-top" onClick={this.handleQuoteToggle}>
+                                               Book Consultation</a></div>
+                                    </div>
+                                           
                                         </div>
                                     </div>
                                 </div>

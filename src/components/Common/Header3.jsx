@@ -74,9 +74,9 @@ class Header3 extends React.Component {
                                       <div className="extra-cell">
                                 
                                                                         <div className="contact-slide-show">
-                                                                            <NavLink to={"#"} className="get-in-touch-btn from-top" onClick={this.handleQuoteToggle}>
-                                                                                Get in touch</NavLink></div>
-                                                                    </div>
+                                            <a href="https://wa.me/919871077515" target="_blank" className="get-in-touch-btn from-top" onClick={this.handleQuoteToggle}>
+                                                Get in touch</a></div>
+                                    </div>
                                                                 </div>
                                 </div>
                                 {/* EXTRA Nav */}

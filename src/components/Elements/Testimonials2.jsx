@@ -14,7 +14,7 @@ const testimonials = [
         image: require('./../../images/testimonials/pic2.jpg'),
         reviewername: ' Neha Sinha ',
         position: ' First-time Homebuyer, Gurugram',
-        review: 'Amazing fast and reliable customer support! The team of willing to go mile for customer service! Thanks!'
+        review: 'Amazing fast delivery and excellent quality The team was willing to go mile for best service! Thanks!'
     },
     {
         image: require('./../../images/testimonials/pic3.jpg'),

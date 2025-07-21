@@ -1,13 +1,37 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Switcher from '../Elements/Switcher';
+import axios from 'axios';
+
 
 var bnr = require('./../../images/background/f-bg.jpg');
 class FooterMain extends React.Component {
+
+handleSubmit = async () => {
+  const username = document.querySelector('[name="username"]').value;
+  const email = document.querySelector('[name="email"]').value;
+  const Phone = document.querySelector('[name="Phone"]').value;
+  const message = document.querySelector('[name="message"]').value;
+
+  try {
+    await axios.post('http://localhost:5000/api/send-email', {
+      username,
+      email,
+      Phone,
+      message
+    });
+
+    alert("Email sent successfully!");
+  } catch (err) {
+    console.error(err);
+    alert("Failed to send email");
+  }
+};
+
     render() {
         return (
             <>
-                       <div className="footer-top overlay-wraper bg-cover" style={{backgroundImage:"url(" + bnr + ")"}}>
+                       <div id="Contact" className="footer-top overlay-wraper bg-cover" style={{backgroundImage:"url(" + bnr + ")"}}>
                                     <div className="overlay-main sx-bg-secondry opacity-08" />
             <div className="container">
             <div className="row">
@@ -27,13 +51,16 @@ class FooterMain extends React.Component {
                 <input name="username" type="text" required className="form-control" placeholder="Name" />
             </div>
             <div className="form-group">
-                <input name="email" type="text" className="form-control" required placeholder="Email" />
+                <input name="email" type="text" className="form-control"  placeholder="Email" />
+            </div>
+             <div className="form-group">
+                <input name="Phone" type="text" className="form-control" required placeholder="Phone " />
             </div>
             <div className="form-group">
                 <textarea name="message" rows={4} className="form-control " required placeholder="Message" defaultValue={""} />
             </div>
             <div className="text-right">
-                <button name="submit" type="button" value="Submit" className="site-button btn-half"><span> submit</span>
+                <button onClick={this.handleSubmit} name="submit" type="button" value="Submit" className="site-button btn-half"><span> submit</span>
                 </button>
             </div>
         </div>
