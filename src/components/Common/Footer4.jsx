@@ -16,7 +16,7 @@ handleSubmit = async () => {
   const message = document.querySelector('[name="message"]').value;
 
   try {
-    await axios.post('http://localhost:5000/api/send-email', {
+    await axios.post('http://pluxestudio.com:5000/api/send-email', {
       username,
       email,
       Phone,
