@@ -66,7 +66,7 @@ handleSubmit = async () => {
                 <textarea name="message" rows={4} className="form-control " required placeholder="Message" defaultValue={""} />
             </div>
             <div className="text-right">
-                <button onClick={this.handleSubmit} name="submit" type="button" value="Submit" className="site-button btn-half"><span> submit</span>
+                <button onClick={this.handleSubmit} name="submit" id="submitButton" type="button" value="Submit" className="site-button btn-half"><span> submit</span>
                 </button>
             </div>
         </div>
