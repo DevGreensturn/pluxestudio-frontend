@@ -34,7 +34,7 @@ handleSubmit = async () => {
         return (
             <>
             <div className="whatsappdiv" >
-    <a href="https://api.whatsapp.com/send/?phone=918447790110&text=I+want+to+know+more+about+the+Pluxe+Studio+services" target="_blank" className="whatsapplink">
+    <a href="https://api.whatsapp.com/send/?phone=919871077515&text=I+want+to+know+more+about+the+Pluxe+Studio+services" target="_blank" className="whatsapplink">
     <img className="whatsappimg" style={{ position: 'fixed', left: '0',bottom: '0',width: '200px',zIndex:'100'}} src={wa}  alt="whatsapp icon"/>
     </a></div>
                        <div id="Contact" className="footer-top overlay-wraper bg-cover" style={{backgroundImage:"url(" + bnr + ")"}}>
@@ -42,7 +42,7 @@ handleSubmit = async () => {
             <div className="container">
             <div className="row">
 <div className="col-lg-8 col-md-12 col-sm-12">
-    <form className="contact-form cons-contact-form bg-gray p-a30" method="post" action="#">
+    <form className="contact-form cons-contact-form bg-gray p-a30" method="post" action="#" id="leadForm">
         <div className="contact-one">
             {/* TITLE START */}
             <div className="section-head">
@@ -88,7 +88,7 @@ handleSubmit = async () => {
                 <div className="icon-xs"><i className="fa fa-phone" /></div>
                 <div className="icon-content">
                     <h5 className="m-t0">Phone number</h5>
-                    <p>+91  987 107 7515 </p>
+                    <p><a href="tel://+919871077515" >+91  987 107 7515 </a></p>
                 </div>
             </div>
             <div className="sx-icon-box-wraper left p-b30">

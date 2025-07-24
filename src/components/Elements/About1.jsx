@@ -59,7 +59,7 @@ class About1 extends React.Component {
                                                                                 <li><strong>	Detail-Driven Execution  – </strong>From design to final styling, we manage it all seamlessly.</li>
                                                                             </ul>
                                         <div className="text-left">
-                                            <NavLink to="#contact" className="site-button-secondry btn-half"><span>Connect with us</span></NavLink>
+                                            <NavLink to="#Contact" className="site-button-secondry btn-half"><span>Connect with us</span></NavLink>
                                         </div>
                                     </div>
                                 </div>
