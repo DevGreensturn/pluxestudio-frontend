@@ -5,6 +5,8 @@ import axios from 'axios';
 
 
 var bnr = require('./../../images/background/f-bg.jpg');
+
+var wa = require('./../../images/whatsapp.png');
 class FooterMain extends React.Component {
 
 handleSubmit = async () => {
@@ -31,6 +33,10 @@ handleSubmit = async () => {
     render() {
         return (
             <>
+            <div className="whatsappdiv" >
+    <a href="https://api.whatsapp.com/send/?phone=918447790110&text=I+want+to+know+more+about+the+Pluxe+Studio+services" target="_blank" className="whatsapplink">
+    <img className="whatsappimg" style={{ position: 'fixed', left: '0',bottom: '0',width: '200px',zIndex:'100'}} src={wa}  alt="whatsapp icon"/>
+    </a></div>
                        <div id="Contact" className="footer-top overlay-wraper bg-cover" style={{backgroundImage:"url(" + bnr + ")"}}>
                                     <div className="overlay-main sx-bg-secondry opacity-08" />
             <div className="container">
