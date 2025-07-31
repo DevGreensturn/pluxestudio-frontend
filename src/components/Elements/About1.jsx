@@ -69,7 +69,7 @@ class About1 extends React.Component {
                                             {images.map((item, index) => (
                                                 <div className="item" key={index}>
                                                     <div className="sx-img-effect zoom-slow">
-                                                    <NavLink to={"/about-1"}><img src={item} alt="" /></NavLink>
+                                                    <a href="Contact" ><img src={item} alt="" /></a>
                                                     </div>
                                                 </div>
 

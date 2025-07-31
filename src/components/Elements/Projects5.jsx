@@ -16,11 +16,7 @@ const projects = [
         title: 'Life style building',
         filter: 'cat-1'
     },
-    {
-        image: require('./../../images/projects/square/1.jpg'),
-        title: 'Modern Bathroom',
-        filter: 'cat-1'
-    },
+   
     {
         image: require('./../../images/projects/square/2.jpg'),
         title: 'Dream House',

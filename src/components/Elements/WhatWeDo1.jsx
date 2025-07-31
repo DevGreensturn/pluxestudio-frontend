@@ -61,12 +61,12 @@ class WhatWeDo1 extends React.Component {
                                 <div className="row">
                                     <div className="col-lg-6 col-md-12 col-sm-12">
                                         <div className="large-title">
-                                            <h3 className="m-tb0">We present the idea with impressive details.</h3>
+                                            <h3 className="m-tb0"> Creating Luxurious Design Statements</h3>
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-12	col-sm-12">
                                         <div className="large-title-info">
-                                            <p>Vivid colors and abstract patterns, combined with unique uses of light, textures, and space, create an outdoor space that magnifies...</p>
+                                            <p>Soothing Colors and Mordern Patterns, Cominbed with unique uses of Light, Texture and Space, Create a space that magnifies</p>
                                             <div className="text-left">
 
                                                  <div className="site-button-link">
