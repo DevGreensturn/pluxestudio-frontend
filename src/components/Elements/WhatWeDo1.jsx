@@ -66,7 +66,7 @@ class WhatWeDo1 extends React.Component {
                                     </div>
                                     <div className="col-lg-6 col-md-12	col-sm-12">
                                         <div className="large-title-info">
-                                            <p>Soothing Colors and Mordern Patterns, Cominbed with unique uses of Light, Texture and Space, Create a space that magnifies</p>
+                                            <p>Soothing Colors and Mordern Patterns, Combined with unique uses of Light, Texture and Space, Create a space that magnifies</p>
                                             <div className="text-left">
 
                                                  <div className="site-button-link">
