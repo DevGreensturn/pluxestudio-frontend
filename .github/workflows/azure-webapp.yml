@@ -1,0 +1,61 @@
+name: Deploy CRA+Express to Azure App Service
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install frontend deps
+        working-directory: .
+        run: npm ci
+
+      - name: Build frontend
+        run: npm run build
+
+      - name: Install server deps
+        working-directory: pluxestudio.com/server
+        run: npm ci
+
+      - name: Archive artifact
+        run: |
+          mkdir deploy
+          cp -r build deploy/build
+          cp -r pluxestudio.com/server deploy/server
+          cat > deploy/server/start.sh << 'EOS'
+          #!/usr/bin/env bash
+          cd $(dirname "$0")
+          node index.js
+          EOS
+          chmod +x deploy/server/start.sh
+          cat > deploy/package.json << 'EOPKG'
+          {
+            "name": "pluxestudio-combined",
+            "version": "1.0.0",
+            "private": true,
+            "scripts": {
+              "start": "node server/index.js"
+            }
+          }
+          EOPKG
+          cd deploy && zip -r ../app.zip .
+
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: ${{ secrets.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: app.zip
+
+
