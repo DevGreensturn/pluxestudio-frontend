@@ -83,9 +83,13 @@ var revapi96,
 		});
 	}; /* END OF revapi call */
 	
-    RsRevealerAddOn(tpj, revapi96, "<div class='rsaddon-revealer-spinner rsaddon-revealer-spinner-2'><div class='rsaddon-revealer-2' style='border-top-color: {{color}}0.65); border-bottom-color: {{color}}0.15); border-left-color: {{color}}0.65); border-right-color: {{color}}0.15)'><\/div><\/div>");
+    if (typeof RsRevealerAddOn === 'function') {
+        RsRevealerAddOn(tpj, revapi96, "<div class='rsaddon-revealer-spinner rsaddon-revealer-spinner-2'><div class='rsaddon-revealer-2' style='border-top-color: {{color}}0.65); border-bottom-color: {{color}}0.15); border-left-color: {{color}}0.65); border-right-color: {{color}}0.15)'><\/div><\/div>");
+    }
 
-                RsTypewriterAddOn(tpj, revapi96);
+    if (typeof RsTypewriterAddOn === 'function') {
+        RsTypewriterAddOn(tpj, revapi96);
+    }
 
  }; /* END OF ON LOAD FUNCTION */
 }()); /* END OF WRAPPING FUNCTION */
