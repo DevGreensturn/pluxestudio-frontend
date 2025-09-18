@@ -16,7 +16,7 @@ handleSubmit = async () => {
   const message = document.querySelector('[name="message"]').value;
 
   try {
-    await axios.post(`${process.env.REACT_APP_API_BASE || 'http://localhost:5000'}/api/send-email`, {
+    await axios.post(`${process.env.REACT_APP_API_BASE || 'https://pluxestudio.com/user'}/api/send-email`, {
       username,
       email,
       Phone,
