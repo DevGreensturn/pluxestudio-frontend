@@ -10,7 +10,7 @@ class Statistics1 extends React.Component {
         return (
             <>
                 <div className="section-full overlay-wraper sx-bg-secondry mobile-page-padding  p-t80 p-b50 bg-parallax ml-auto" data-stellar-background-ratio="0.5" style={{ backgroundImage: 'url(' + bgimg1 + ')' }}>
-                        <div className="overlay-main bg-black opacity-05" />
+                        <div className="overlay-main bg-black opacity-0.10" />
                         <div className="container">
                             <div className="section-content">
                                 <div className="counter-blocks">

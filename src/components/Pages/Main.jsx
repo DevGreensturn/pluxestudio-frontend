@@ -23,10 +23,11 @@ class Home6 extends React.Component {
                 <Header />
                 <div className="page-content">
                     <Slider6 id="Home" />
+                    <HeroSection />
                     <About1 id="About" />
                     <Statistics1 />
                     <WhatWeDo1 id="WhatWeDo"/>
-                    <SimilarProjects alignment="separator-center" title="Similar Project"  id="Projects"/>
+                    {/* <SimilarProjects alignment="separator-center" title="Similar Project"  id="Projects"/> */}
                     <Projects5  />
                     
                     <Services1 />
@@ -34,7 +35,7 @@ class Home6 extends React.Component {
 
                     <Testimonials2 separatoralignment="separator-center" />
                     <Faq Id="Faq" />
-                    <HeroSection />
+                   
                 </div>
 
                 <FooterMain id="Contact" />

@@ -48,7 +48,7 @@ class Services1 extends React.Component {
 
         return (
             <>
-                <div className="section-full mobile-page-padding p-t80  p-b50 bg-gray" style={{ backgroundImage: 'url(' + bgimg2 + ')', backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}}>
+                <div className="section-full mobile-page-padding p-t60  p-b50 bg-gray" style={{ backgroundImage: 'url(' + bgimg2 + ')', backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}}>
                     <div className="section-content">
                         <div className="container">
                             {/* TITLE START */}
@@ -62,7 +62,7 @@ class Services1 extends React.Component {
                             {/* TITLE END */}
                             <div className="row">
                                 {services.map((item, index) => (
-                                    <div className="col-lg-4 col-md-6 col-sm-12 m-b30" key={index}>
+                                    <div className="col-lg-4 col-md-6 col-sm-12 m-b20" key={index}>
                                         <div className="sx-icon-box-wraper  icon-count-2-outer">
                                             <div className="icon-count-2 bg-white">
                                                 {/* <span className="icon-count-number">{item.count}</span> */}
