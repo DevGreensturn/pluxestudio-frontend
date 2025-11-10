@@ -43,8 +43,8 @@ class Slider6 extends React.Component {
                         }
                     }
                 `}</style>
-                <div id="welcome_wrapper" className="rev_slider_wrapper fullscreen-container" data-alias="goodnews-header" data-source="gallery" style={{ background: '#eeeeee', padding: 0, height: '500px', maxHeight: '500px' }}>
-                        <div id="slider-video" className="rev_slider fullscreenbanner" style={{ display: 'none', height: '500px', maxHeight: '500px' }} data-version="5.4.3.1">
+                <div id="welcome_wrapper" className="rev_slider_wrapper fullscreen-container" data-alias="goodnews-header" data-source="gallery" style={{ background: '#eeeeee', padding: 0, height: '300px', maxHeight: '300px' }}>
+                        <div id="slider-video" className="rev_slider fullscreenbanner" style={{ display: 'none', height: '500px', maxHeight: '300px' }} data-version="5.4.3.1">
                             <ul>
                                 {/* SLIDE 1 */}
                                 <li data-index="rs-901" data-transition="fade" data-slotamount="default" data-hideafterloop={0} data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate={0} data-fstransition="fade" data-fsmasterspeed={300} data-fsslotamount={7} data-saveperformance="off" data-title data-param1 data-param2 data-param3 data-param4 data-param5 data-param6 data-param7 data-param8 data-param9 data-param10 data-description>
