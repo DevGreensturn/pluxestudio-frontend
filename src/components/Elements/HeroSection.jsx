@@ -188,44 +188,7 @@ class HeroSection extends React.Component {
                     </div>
                 </div>
 
-                <div className="video-reel-section" style={{ backgroundColor: '#000', padding: '60px 0', margin: 0 }}>
-                    <div className="container">
-                        <h2 style={{ 
-                            fontSize: '42px', 
-                            color: '#FFF', 
-                            textAlign: 'center',
-                            marginBottom: '40px',
-                            fontWeight: 300,
-                            letterSpacing: '2px'
-                        }}>
-                            Our Work in Motion
-                        </h2>
-                        <div className="video-container" style={{ 
-                            maxWidth: '900px', 
-                            margin: '0 auto',
-                            position: 'relative',
-                            paddingBottom: '56.25%',
-                            height: 0,
-                            overflow: 'hidden'
-                        }}>
-                            <video 
-                                controls 
-                                style={{
-                                    position: 'absolute',
-                                    top: 0,
-                                    left: 0,
-                                    width: '100%',
-                                    height: '100%',
-                                    objectFit: 'cover'
-                                }}
-                                poster={require('./../../assets/media/images/video1.jpg')}
-                            >
-                                <source src={require('./../../assets/media/video/video.mp4')} type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>
-                </div>
+             
 
                 <div className="reviews-section" style={{ backgroundColor: '#FFF8F0', padding: '80px 0', margin: 0 }}>
                     <div className="container">
