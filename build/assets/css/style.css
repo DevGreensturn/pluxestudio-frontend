@@ -1,3 +1,8 @@
+#slider-video_forcefullwidth .tp-fullwidth-forcer {
+    height: 450px !important;
+    max-height: 450px !important;
+    min-height: 450px !important;
+}
 /*
 ==========================
 Author: 7xtheme team
