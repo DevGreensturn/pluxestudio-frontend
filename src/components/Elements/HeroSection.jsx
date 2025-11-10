@@ -190,63 +190,7 @@ class HeroSection extends React.Component {
 
              
 
-                <div className="reviews-section" style={{ backgroundColor: '#FFF8F0', padding: '80px 0', margin: 0 }}>
-                    <div className="container">
-                        <h2 style={{ 
-                            fontSize: '42px', 
-                            color: '#000', 
-                            textAlign: 'center',
-                            marginBottom: '60px',
-                            fontWeight: 300,
-                            letterSpacing: '2px'
-                        }}>
-                            Client Reviews
-                        </h2>
-                        <div className="row">
-                            {clientReviews.map((review, index) => (
-                                <div key={index} className="col-lg-6 col-md-12 col-sm-12" style={{ marginBottom: '30px' }}>
-                                    <div className="review-card" style={{ 
-                                        backgroundColor: '#FFF', 
-                                        padding: '40px',
-                                        boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
-                                        height: '100%'
-                                    }}>
-                                        <div style={{ marginBottom: '20px' }}>
-                                            {[...Array(review.rating)].map((_, i) => (
-                                                <span key={i} style={{ color: '#D4AF37', fontSize: '20px' }}>★</span>
-                                            ))}
-                                        </div>
-                                        <p style={{ 
-                                            fontSize: '16px', 
-                                            color: '#333', 
-                                            lineHeight: '1.8',
-                                            marginBottom: '25px',
-                                            fontStyle: 'italic'
-                                        }}>
-                                            "{review.review}"
-                                        </p>
-                                        <div style={{ borderTop: '1px solid #E5E5E5', paddingTop: '20px' }}>
-                                            <h4 style={{ 
-                                                fontSize: '18px', 
-                                                color: '#000', 
-                                                marginBottom: '5px',
-                                                fontWeight: 500
-                                            }}>
-                                                {review.name}
-                                            </h4>
-                                            <p style={{ 
-                                                fontSize: '14px', 
-                                                color: '#666'
-                                            }}>
-                                                {review.location}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
+              
 
                 <div className="portfolio-section" style={{ backgroundColor: '#FFF', padding: '80px 0', margin: 0 }}>
                     <div className="container">

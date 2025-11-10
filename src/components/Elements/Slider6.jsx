@@ -28,16 +28,16 @@ class Slider6 extends React.Component {
             <>
                 <style>{`
                     #welcome_wrapper.fullscreen-container {
-                        height: 450px !important;
-                        max-height: 450px !important;
+                        height: 500px !important;
+                        max-height: 500px !important;
                         margin: 0 !important;
                         padding: 0 !important;
                         background: transparent !important;
                         overflow: hidden !important;
                     }
                     #slider-video.fullscreenbanner {
-                        height: 450px !important;
-                        max-height: 450px !important;
+                        height: 500px !important;
+                        max-height: 500px !important;
                         margin: 0 !important;
                         padding: 0 !important;
                     }
@@ -53,9 +53,33 @@ class Slider6 extends React.Component {
                             max-height: 300px !important;
                         }
                     }
+                    #slider-video_forcefullwidth {
+                        height: 500px !important;
+                        max-height: 500px !important;
+                    }
+                    #slider-video_forcefullwidth .tp-fullwidth-forcer {
+                        height: 500px !important;
+                        max-height: 500px !important;
+                    }
+                    #slider-video #slide-901-layer-2 {
+                        position: absolute !important;
+                        top: 50% !important;
+                        
+                        height: 100% !important;
+                        padding: 0 !important;
+                        margin: 0 !important;
+                    }
+                    #slide-901-layer-2 > div {
+                        display: flex !important;
+                        align-items: center !important;
+                        justify-content: center !important;
+                        text-align: center !important;
+                        width: 100% !important;
+                        margin:'auto !important'
+                    }   
                 `}</style>
-                <div id="welcome_wrapper" className="rev_slider_wrapper fullscreen-container" data-alias="goodnews-header" data-source="gallery" style={{ background: 'transparent', padding: 0, margin: 0, height: '450px', maxHeight: '450px', overflow: 'hidden' }}>
-                        <div id="slider-video" className="rev_slider fullscreenbanner" style={{ display: 'none', height: '450px', maxHeight: '450px', margin: 0, padding: 0 }} data-version="5.4.3.1">
+                    <div id="welcome_wrapper" className="rev_slider_wrapper fullscreen-container" data-alias="goodnews-header" data-source="gallery" style={{ background: 'transparent', padding: 0, margin: 0, height: '500px', maxHeight: '500px', overflow: 'hidden' }}>
+                        <div id="slider-video" className="rev_slider fullscreenbanner" style={{ display: 'none', height: '500px', maxHeight: '500px', margin: 0, padding: 0 }} data-version="5.4.3.1">
                             <ul>
                                 {/* SLIDE 1 */}
                                 <li data-index="rs-901" data-transition="fade" data-slotamount="default" data-hideafterloop={0} data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate={0} data-fstransition="fade" data-fsmasterspeed={300} data-fsslotamount={7} data-saveperformance="off" data-title data-param1 data-param2 data-param3 data-param4 data-param5 data-param6 data-param7 data-param8 data-param9 data-param10 data-description>
@@ -72,8 +96,8 @@ class Slider6 extends React.Component {
                                     <div className="tp-caption   tp-resizeme" id="slide-901-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['54','54','54','34']" data-lineheight="['64','64','64','44']" data-width="['700','700','700','90%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-typewriter="{&quot;lines&quot;:&quot;Making dreams Come To life , From Concept To Creation&quot;,&quot;enabled&quot;:&quot;on&quot;,&quot;speed&quot;:&quot;200&quot;,&quot;delays&quot;:&quot;1%7C100&quot;,&quot;looped&quot;:&quot;on&quot;,
 &quot;cursorType&quot;:&quot;one&quot;,&quot;blinking&quot;:&quot;on&quot;,&quot;word_delay&quot;:&quot;off&quot;,&quot;sequenced&quot;:&quot;on&quot;,&quot;hide_cursor&quot;:&quot;off&quot;,
 &quot;start_delay&quot;:&quot;500&quot;,&quot;newline_delay&quot;:&quot;1000&quot;,&quot;deletion_speed&quot;:&quot;20&quot;,&quot;deletion_delay&quot;:&quot;1000&quot;,
-&quot;blinking_speed&quot;:&quot;500&quot;,&quot;linebreak_delay&quot;:&quot;60&quot;,&quot;cursor_type&quot;:&quot;one&quot;,&quot;background&quot;:&quot;off&quot;}" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:&quot;+790&quot;,&quot;speed&quot;:1500,&quot;sfxcolor&quot;:&quot;#fff&quot;,&quot;sfx_effect&quot;:&quot;blockfromleft&quot;,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;z:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power4.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['center','center','center','center']" data-paddingtop="[5,5,5,5]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style={{ zIndex: 13, whiteSpace: 'normal', fontWeight: 600, color: '#fff', borderWidth: 0, fontFamily: '"Poppins", sans-serif', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%' }}>
-                                        <div style={{ textAlign: 'center' }}>Welcome To Pluxe Studio</div>
+&quot;blinking_speed&quot;:&quot;500&quot;,&quot;linebreak_delay&quot;:&quot;60&quot;,&quot;cursor_type&quot;:&quot;one&quot;,&quot;background&quot;:&quot;off&quot;}" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:&quot;+790&quot;,&quot;speed&quot;:1500,&quot;sfxcolor&quot;:&quot;#fff&quot;,&quot;sfx_effect&quot;:&quot;blockfromleft&quot;,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;z:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power4.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['center','center','center','center']" data-paddingtop="[5,5,5,5]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style={{ zIndex: 13, whiteSpace: 'normal', fontWeight: 600, color: '#fff', borderWidth: 0, fontFamily: '"Poppins", sans-serif', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%' }}>
+                                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>Welcome To Pluxe Studio</div>
                                     </div>
                                 </li>
                             </ul>
