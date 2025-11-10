@@ -28,28 +28,39 @@ class Slider6 extends React.Component {
             <>
                 <style>{`
                     #welcome_wrapper.fullscreen-container {
-                        height: 500px !important;
-                        max-height: 500px !important;
+                        height: 450px !important;
+                        max-height: 450px !important;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        background: transparent !important;
+                        overflow: hidden !important;
                     }
                     #slider-video.fullscreenbanner {
-                        height: 500px !important;
-                        max-height: 500px !important;
+                        height: 450px !important;
+                        max-height: 450px !important;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                    }
+                    .rev_slider_wrapper {
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        background: transparent !important;
                     }
                     @media only screen and (max-width: 768px) {
                         #welcome_wrapper.fullscreen-container,
                         #slider-video.fullscreenbanner {
-                            height: 350px !important;
-                            max-height: 350px !important;
+                            height: 300px !important;
+                            max-height: 300px !important;
                         }
                     }
                 `}</style>
-                <div id="welcome_wrapper" className="rev_slider_wrapper fullscreen-container" data-alias="goodnews-header" data-source="gallery" style={{ background: '#eeeeee', padding: 0, height: '300px', maxHeight: '300px' }}>
-                        <div id="slider-video" className="rev_slider fullscreenbanner" style={{ display: 'none', height: '500px', maxHeight: '300px' }} data-version="5.4.3.1">
+                <div id="welcome_wrapper" className="rev_slider_wrapper fullscreen-container" data-alias="goodnews-header" data-source="gallery" style={{ background: 'transparent', padding: 0, margin: 0, height: '450px', maxHeight: '450px', overflow: 'hidden' }}>
+                        <div id="slider-video" className="rev_slider fullscreenbanner" style={{ display: 'none', height: '450px', maxHeight: '450px', margin: 0, padding: 0 }} data-version="5.4.3.1">
                             <ul>
                                 {/* SLIDE 1 */}
                                 <li data-index="rs-901" data-transition="fade" data-slotamount="default" data-hideafterloop={0} data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate={0} data-fstransition="fade" data-fsmasterspeed={300} data-fsslotamount={7} data-saveperformance="off" data-title data-param1 data-param2 data-param3 data-param4 data-param5 data-param6 data-param7 data-param8 data-param9 data-param10 data-description>
-                                    {/* <img src={require('./../../assets/media/images/video1.jpg')} alt="" data-bgposition="center center" data-bgfit="cover" data-bgparallax={4} className="rev-slidebg" data-no-retina /> */}
-                                    <div className="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-videowidth="100%" data-videoheight="100%" data-videomp4="/assets/media/images/kitchen.mp4" data-videopreload="metadata" data-videoloop="loop" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false" />
+                                    {/* <img src={require('./../../assets/media/images/video1.jpg')} alt="" data-bgposition="center center" data-bgfit="cover" data-bgparallax={4} className="rev-slidebg" data-no-retina style={{ display: 'block' }} /> */}
+                                    <div className="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-videowidth="100%" data-videoheight="100%" data-videomp4="/assets/media/images/kitchen.mp4" data-videopreload="auto" data-videoloop="loop" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false" />
                                     {/* LAYERS */}
                                     {/* LAYER NR. 1 [ for overlay ] */}
                                     <div className="tp-caption tp-shape tp-shapewrapper " id="slide-901-layer-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[
@@ -62,7 +73,7 @@ class Slider6 extends React.Component {
 &quot;cursorType&quot;:&quot;one&quot;,&quot;blinking&quot;:&quot;on&quot;,&quot;word_delay&quot;:&quot;off&quot;,&quot;sequenced&quot;:&quot;on&quot;,&quot;hide_cursor&quot;:&quot;off&quot;,
 &quot;start_delay&quot;:&quot;500&quot;,&quot;newline_delay&quot;:&quot;1000&quot;,&quot;deletion_speed&quot;:&quot;20&quot;,&quot;deletion_delay&quot;:&quot;1000&quot;,
 &quot;blinking_speed&quot;:&quot;500&quot;,&quot;linebreak_delay&quot;:&quot;60&quot;,&quot;cursor_type&quot;:&quot;one&quot;,&quot;background&quot;:&quot;off&quot;}" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:&quot;+790&quot;,&quot;speed&quot;:1500,&quot;sfxcolor&quot;:&quot;#fff&quot;,&quot;sfx_effect&quot;:&quot;blockfromleft&quot;,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;z:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power4.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['center','center','center','center']" data-paddingtop="[5,5,5,5]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style={{ zIndex: 13, whiteSpace: 'normal', fontWeight: 600, color: '#fff', borderWidth: 0, fontFamily: '"Poppins", sans-serif', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%' }}>
-                                        <div style={{ textAlign: 'center', width: '100%' }}>Welcome To Pluxe Studio</div>
+                                        <div style={{ textAlign: 'center' }}>Welcome To Pluxe Studio</div>
                                     </div>
                                 </li>
                             </ul>
