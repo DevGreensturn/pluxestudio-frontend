@@ -12,6 +12,7 @@ import About1 from './../Elements/About1';
 import Statistics1 from './../Elements/Statistics1';
 import Testimonials2 from './../Elements/Testimonials2';
 import Faq from './../Elements/Faq';
+import HeroSection from './../Elements/HeroSection';
 
 
 
@@ -33,6 +34,7 @@ class Home6 extends React.Component {
 
                     <Testimonials2 separatoralignment="separator-center" />
                     <Faq Id="Faq" />
+                    <HeroSection />
                 </div>
 
                 <FooterMain id="Contact" />
