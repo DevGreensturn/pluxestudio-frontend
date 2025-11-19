@@ -1,5 +1,30 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
+
+const NavigationContent = () => {
+    const location = useLocation();
+    const isAboutActive = location.pathname === '/about';
+    const isHomeActive = location.pathname === '/';
+
+    return (
+        <ul className="nav navbar-nav">
+            <li className={isHomeActive ? 'active' : ''}>
+                <NavLink to="/">Home</NavLink>
+            </li>
+            <li className={isAboutActive ? 'active' : ''}>
+                <NavLink to="/about">About us</NavLink>
+            </li>
+            <li>
+                <a href="#WhatWeDo">What we Do</a>
+            </li>
+            <li> 
+                <a href="#Projects">Projects</a>
+            </li>
+            <li><a href="#Faq">FAQ</a></li>
+            <li><a href="#Contact">Contact us</a></li>
+        </ul>
+    );
+};
 
 class Navigation extends React.Component {
 
@@ -27,26 +52,7 @@ class Navigation extends React.Component {
     render() {
         return (
             <>
-                <ul className="nav navbar-nav">
-                    <li className="active">
-                        <a href="#welcome_wrapper">Home</a>
-                        
-                    </li>
-                    <li><a href="#About">About us</a>
-                       
-                    </li>
-                    <li>
-                        <a href="#WhatWeDo">What we Do</a>
-                      
-                    </li>
-                    <li> 
-                        <a href="#Projects">Projects</a>
-                    
-                    </li>
-                    
-                    <li><a href="#Faq">FAQ</a></li>
-                    <li><a href="#Contact">Contact us</a></li>
-                </ul>
+                <NavigationContent />
             </>
         );
     };

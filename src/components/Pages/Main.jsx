@@ -13,6 +13,7 @@ import Statistics1 from './../Elements/Statistics1';
 import Testimonials2 from './../Elements/Testimonials2';
 import Faq from './../Elements/Faq';
 import HeroSection from './../Elements/HeroSection';
+import HeaderBanner from './HeaderBanner';
 
 
 
@@ -20,10 +21,11 @@ class Home6 extends React.Component {
     render() {
         return (
             <>
+            <HeaderBanner />
                 <Header />
                 <div className="page-content">
                     <Slider6 id="Home" />
-                    <HeroSection />
+                    <HeroSection />;
                     <About1 id="About" />
                     <Statistics1 />
                     <WhatWeDo1 id="WhatWeDo"/>

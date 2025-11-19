@@ -7,8 +7,7 @@ import Home4 from './Pages/Home4';
 import Home5 from './Pages/Home5';
 import Home6 from './Pages/Home6';
 
-import About1 from './Pages/About1';
-import About2 from './Pages/About2';
+import AboutSection from './Pages/AboutSection';
 
 import Services1 from './Pages/Services1';
 import Services2 from './Pages/Services2';
@@ -65,7 +64,7 @@ class Components extends React.Component {
                 <div className="page-wraper">
                         <Routes>
                             <Route path='/' element={<Home1/>} />
-                            
+                            <Route path='/about' element={<AboutSection />} />
                             
                             <Route element={<Error/>} />
                         </Routes>
