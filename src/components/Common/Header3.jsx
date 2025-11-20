@@ -52,7 +52,7 @@ class Header3 extends React.Component {
                                 <div className="logo-header">
                                     <div className="logo-header-inner logo-header-one">
                                         <NavLink to={"./"}>
-                                            <img src={this.state.logo} alt="Pluxe Studio" />
+                                            <img src={this.state.logo} alt="Pluxe Studio" style={{ maxWidth: '120px', height: 'auto' }} />
                                         </NavLink>
                                     </div>
                                 </div>

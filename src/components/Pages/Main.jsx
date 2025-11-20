@@ -14,7 +14,7 @@ import Testimonials2 from './../Elements/Testimonials2';
 import Faq from './../Elements/Faq';
 import HeroSection from './../Elements/HeroSection';
 import HeaderBanner from './HeaderBanner';
-
+import IntroPage from './IntroPage';
 
 
 class Home6 extends React.Component {
@@ -25,6 +25,8 @@ class Home6 extends React.Component {
                 <Header />
                 <div className="page-content">
                     <Slider6 id="Home" />
+                    <IntroPage />
+              
                     <HeroSection />;
                     <About1 id="About" />
                     <Statistics1 />
