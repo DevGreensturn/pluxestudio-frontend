@@ -31,8 +31,9 @@ class Home6 extends React.Component {
               
                     <HeroSection />;
                     <About1 id="About" />
-                    <Statistics1 />
+                  
                     <WhatWeDo1 id="WhatWeDo"/>
+                    <Statistics1 />
                     {/* <SimilarProjects alignment="separator-center" title="Similar Project"  id="Projects"/> */}
                     <Projects5  />
                     

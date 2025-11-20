@@ -16,7 +16,7 @@ const serviceLinks = [
 ]
 
 const contactDetails = [
-  { icon: 'fa-phone', label: '+91 987 107 7515', href: 'tel:+919871077515' },
+  { icon: 'fa-phone', label: '+91 987 107 6565', href: 'tel:+919871076565' },
   { icon: 'fa-envelope', label: 'info@pluxestudio.com', href: 'mailto:info@pluxestudio.com' },
   { icon: 'fa-map-marker', label: '13/33, Infocity 2, Gurugram - 122001', href: 'https://maps.app.goo.gl/vxppwK1s9NqYv9Ch8' }
 ]

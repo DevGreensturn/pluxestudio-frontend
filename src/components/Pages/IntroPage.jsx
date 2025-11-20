@@ -42,7 +42,7 @@ export default function IntroPage() {
                   color: '#333',
                 }}
               >
-                Preeti M. Ahuja
+                Preeti  Ahuja
               </h3>
               <p
                 style={{
@@ -74,6 +74,7 @@ export default function IntroPage() {
                   lineHeight: 1.4,
                   color: '#4a4a4a',
                   marginBottom: '24px',
+                  fontStyle: 'italic',
                 }}
               >
                 With expertise in sustainable design and client relations, we partner with homeowners, NRIs, millennial couples, and developers to craft premium interiors that honor refined aesthetics and mindful living while ensuring each space remains future-ready.
