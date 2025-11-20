@@ -15,6 +15,8 @@ import Faq from './../Elements/Faq';
 import HeroSection from './../Elements/HeroSection';
 import HeaderBanner from './HeaderBanner';
 import IntroPage from './IntroPage';
+import FooterSection from './../Common/FooterSection';
+
 
 
 class Home6 extends React.Component {
@@ -39,10 +41,13 @@ class Home6 extends React.Component {
 
                     <Testimonials2 separatoralignment="separator-center" />
                     <Faq Id="Faq" />
+                 
+                    
                    
                 </div>
 
                 <FooterMain id="Contact" />
+                <FooterSection />
             </>
         );
     };

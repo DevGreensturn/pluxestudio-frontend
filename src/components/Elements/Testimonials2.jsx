@@ -37,7 +37,8 @@ class Testimonials2 extends React.Component {
     render() {
         const options = {
             loop: true,
-        autoplay: false,
+        autoplay: true,
+        autoplayTimeout: 2500,
 
             margin: 30,
             nav: true,
