@@ -6,11 +6,11 @@ const featuredProjects = [
         title: 'Gurugram Villa',
         name: 'Gurugram Villa'
     },
-    // {
-    //     image: require('./../../'),
-    //     title: 'Commercial Gym',
-    //     name: 'Commercial GYM'
-    // },
+    {
+        image: '/assets/media/images/gym-photo.jpg',
+        title: 'Commercial Gym',
+        name: 'Commercial GYM'
+    },
     {
         image: require('./../../images/projects/square/3.jpg'),
         title: 'London Home',
@@ -37,12 +37,12 @@ export default function GlobalPortfolio() {
                     </div>
                 </div>
                 <div className="section-content">
-                    <div className="row">
+                    <div className="row" style={{ display: 'flex', flexWrap: 'wrap' }}>
                         {featuredProjects.map((project, index) => (
-                            <div key={index} className="col-lg-3 col-md-6 col-sm-12 m-b30">
-                                <div className="project-mas hover-shadow">
-                                    <div className="image-effect-one">
-                                        <img src={project.image} alt={project.title} />
+                            <div key={index} className="col-lg-3 col-md-6 col-sm-12 m-b30" style={{ display: 'flex', flexDirection: 'column' }}>
+                                <div className="project-mas hover-shadow" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+                                    <div className="image-effect-one" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+                                        <img src={project.image} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                         <div className="figcaption">
                                             <h4 style={{ fontSize: '20px', marginBottom: '10px', color: '#FFF' }}>{project.title}</h4>
                                         </div>

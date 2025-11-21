@@ -1,7 +1,4 @@
 import React from 'react';
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 var bgimg1 = require('./../../images/background/bg-5.png');
 var bgimg2 = require('./../../images/background/bg-1.jpg');
@@ -20,7 +17,7 @@ const services = [
     {
         count: '03',
         title: 'Land Scapping',
-        image: require('./../../images/services/service-projects/3.jpg')
+        image: require('./../../images/pic2.jpg')
     },
     {
         count: '04',
@@ -31,28 +28,6 @@ const services = [
 
 class WhatWeDo1 extends React.Component {
     render() {
-        const carouselOptions = {
-            loop: false,
-            autoplay: false,
-            margin: 30,
-            nav: true,
-            dots: false,
-            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-            responsive: {
-                0: {
-                    items: 1
-                },
-                640: {
-                    items: 2
-                },
-                991: {
-                    items: 3
-                },
-                1200: {
-                    items: 4
-                }
-            }
-        };
         return (
             <>
                 <div id="WhatWeDo" className="section-full  mobile-page-padding  p-t80 p-b30 bg-repeat overflow-hide" style={{  backgroundColor: '#f2f0ec' }}>
@@ -66,9 +41,9 @@ class WhatWeDo1 extends React.Component {
                             </div>
                         </div>
                         <div className="section-content">
-                            <OwlCarousel className="owl-carousel number-block-slider owl-btn-vertical-center" {...carouselOptions}>
+                            <div className="row">
                                 {services.map((service) => (
-                                    <div className="item" key={service.title}>
+                                    <div className="col-lg-3 col-md-6 col-sm-12" key={service.title}>
                                         <div className="number-block-one animate-in-to-top">
                                             <img src={service.image} alt="" />
                                             <div className="figcaption bg-white text-center p-a20">
@@ -80,7 +55,7 @@ class WhatWeDo1 extends React.Component {
                                         </div>
                                     </div>
                                 ))}
-                            </OwlCarousel>
+                            </div>
                             {/* <div className="large-title-block full-content bg-gray">
                                 <div className="row">
                                     <div className="col-lg-6 col-md-12 col-sm-12">

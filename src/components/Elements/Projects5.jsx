@@ -142,7 +142,7 @@ class Projects5 extends React.Component {
     render() {
         return (
             <>
-                <div className="section-full p-tb80 column-grid-4 inner-page-padding" style={{ backgroundColor: '#e8d7cb' }}>
+                <div className="section-full p-tb80 column-grid-4 inner-page-padding" style={{ backgroundColor: '#faf8f3' }}>
                         {/* GALLERY CONTENT START */}
                         <div className="container">
                             {/* TITLE START */}
