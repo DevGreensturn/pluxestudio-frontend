@@ -16,6 +16,7 @@ import HeroSection from './../Elements/HeroSection';
 import HeaderBanner from './HeaderBanner';
 import IntroPage from './IntroPage';
 import FooterSection from './../Common/FooterSection';
+import GlobalPortfolio from './../Pages/GlobalPortfolio';
 
 
 
@@ -34,6 +35,7 @@ class Home6 extends React.Component {
                   
                     <WhatWeDo1 id="WhatWeDo"/>
                     <Statistics1 />
+                    <GlobalPortfolio />
                     {/* <SimilarProjects alignment="separator-center" title="Similar Project"  id="Projects"/> */}
                     <Projects5  />
                     

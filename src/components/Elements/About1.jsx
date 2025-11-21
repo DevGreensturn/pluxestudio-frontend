@@ -36,7 +36,7 @@ class About1 extends React.Component {
         };
         return (
             <>
-                <div id="About" className="section-full mobile-page-padding p-t80 p-b80 bg-no-repeat bg-bottom-left" style={{ backgroundImage: 'url(' + bgimg1 + ')', backgroundColor: '#F5F5F5' }}>
+                <div id="About" className="section-full mobile-page-padding p-t30 bg-no-repeat bg-bottom-left" style={{ backgroundImage: 'url(' + bgimg1 + ')', backgroundColor: '#F5F5F5' }}>
                     <div style={{ backgroundColor: '#F5F5F5' }}>
                     <div className="container" >
                         {/* TITLE START */}

@@ -28,16 +28,16 @@ class Slider6 extends React.Component {
             <>
                 <style>{`
                     #welcome_wrapper.fullscreen-container {
-                        height: 420px !important;
-                        max-height: 420px !important;
+                        height: 380px !important;
+                        max-height: 380px !important;
                         margin: 0 !important;
                         padding: 0 !important;
                         background: transparent !important;
                         overflow: hidden !important;
                     }
                     #slider-video.fullscreenbanner {
-                        height: 420px !important;
-                        max-height: 420px !important;
+                        height: 380px !important;
+                        max-height: 380px !important;
                         margin: 0 !important;
                         padding: 0 !important;
                     }
@@ -54,12 +54,12 @@ class Slider6 extends React.Component {
                         }
                     }
                     #slider-video_forcefullwidth {
-                        height: 420px !important;
-                        max-height: 420px !important;
+                        height: 380px !important;
+                        max-height: 380px !important;
                     }
                     #slider-video_forcefullwidth .tp-fullwidth-forcer {
-                        height: 420px !important;
-                        max-height: 420px !important;
+                        height: 380px !important;
+                        max-height: 380px !important;
                     }
                     #slider-video #slide-901-layer-2 {
                         position: absolute !important;
@@ -78,8 +78,8 @@ class Slider6 extends React.Component {
                         margin:'auto !important'
                     }   
                 `}</style>
-                    <div id="welcome_wrapper" className="rev_slider_wrapper fullscreen-container" data-alias="goodnews-header" data-source="gallery" style={{ background: 'transparent', padding: 0, margin: 0, height: '420px', maxHeight: '420px', overflow: 'hidden' }}>
-                        <div id="slider-video" className="rev_slider fullscreenbanner" style={{ display: 'none', height: '420px', maxHeight: '420px', margin: 0, padding: 0 }} data-version="5.4.3.1">
+                    <div id="welcome_wrapper" className="rev_slider_wrapper fullscreen-container" data-alias="goodnews-header" data-source="gallery" style={{ background: 'transparent', padding: 0, margin: 0, height: '380px', maxHeight: '380px', overflow: 'hidden' }}>
+                        <div id="slider-video" className="rev_slider fullscreenbanner" style={{ display: 'none', height: '380px', maxHeight: '380px', margin: 0, padding: 0 }} data-version="5.4.3.1">
                             <ul>
                                 {/* SLIDE 1 */}
                                 <li data-index="rs-901" data-transition="fade" data-slotamount="default" data-hideafterloop={0} data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate={0} data-fstransition="fade" data-fsmasterspeed={300} data-fsslotamount={7} data-saveperformance="off" data-title data-param1 data-param2 data-param3 data-param4 data-param5 data-param6 data-param7 data-param8 data-param9 data-param10 data-description>
@@ -89,7 +89,7 @@ class Slider6 extends React.Component {
                                     <div className="tp-caption tp-shape tp-shapewrapper " id="slide-901-layer-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[
                       {&quot;from&quot;:&quot;opacity:0;&quot;,&quot;speed&quot;:1000,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:0,&quot;ease&quot;:&quot;Power4.easeOut&quot;},
                       {&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power4.easeOut&quot;}
-                      ]" data-textalign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style={{ zIndex: 1, backgroundColor: 'rgba(0, 0, 0, 0.18)', borderColor: 'rgba(0, 0, 0, 0)', borderWidth: 0 }}>
+                      ]" data-textalign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style={{ zIndex: 1, backgroundColor: 'rgba(0, 0, 0, 0.05)', borderColor: 'rgba(0, 0, 0, 0)', borderWidth: 0 }}>
                                     </div>
                                     {/* LAYER NR. 4 [ for title ] */}
                                     <div className="tp-caption   tp-resizeme" id="slide-901-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['54','54','54','34']" data-lineheight="['64','64','64','44']" data-width="['700','700','700','90%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-typewriter="{&quot;lines&quot;:&quot;Making dreams Come To life , From Concept To Creation&quot;,&quot;enabled&quot;:&quot;on&quot;,&quot;speed&quot;:&quot;200&quot;,&quot;delays&quot;:&quot;1%7C100&quot;,&quot;looped&quot;:&quot;on&quot;,

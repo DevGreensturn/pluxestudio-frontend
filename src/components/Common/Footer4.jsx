@@ -2,18 +2,40 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Switcher from '../Elements/Switcher';
 import axios from 'axios';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 var bnr = require('./../../images/background/f-bg.jpg');
 
 var wa = require('./../../images/whatsapp.png');
 class FooterMain extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: false
+    };
+  }
 
-handleSubmit = async () => {
-  const username = document.querySelector('[name="username"]').value;
-  const email = document.querySelector('[name="email"]').value;
-  const Phone = document.querySelector('[name="Phone"]').value;
-  const message = document.querySelector('[name="message"]').value;
+handleSubmit = async (e) => {
+  const form = document.getElementById('leadForm');
+  
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+
+  const username = document.querySelector('[name="username"]').value.trim();
+  const email = document.querySelector('[name="email"]').value.trim();
+  const Phone = document.querySelector('[name="Phone"]').value.trim();
+  const message = document.querySelector('[name="message"]').value.trim();
+
+  if (!username || !email || !Phone || !message) {
+    toast.error("Please fill in all required fields");
+    return;
+  }
+
+  this.setState({ loading: true });
 
   try {
     await axios.post(`${process.env.REACT_APP_API_BASE || 'https://pluxestudio.com/user'}/api/send-email`, {
@@ -23,10 +45,13 @@ handleSubmit = async () => {
       message
     });
 
-    alert("Email sent successfully!");
+    this.setState({ loading: false });
+    form.reset();
+    toast.success("Email sent successfully!");
   } catch (err) {
     console.error(err);
-    alert("Failed to send email");
+    this.setState({ loading: false });
+    toast.error("Failed to send email");
   }
 };
 
@@ -42,7 +67,12 @@ handleSubmit = async () => {
             <div className="container">
             <div className="row">
 <div className="col-lg-8 col-md-12 col-sm-12">
-    <form className="contact-form cons-contact-form bg-gray p-a30" method="post" action="#" id="leadForm">
+    <form className="contact-form cons-contact-form bg-gray p-a30" method="post" action="#" id="leadForm" style={{ position: 'relative' }}>
+        {this.state.loading && (
+            <div className="loading-cover" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(255, 255, 255, 0.8)' }}>
+                <i className="fa fa-spinner fa-spin" style={{ fontSize: '30px', color: '#333' }}></i>
+            </div>
+        )}
         <div className="contact-one">
             {/* TITLE START */}
             <div className="section-head">
@@ -54,19 +84,20 @@ handleSubmit = async () => {
             </div>
             {/* TITLE END */}
             <div className="form-group">
-                <input name="username" type="text" required className="form-control" placeholder="Name" />
+                <input name="username" type="text" required className="form-control" placeholder="Name" disabled={this.state.loading} />
             </div>
             <div className="form-group">
-                <input name="email" type="text" className="form-control"  placeholder="Email" />
+                <input name="email" type="email" className="form-control" required placeholder="Email" disabled={this.state.loading} />
             </div>
              <div className="form-group">
-                <input name="Phone" type="text" className="form-control" required placeholder="Phone " />
+                <input name="Phone" type="tel" className="form-control" required placeholder="Phone " disabled={this.state.loading} />
             </div>
             <div className="form-group">
-                <textarea name="message" rows={4} className="form-control " required placeholder="Message" defaultValue={""} />
+                <textarea name="message" rows={4} className="form-control " required placeholder="Message" defaultValue={""} disabled={this.state.loading} />
             </div>
             <div className="text-right">
-                <button onClick={this.handleSubmit} name="submit" id="submitButton" type="button" value="Submit" className="site-button btn-half"><span> submit</span>
+                <button onClick={this.handleSubmit} name="submit" id="submitButton" type="button" value="Submit" className="site-button btn-half" disabled={this.state.loading}>
+                    <span>{this.state.loading ? 'Sending...' : 'submit'}</span>
                 </button>
             </div>
         </div>
