@@ -142,13 +142,13 @@ class Projects5 extends React.Component {
     render() {
         return (
             <>
-                <div className="section-full p-tb80 column-grid-4 inner-page-padding">
+                <div className="section-full p-tb80 column-grid-4 inner-page-padding" style={{ backgroundColor: '#e8d7cb' }}>
                         {/* GALLERY CONTENT START */}
                         <div className="container">
                             {/* TITLE START */}
                             <div className="section-head">
                                 <div className="sx-separator-outer separator-center">
-                                    <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ backgroundImage: 'url(' + bgimg1 + ')' }}>
+                                    <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ backgroundColor: '#e8d7cb' }}>
                                         <h3 className="sep-line-one">All Projects</h3>
                                     </div>
                                 </div>

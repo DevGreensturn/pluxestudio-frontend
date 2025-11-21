@@ -20,7 +20,7 @@ const services = [
     {
         count: '03',
         title: 'Land Scapping',
-        image: require('./../../images/services/service-projects/1.jpg')
+        image: require('./../../images/services/service-projects/3.jpg')
     },
     {
         count: '04',
@@ -32,10 +32,8 @@ const services = [
 class WhatWeDo1 extends React.Component {
     render() {
         const carouselOptions = {
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 3500,
-            autoplayHoverPause: true,
+            loop: false,
+            autoplay: false,
             margin: 30,
             nav: true,
             dots: false,
@@ -57,7 +55,7 @@ class WhatWeDo1 extends React.Component {
         };
         return (
             <>
-                <div id="WhatWeDo" className="section-full  mobile-page-padding bg-white  p-t80 p-b30 bg-repeat overflow-hide" style={{ backgroundImage: 'url(' + bgimg1 + ')' }}>
+                <div id="WhatWeDo" className="section-full  mobile-page-padding  p-t80 p-b30 bg-repeat overflow-hide" style={{  backgroundColor: '#f2f0ec' }}>
                     <div className="container right-half-bg-image-outer">
                         <div className="right-half-bg-image bg-parallax bg-fixed bg-top-right" data-stellar-background-ratio={0} style={{ backgroundImage: 'url(' + bgimg2 + ')' }} />
                         <div className="section-head">

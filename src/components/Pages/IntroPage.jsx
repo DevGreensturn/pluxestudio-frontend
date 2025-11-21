@@ -4,30 +4,30 @@ export default function IntroPage() {
   return (
     <div className="section-full" style={{ background: '#f9f6f1', padding: '20px 0' }}>
       <div className="container">
-        <div className="row align-items-center">
+        <div className="row align-items-stretch">
           {/* Image Section */}
-          <div className="col-lg-5 col-md-10 m-b30 mx-auto">
+          <div className="col-lg-5 col-md-10 m-b30 mx-auto" style={{ height: '100%' }}>
             <div
               style={{
                 width: '100%',
-                maxWidth: '340px',
-                height: '340px',
-                borderRadius: '50%',
+                height: '100%',
+                minHeight: '340px',
                 overflow: 'hidden',
-                boxShadow: '0 25px 70px rgba(0,0,0,0.15)',
+                borderRadius: '0',
+                boxShadow: '0 25px 70px rgba(128,128,128,0.3)',
                 border: '1px solid #f0e9dd',
                 transform: 'translateY(10px)',
                 margin: '0 auto',
               }}
             >
               <img
-                src="./../../assets/media/images/founder-image.jpg"
+      src="./../../assets/media/images/founder-image-removebg-preview.png"
                 alt="Founder portrait"
                 style={{
                   width: '100%',
                   height: '100%',
                   objectFit: 'cover',
-                  borderRadius: '50%',
+                  borderRadius: '0',
                 }}
               />
             </div>
@@ -43,19 +43,19 @@ export default function IntroPage() {
                   fontWeight: 'bold',
                   letterSpacing: '2px',
                   textTransform: 'uppercase',
-                  marginBottom: '6px',
+                  marginBottom: '4px',
                   color: '#333',
                 }}
               >
-                Preeti Ahuja
+              Preeti M. Ahuja
               </h3>
               <p
                 style={{
                   fontSize: '12px',
-                  letterSpacing: '4px',
+                  letterSpacing: '2px',
                   textTransform: 'uppercase',
                   color: '#777',
-                  marginBottom: '16px',
+                  marginBottom: '5px',
                 }}
               >
                 Founder & Creative Director
@@ -65,9 +65,9 @@ export default function IntroPage() {
               <p
                 style={{
                   fontSize: '13px',
-                  lineHeight: 1.4,
+                  lineHeight: 1.1,
                   color: '#4a4a4a',
-                  marginBottom: '14px',
+                  marginBottom: '8px',
                   fontStyle: 'italic',
                 }}
               >

@@ -85,7 +85,7 @@ class HeroSection extends React.Component {
         return (
             <>
                 {/* HERO SECTION */}
-                <div className="hero-section" style={{padding: '80px 0 60px', margin: 0 }}>
+                <div className="hero-section" style={{padding: '80px 0 60px', margin: 0, backgroundColor: '#f2f0ec' }}>
                     <div className="container">
                         <div className="row align-items-center">
 

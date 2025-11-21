@@ -47,12 +47,12 @@ class Header3 extends React.Component {
             <>
                 <header className="site-header header-style-3 nav-wide header-fixed mobile-sider-drawer-menu">
                     <div className="sticky-header main-bar-wraper navbar-expand-lg">
-                        <div className="main-bar bg-white ">
+                        <div className="main-bar bg-white " >
                             <div className="container clearfix">
                                 <div className="logo-header">
                                     <div className="logo-header-inner logo-header-one">
                                         <NavLink to={"./"}>
-                                            <img src={this.state.logo} alt="Pluxe Studio" style={{ maxWidth: '120px', height: 'auto' }} />
+                                            <img src={this.state.logo} alt="Pluxe Studio" style={{ maxWidth: '105px', height: 'auto' }} />
                                         </NavLink>
                                     </div>
                                 </div>
@@ -67,16 +67,16 @@ class Header3 extends React.Component {
                                 {/* EXTRA NAV */}
                                 <div className="extra-nav">
                                         {/* MAIN NAVIGATION */}
-                                <div className="header-nav navbar-collapse collapse justify-content-center collapse">
+                                <div className="header-nav navbar-collapse collapse justify-content-center collapse" >
                                     <Navigation />
                                 </div>
                                 {/* SITE SEARCH */}
-                                      <div className="extra-cell">
+                                      {/* <div className="extra-cell">
                                 
                                                                         <div className="contact-slide-show">
                                             <a href="https://wa.me/919871077515" target="_blank" className="get-in-touch-btn from-top" onClick={this.handleQuoteToggle}>
                                                 Get in touch</a></div>
-                                    </div>
+                                    </div> */}
                                                                 </div>
                                 </div>
                                 {/* EXTRA Nav */}

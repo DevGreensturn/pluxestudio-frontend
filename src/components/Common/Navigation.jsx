@@ -15,13 +15,18 @@ const NavigationContent = () => {
                 <NavLink to="/about">About us</NavLink>
             </li>
             <li>
-                <a href="#WhatWeDo">What we Do</a>
+                <NavLink to="/services">Services</NavLink>
             </li>
-            <li> 
-                <a href="#Projects">Projects</a>
+            <li>
+                <NavLink to="/portfolio">Portfolio</NavLink>
             </li>
-            <li><a href="#Faq">FAQ</a></li>
+            <li>
+                <NavLink to="/nri">NRI</NavLink>
+            </li>
+          
+         
             <li><a href="#Contact">Contact us</a></li>
+            <li><a href="#Faq">FAQ</a></li>
         </ul>
     );
 };

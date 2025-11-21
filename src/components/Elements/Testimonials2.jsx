@@ -55,7 +55,7 @@ class Testimonials2 extends React.Component {
         };
         return (
             <>
-                <div className="section-full mobile-page-padding bg-repeat p-t80 p-b80" style={{ backgroundImage: 'url(' + bgimg1 + ')' }}>
+                <div className="section-full mobile-page-padding bg-repeat p-t80 p-b80" style={{ backgroundColor: '#f2f0ec' }}>
                     <div className="section-content">
                         <div className="container">
                             {/* TITLE START */}

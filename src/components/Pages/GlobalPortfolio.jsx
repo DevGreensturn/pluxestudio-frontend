@@ -6,11 +6,11 @@ const featuredProjects = [
         title: 'Gurugram Villa',
         name: 'Gurugram Villa'
     },
-    {
-        image: require('./../../images/projects/square/2.jpg'),
-        title: 'Commercial Gym',
-        name: 'Commercial GYM'
-    },
+    // {
+    //     image: require('./../../'),
+    //     title: 'Commercial Gym',
+    //     name: 'Commercial GYM'
+    // },
     {
         image: require('./../../images/projects/square/3.jpg'),
         title: 'London Home',
@@ -27,11 +27,11 @@ var bgimg1 = require('./../../images/background/cross-line2.png');
 
 export default function GlobalPortfolio() {
     return (
-        <div className="section-full mobile-page-padding p-t80">
+        <div className="section-full mobile-page-padding p-t80" style={{ backgroundColor: '#e7e5e3' }}>
             <div className="container">
                 <div className="section-head">
                     <div className="sx-separator-outer separator-center">
-                        <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ backgroundImage: 'url(' + bgimg1 + ')' }}>
+                        <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ backgroundColor:'#e7e5e3' }}>
                             <h3 className="sep-line-one">Featured Project</h3>
                         </div>
                     </div>

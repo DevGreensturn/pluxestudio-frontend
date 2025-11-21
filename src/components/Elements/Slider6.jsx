@@ -28,16 +28,16 @@ class Slider6 extends React.Component {
             <>
                 <style>{`
                     #welcome_wrapper.fullscreen-container {
-                        height: 380px !important;
-                        max-height: 380px !important;
+                        height: 320px !important;
+                        max-height: 320px !important;
                         margin: 0 !important;
                         padding: 0 !important;
                         background: transparent !important;
                         overflow: hidden !important;
                     }
                     #slider-video.fullscreenbanner {
-                        height: 380px !important;
-                        max-height: 380px !important;
+                        height: 320px !important;
+                        max-height: 320px !important;
                         margin: 0 !important;
                         padding: 0 !important;
                     }
@@ -49,17 +49,17 @@ class Slider6 extends React.Component {
                     @media only screen and (max-width: 768px) {
                         #welcome_wrapper.fullscreen-container,
                         #slider-video.fullscreenbanner {
-                            height: 300px !important;
-                            max-height: 300px !important;
+                            height: 240px !important;
+                            max-height: 240px !important;
                         }
                     }
                     #slider-video_forcefullwidth {
-                        height: 380px !important;
-                        max-height: 380px !important;
+                        height: 320px !important;
+                        max-height: 320px !important;
                     }
                     #slider-video_forcefullwidth .tp-fullwidth-forcer {
-                        height: 380px !important;
-                        max-height: 380px !important;
+                        height: 320px !important;
+                        max-height: 320px !important;
                     }
                     #slider-video #slide-901-layer-2 {
                         position: absolute !important;
