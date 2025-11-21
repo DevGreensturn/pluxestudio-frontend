@@ -3,19 +3,23 @@ import React from 'react';
 const featuredProjects = [
     {
         image: require('./../../images/projects/square/1.jpg'),
-        title: 'Gurugram Villa'
+        title: 'Gurugram Villa',
+        name: 'Gurugram Villa'
     },
     {
         image: require('./../../images/projects/square/2.jpg'),
-        title: 'Comm GYM'
+        title: 'Commercial Gym',
+        name: 'Commercial GYM'
     },
     {
         image: require('./../../images/projects/square/3.jpg'),
-        title: 'London Home'
+        title: 'London Home',
+        name: 'London Home'
     },
     {
         image: require('./../../images/projects/square/4.jpg'),
-        title: 'Dubai Flat'
+        title: 'Dubai Flat',
+        name: 'Dubai Flat'
     }
 ];
 
@@ -23,7 +27,7 @@ var bgimg1 = require('./../../images/background/cross-line2.png');
 
 export default function GlobalPortfolio() {
     return (
-        <div className="section-full mobile-page-padding p-tb80">
+        <div className="section-full mobile-page-padding p-t80">
             <div className="container">
                 <div className="section-head">
                     <div className="sx-separator-outer separator-center">
@@ -43,6 +47,9 @@ export default function GlobalPortfolio() {
                                             <h4 style={{ fontSize: '20px', marginBottom: '10px', color: '#FFF' }}>{project.title}</h4>
                                         </div>
                                     </div>
+                                </div>
+                                <div className="p-t20 text-center">
+                                    <h4 className="m-b0">{project.name}</h4>
                                 </div>
                             </div>
                         ))}
