@@ -4516,6 +4516,7 @@ btn-half {cursor: pointer;	z-index: 0;	display: inline-block;	position: relative
 
 .sep-line-one{	
 	position:relative;
+	border: none;
 }
 
 

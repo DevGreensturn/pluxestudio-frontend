@@ -4,6 +4,7 @@ import FooterMain from './../Common/Footer4';
 import Banner from './../Elements/Banner';
 import CountUp from 'react-countup';
 import bnrimg from './../../images/banner/5.jpg';
+import FooterSection from './../Common/FooterSection';
 
 var bgimg1 = require('./../../images/background/cross-line2.png');
 var bgimg2 = require('./../../images/background/bg-4.png');
@@ -63,7 +64,8 @@ const AboutSection = () => {
         <>
             <Header />
             <div className="page-content">
-                <Banner title="About Us" pagename="About Us" description="Crafting extraordinary spaces that blend luxury, sustainability, and timeless elegance." bgimage={bnrimg} />
+            <Banner title="About Us" pagename="About Us" description="Crafting extraordinary spaces that blend luxury, sustainability, and timeless elegance." bgimage="/assets/media/images/about.jpg" />
+                
                 
                 <div className="section-full mobile-page-padding p-t80 p-b80 bg-white">
                     <div className="container">
@@ -159,7 +161,7 @@ const AboutSection = () => {
                     </div>
                 </div>
 
-                <div className="section-full overlay-wraper sx-bg-secondry mobile-page-padding p-t80 p-b50 bg-parallax" data-stellar-background-ratio="0.5" style={{ backgroundImage: 'url(' + bgimg3 + ')' }}>
+                {/* <div className="section-full overlay-wraper sx-bg-secondry mobile-page-padding p-t80 p-b50 bg-parallax" data-stellar-background-ratio="0.5" style={{ backgroundImage: 'url(' + bgimg3 + ')' }}>
                     <div className="overlay-main bg-black opacity-0.10" />
                     <div className="container">
                         <div className="section-content">
@@ -193,9 +195,9 @@ const AboutSection = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
-                <div className="section-full mobile-page-padding p-t80 p-b80 bg-gray">
+                {/* <div className="section-full mobile-page-padding p-t80 p-b80 bg-gray">
                     <div className="container">
                         <div className="section-content">
                             <div className="row">
@@ -302,9 +304,10 @@ const AboutSection = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
             <FooterMain id="Contact" />
+            <FooterSection />
         </>
     );
 };

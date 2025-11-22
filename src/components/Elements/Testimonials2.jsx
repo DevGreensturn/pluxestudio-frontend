@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -86,6 +87,26 @@ class Testimonials2 extends React.Component {
                                 ))}
 
                             </OwlCarousel>
+                            <div className="text-left" style={{ marginTop: '50px' }}>
+                                <NavLink
+                                    to="#Contact"
+                                    className="site-button"
+                                    style={{
+                                        backgroundColor: "#000",
+                                        color: '#fff',
+                                        padding: '18px 40px',
+                                        fontSize: '14px',
+                                        letterSpacing: '3px',
+                                        textTransform: 'uppercase',
+                                        border: 'none',
+                                        display: 'inline-block',
+                                        textDecoration: 'none',
+                                        transition: 'background-color 0.3s ease'
+                                    }}
+                                >
+                                    Book Free Consultation
+                                </NavLink>
+                            </div>
                         </div>
                     </div>
                 </div>

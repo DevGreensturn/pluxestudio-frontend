@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const quickLinks = [
-  { label: 'About', to: '/about-1' },
+  { label: 'About', to: '/about' },
   { label: 'Services', to: '/services-1' },
   { label: 'Projects', to: '/project-grid-3-columns' },
   { label: 'Blog', to: '/blog-grid' }
