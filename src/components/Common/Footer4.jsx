@@ -78,7 +78,7 @@ handleSubmit = async (e) => {
             <div className="section-head">
                 <div className="sx-separator-outer separator-left">
                     <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ backgroundImage: 'url(images/background/cross-line2.png)' }}>
-                        <h3 className="sep-line-one">Form</h3>
+                        <h3 style={{ border: 'none' , padding:"10px"}} className="">Form</h3>
                     </div>
                 </div>
             </div>

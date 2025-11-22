@@ -65,10 +65,9 @@ export default function IntroPage() {
               <p
                 style={{
                   fontSize: '13px',
-                  lineHeight: 1.1,
+                  lineHeight: 1.4,
                   color: '#4a4a4a',
                   marginBottom: '8px',
-                  fontStyle: 'italic',
                 }}
               >
                 With over a decade of global exposure across the UK and the Middle East, I bring a refined, international perspective to modern Indian interior design. My passion for creating beautiful spaces began early in life—shaped by my early living in Doha, Qatar and London, UK, as well as enriched by extensive travel through the world's design capitals. These experiences helped me develop a deep understanding of global colour palettes, contemporary aesthetics, and timeless luxury.
@@ -78,38 +77,37 @@ export default function IntroPage() {
                   fontSize: '13px',
                   lineHeight: 1.4,
                   color: '#4a4a4a',
-                  marginBottom: '16px',
-                  fontStyle: 'italic',
+                  marginBottom: '8px',
                 }}
               >
                 Much like many renowned designers, my journey into design unfolded organically—starting with creating elegant, personal spaces for friends, family, and my own home. What began as a personal passion soon evolved into a sought-after design practice, as my work drew attention for its modern sensibility, warmth, and understated sophistication.
               </p>
               <p
-                style={{
+                 style={{
                   fontSize: '13px',
                   lineHeight: 1.4,
                   color: '#4a4a4a',
-                  marginBottom: '16px',
+                  marginBottom: '8px',
                 }}
               >
                 Pluxe Studio was born from a desire to combine this global perspective with an intimate, personalised design approach. As the Founder and Creative Lead at Pluxe Studio, I work closely with every client — understanding their lifestyle, aspirations, and the emotions they want their home to evoke. My goal is to design spaces that balance modern sophistication with timeless charm, while ensuring a seamless, enjoyable experience throughout the project.
               </p>
               <p
-                style={{
+                 style={{
                   fontSize: '13px',
                   lineHeight: 1.4,
                   color: '#4a4a4a',
-                  marginBottom: '16px',
+                  marginBottom: '8px',
                 }}
               >
                 Based in Gurgaon, at the heart of India's premium residential landscape, I intuitively understand the tastes of luxury homeowners and craft spaces that feel elevated, meaningful, and beautifully personal.
               </p>
               <p
-                style={{
+                 style={{
                   fontSize: '13px',
                   lineHeight: 1.4,
                   color: '#4a4a4a',
-                  marginBottom: '16px',
+                  marginBottom: '8px',
                 }}
               >
                 Today, Pluxe Studio serves clients across India, Dubai, and London, delivering interiors that reflect individuality, craftsmanship, and a refined global aesthetic. Every space we design is a thoughtful blend of who you are and the world-class design principles that inspire us.
@@ -117,12 +115,11 @@ export default function IntroPage() {
 
               {/* Founder Quote */}
               <p
-                style={{
+                 style={{
                   fontSize: '13px',
                   lineHeight: 1.4,
                   color: '#4a4a4a',
-                  marginBottom: '16px',
-                  fontStyle: 'italic',
+                  marginBottom: '8px',
                 }}
               >
                 "Design is storytelling — and every space has a story I love to create."

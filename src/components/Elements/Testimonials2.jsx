@@ -62,7 +62,7 @@ class Testimonials2 extends React.Component {
                             <div className="section-head">
                                 <div className={`${this.props.separatoralignment} sx-separator-outer`}>
                                     <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ backgroundImage: 'url(' + bgimg2 + ')' }}>
-                                        <h3 className="sep-line-one">Testimonial</h3>
+                                        <h3 style={{ border: 'none' , padding:"10px"}} className="">Testimonial</h3>
                                     </div>
                                 </div>
                             </div>

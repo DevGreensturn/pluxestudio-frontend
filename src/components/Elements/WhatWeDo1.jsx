@@ -22,9 +22,9 @@ const services = [
     {
         count: '04',
         title: 'Global NRI Design',
-        image: require('./../../images/services/service-projects/2.jpg')
+        image: '/assets/media/images/nri.jpg'
     }
-];
+]
 
 class WhatWeDo1 extends React.Component {
     render() {
@@ -36,16 +36,18 @@ class WhatWeDo1 extends React.Component {
                         <div className="section-head">
                             <div className="sx-separator-outer separator-left">
                                 <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ backgroundImage: 'url(' + bgimg3 + ')' }}>
-                                    <h3 className="sep-line-one">What We do</h3>
+                                    <h3 style={{ border: 'none' , padding:"10px"}} className="">What We do</h3>
                                 </div>
                             </div>
                         </div>
                         <div className="section-content">
-                            <div className="row">
+                            <div className="row" style={{ display: 'flex', flexWrap: 'wrap' }}>
                                 {services.map((service) => (
-                                    <div className="col-lg-3 col-md-6 col-sm-12" key={service.title}>
-                                        <div className="number-block-one animate-in-to-top">
-                                            <img src={service.image} alt="" />
+                                    <div className="col-lg-3 col-md-6 col-sm-12" key={service.title} style={{ display: 'flex', flexDirection: 'column' }}>
+                                        <div className="number-block-one animate-in-to-top" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+                                            <div style={{ width: '100%', aspectRatio: '4/3', minHeight: '250px', overflow: 'hidden', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#000' }}>
+                                                <img src={service.image} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }} />
+                                            </div>
                                             <div className="figcaption bg-white text-center p-a20">
                                                 <h4 className="m-a0">{service.title}</h4>
                                             </div>

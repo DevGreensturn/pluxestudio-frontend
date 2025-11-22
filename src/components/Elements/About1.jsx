@@ -42,8 +42,8 @@ class About1 extends React.Component {
                         {/* TITLE START */}
                         <div className="section-head">
                             <div className="sx-separator-outer separator-left">
-                                <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ backgroundImage: 'url(' + bgimg2 + ')' }}>
-                                    <h3 className="sep-line-one">Why Pluxe Studio?</h3>
+                                <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ backgroundImage: 'url(' + bgimg2 + ')', border: 'none' }}>
+                                    <h3 style={{ border: 'none' , padding:"10px"}} className="">Why Pluxe Studio?</h3>
                                 </div>
                             </div>
                         </div>
@@ -51,7 +51,7 @@ class About1 extends React.Component {
                         <div className="section-content">
                             <div className="row">
                                 <div className="col-lg-5 col-md-12 col-sm-12">
-                                    <div className="about-home-left">
+                                    <div className="about-home-left" style={{ border: 'none' }}>
                                         <h4 className="m-t0 sx-tilte">Our Unique Value Proposition:</h4>
                                        <ul className="list-angle-right anchor-line">
                                                                                 <li><strong>	Luxury Without Excess – </strong>Sophisticated design curated with restraint and elegance.</li>

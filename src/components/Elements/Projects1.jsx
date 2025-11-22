@@ -117,7 +117,7 @@ class Projects1 extends React.Component {
                             <div className="section-head">
                                 <div className="sx-separator-outer separator-center">
                                     <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ backgroundImage: 'url(' + bgimg1 + ')' }}>
-                                        <h3 className="sep-line-one">All Projects</h3>
+                                        <h3 style={{ border: 'none' , padding:"10px"}} className="">All Projects</h3>
                                     </div>
                                 </div>
                             </div>

@@ -13,7 +13,7 @@ class Faq extends React.Component {
                                 <div className="section-head">
                                     <div className="sx-separator-outer separator-left">
                                         <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ backgroundImage: 'url(images/background/cross-line2.png)', backgroundColor: '#e7e5e3' }}>
-                                            <h3 className="sep-line-one">FAQ</h3>
+                                            <h3 style={{ border: 'none' , padding:"10px"}} className="">FAQ</h3>
                                         </div>
                                     </div>
             <div className="sx-accordion acc-bg-gray" id="accordion5">

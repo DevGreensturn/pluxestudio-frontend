@@ -72,7 +72,7 @@ class HeroSection extends React.Component {
         const heroSliderOptions = {
             loop: true,
             autoplay: true,
-            autoplayTimeout: 3000,
+            autoplayTimeout: 1500,
             autoplayHoverPause: true,
             margin: 0,
             nav: false,
@@ -116,16 +116,18 @@ class HeroSection extends React.Component {
                                         to="#Contact"
                                         className="site-button"
                                         style={{
-                                            backgroundColor: this.state.buttonHover ? '#C9A227' : '#D4AF37',
+                                            backgroundColor:"#000",
                                             color: '#000',
                                             padding: '18px 40px',
                                             fontSize: '14px',
                                             letterSpacing: '3px',
+                                            color: '#fff',
                                             textTransform: 'uppercase',
                                             border: 'none',
                                             display: 'inline-block',
                                             textDecoration: 'none',
                                             transition: 'background-color 0.3s ease'
+                                           
                                         }}
                                         onMouseEnter={() => this.setState({ buttonHover: true })}
                                         onMouseLeave={() => this.setState({ buttonHover: false })}

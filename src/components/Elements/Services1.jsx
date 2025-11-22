@@ -55,7 +55,7 @@ class Services1 extends React.Component {
                             <div className="section-head">
                                 <div className="sx-separator-outer separator-left">
                                     <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ backgroundImage: 'url(' + bgimg1 + ')' }}>
-                                        <h3 className="sep-line-one ">All Services</h3>
+                                        <h3 style={{ border: 'none' , padding:"10px"}} className="">All Services</h3>
                                     </div>
                                 </div>
                             </div>

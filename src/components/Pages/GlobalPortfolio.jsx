@@ -32,7 +32,7 @@ export default function GlobalPortfolio() {
                 <div className="section-head">
                     <div className="sx-separator-outer separator-center">
                         <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ backgroundColor:'#e7e5e3' }}>
-                            <h3 className="sep-line-one">Featured Project</h3>
+                            <h3 style={{ border: 'none' , padding:"10px"}} className="">Featured Project</h3>
                         </div>
                     </div>
                 </div>
