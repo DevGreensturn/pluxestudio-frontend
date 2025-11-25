@@ -120,6 +120,7 @@ export default function IntroPage() {
                   lineHeight: 1.4,
                   color: '#4a4a4a',
                   marginBottom: '8px',
+                  fontStyle: 'italic',
                 }}
               >
                 "Design is storytelling — and every space has a story I love to create."

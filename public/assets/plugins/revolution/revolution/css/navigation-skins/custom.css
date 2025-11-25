@@ -23,7 +23,7 @@ website:    http://www.themepunch.com
 	background:#000;
 }
 .custom.tparrows:before {
-	font-family: "revicons";
+	font-family: 'Poppins', sans-serif !important;
 	font-size:15px;
 	color:#fff;
 	display:block;

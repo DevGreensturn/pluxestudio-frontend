@@ -23,6 +23,11 @@ const services = [
         count: '04',
         title: 'Global NRI Design',
         image: '/assets/media/images/nri.jpg'
+    },
+    {
+        count: '05',
+        title: 'Boutique Commercial',
+        image: '/assets/media/images/botique.jpeg'
     }
 ]
 
@@ -41,18 +46,30 @@ class WhatWeDo1 extends React.Component {
                             </div>
                         </div>
                         <div className="section-content">
-                            <div className="row" style={{ display: 'flex', flexWrap: 'wrap' }}>
+                            <div className="row" style={{ display: 'flex', flexWrap: 'nowrap', gap: '15px', alignItems: 'stretch' }}>
                                 {services.map((service) => (
-                                    <div className="col-lg-3 col-md-6 col-sm-12" key={service.title} style={{ display: 'flex', flexDirection: 'column' }}>
-                                        <div className="number-block-one animate-in-to-top" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+                                    <div key={service.title} style={{ display: 'flex', flexDirection: 'column', flex: '1 1 0%', minWidth: 0, height: '100%' }}>
+                                        <div className="number-block-one animate-in-to-top" style={{ display: 'flex', flexDirection: 'column', height: '100%', flex: '1 1 auto' }}>
                                             <div style={{ width: '100%', aspectRatio: '4/3', minHeight: '250px', overflow: 'hidden', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#000' }}>
                                                 <img src={service.image} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }} />
-                                            </div>
-                                            <div className="figcaption bg-white text-center p-a20">
-                                                <h4 className="m-a0">{service.title}</h4>
+                                            </div> 
+                                            <div className="figcaption bg-white text-center" style={{ padding: '15px 10px' }}>
+                                                <h4 className="m-a0" style={{ fontSize: '18px', margin: 0, lineHeight: '1.4', display: 'flex', flexDirection: 'column' }}>
+                                                    {(() => {
+                                                        const words = service.title.split(' ');
+                                                        const firstLine = words.slice(0, -1).join(' ');
+                                                        const lastWord = words[words.length - 1];
+                                                        return (
+                                                            <>
+                                                                <span>{firstLine}</span>
+                                                                <span>{lastWord}</span>
+                                                            </>
+                                                        );
+                                                    })()}
+                                                </h4>
                                             </div>
                                             <div className="figcaption-number text-center sx-text-primary animate-in-to-top-content">
-                                                <span>{service.count}</span>
+                                                <span style={{ fontSize: '36px', fontWeight: 'bold' }}>{service.count}</span>
                                             </div>
                                         </div>
                                     </div>

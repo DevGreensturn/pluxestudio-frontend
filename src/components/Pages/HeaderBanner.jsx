@@ -6,7 +6,7 @@ const HeaderBanner = () => {
         
             <div style={{ backgroundColor: '#e8d7cb' }}>
                 <marquee behavior="scroll" direction="left" scrollamount="10" className="text-sm font-medium tracking-wide">
-                   Serving Clients Across India, UAE , London 
+                   Serving Clients Across INDIA, UAE, UK 
                 </marquee>
             </div>
       
