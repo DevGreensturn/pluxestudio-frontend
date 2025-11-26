@@ -58,9 +58,9 @@ export default function FooterSection() {
       
         <div className="row" style={{ paddingTop: '50px', paddingBottom: '50px', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
           <div className="col-lg-3 col-md-6 col-sm-12" style={{ marginBottom: '30px' }}>
-            <h5 style={{ textTransform: 'uppercase', letterSpacing: '3px', fontSize: '13px', color: '#d4af37' }}>Studio</h5>
+            <h5 style={{ textTransform: 'uppercase', letterSpacing: '3px', fontSize: '14px', color: '#d4af37' }}>Studio</h5>
             <h3 style={{ fontSize: '26px', fontWeight: 400, marginTop: '10px', marginBottom: '15px', color: '#fff' }}>Pluxe Studio</h3>
-            <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '20px' }}>
+            <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '20px', fontSize: '14px' }}>
               Crafting timeless interiors driven by research, material mastery, and human-centric design.
             </p>
             <div style={{ display: 'flex', gap: '12px' }}>
@@ -88,7 +88,7 @@ export default function FooterSection() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12" style={{ marginBottom: '30px' }}>
-            <h5 style={{ textTransform: 'uppercase', letterSpacing: '3px', fontSize: '13px', color: 'rgba(255,255,255,0.6)', marginBottom: '20px' }}>Explore</h5>
+            <h5 style={{ textTransform: 'uppercase', letterSpacing: '3px', fontSize: '14px', color: 'rgba(255,255,255,0.6)', marginBottom: '20px' }}>Explore</h5>
             <ul className="list-unstyled" style={{ margin: 0, padding: 0 }}>
               {quickLinks.map((item) => (
                 <li key={item.label} style={{ marginBottom: '12px' }}>
@@ -98,8 +98,9 @@ export default function FooterSection() {
                       style={{
                         color: 'rgba(255,255,255,0.75)',
                         textDecoration: 'none',
-                        fontSize: '15px',
-                        letterSpacing: '0.5px'
+                        fontSize: '14px',
+                        letterSpacing: '0.5px',
+                        fontSize: '14px'
                       }}
                     >
                       {item.label}
@@ -112,7 +113,7 @@ export default function FooterSection() {
                       style={{
                         color: 'rgba(255,255,255,0.6)',
                         textDecoration: 'none',
-                        fontSize: '15px',
+                        fontSize: '14px',
                         letterSpacing: '0.5px',
                         cursor: 'default'
                       }}
@@ -125,7 +126,7 @@ export default function FooterSection() {
             </ul>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12" style={{ marginBottom: '30px' }}>
-            <h5 style={{ textTransform: 'uppercase', letterSpacing: '3px', fontSize: '13px', color: 'rgba(255,255,255,0.6)', marginBottom: '20px' }}>Services</h5>
+            <h5 style={{ textTransform: 'uppercase', letterSpacing: '3px', fontSize: '14px', color: 'rgba(255,255,255,0.6)', marginBottom: '20px' }}>Services</h5>
             <ul className="list-unstyled" style={{ margin: 0, padding: 0 }}>
               {serviceLinks.map((item) => (
                 <li key={item.label} style={{ marginBottom: '12px' }}>
@@ -136,7 +137,7 @@ export default function FooterSection() {
                     style={{
                       color: 'rgba(255,255,255,0.6)',
                       textDecoration: 'none',
-                      fontSize: '15px',
+                      fontSize: '14px',
                       letterSpacing: '0.5px',
                       cursor: 'default'
                     }}
@@ -148,7 +149,7 @@ export default function FooterSection() {
             </ul>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12" style={{ marginBottom: '30px' }}>
-            <h5 style={{ textTransform: 'uppercase', letterSpacing: '3px', fontSize: '13px', color: 'rgba(255,255,255,0.6)', marginBottom: '20px' }}>Connect</h5>
+            <h5 style={{ textTransform: 'uppercase', letterSpacing: '3px', fontSize: '14px', color: 'rgba(255,255,255,0.6)', marginBottom: '20px' }}>Connect</h5>
             <ul className="list-unstyled" style={{ margin: 0, padding: 0 }}>
               {contactDetails.map((item) => (
                 <li key={item.label} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '16px', color: 'rgba(255,255,255,0.8)' }}>
