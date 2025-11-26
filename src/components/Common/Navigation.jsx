@@ -5,6 +5,8 @@ const NavigationContent = () => {
     const location = useLocation();
     const isAboutActive = location.pathname === '/about';
     const isHomeActive = location.pathname === '/';
+    const disabledLinks = ['Services', 'Portfolio', 'NRI', 'Contact us', 'FAQ'];
+    const handleDisabledLinkClick = (event) => event.preventDefault();
 
     return (
         <ul className="nav navbar-nav">
@@ -14,19 +16,11 @@ const NavigationContent = () => {
             <li className={isAboutActive ? 'active' : ''}>
                 <NavLink to="/about">About us</NavLink>
             </li>
-            <li>
-                <NavLink to="/services">Services</NavLink>
-            </li>
-            <li>
-                <NavLink to="/portfolio">Portfolio</NavLink>
-            </li>
-            <li>
-                <NavLink to="/nri">NRI</NavLink>
-            </li>
-          
-         
-            <li><a href="#Contact">Contact us</a></li>
-            <li><a href="#Faq">FAQ</a></li>
+            {disabledLinks.map((link) => (
+                <li key={link}>
+                    <a href="#!" onClick={handleDisabledLinkClick} aria-disabled="true" tabIndex={-1}>{link}</a>
+                </li>
+            ))}
         </ul>
     );
 };

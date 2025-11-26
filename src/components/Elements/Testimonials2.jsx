@@ -85,9 +85,9 @@ class Testimonials2 extends React.Component {
                             <div className="section-head" style={{ textAlign: 'center' }}>
                               
                                 <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ display: 'inline-block', padding: '4px 14px', backgroundImage: 'url(' + bgimg2 + ')' }}>
-                                    <p style={{ border: 'none', padding: '0', fontSize: '13px', fontWeight: 400, letterSpacing: '6px', textTransform: 'uppercase', margin: 0 }}>
-                                        What our clients say
-                                    </p>
+                                    <h3 style={{ border: 'none', padding: '0', fontWeight: "bold", letterSpacing: '6px', textTransform: 'uppercase', margin: 0 }}>
+                                        What Our Clients Say
+                                    </h3>
                                 </div>
                             </div>
                             <div className="testimonial-static-grid">
@@ -132,7 +132,7 @@ class Testimonials2 extends React.Component {
                                                             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', alignItems: 'flex-end', marginRight: '-60px', zIndex: 3 }}>
                                                                 {leftCards.map((review, reviewIndex) => (
                                                                     <div key={`${review.reviewername}-left-${reviewIndex}`} style={cardStyle}>
-                                                                        <p style={{ fontSize: '13px', letterSpacing: '1.6px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px' }}>{review.position}</p>
+                                                                        <p style={{ fontSize: '14px', letterSpacing: '1.6px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px' }}>{review.position}</p>
                                                                         <p style={{ fontSize: '13px', marginTop: '2px', marginBottom: '4px', color: '#fff' }}>{review.reviewername}</p>
                                                                         <p style={{ marginBottom: '6px', color: '#f0c75e', fontSize: '13px' }}>
                                                                             {Array.from({ length: review.rating }).map((_, starIndex) => (
@@ -149,7 +149,7 @@ class Testimonials2 extends React.Component {
                                                             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', alignItems: 'flex-start', marginLeft: '-60px', zIndex: 3 }}>
                                                                 {rightCards.map((review, reviewIndex) => (
                                                                     <div key={`${review.reviewername}-right-${reviewIndex}`} style={cardStyle}>
-                                                                        <p style={{ fontSize: '13px', letterSpacing: '1.6px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px' }}>{review.position}</p>
+                                                                        <p style={{ fontSize: '14px', letterSpacing: '1.6px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px' }}>{review.position}</p>
                                                                         <p style={{ fontSize: '13px', marginTop: '2px', marginBottom: '4px', color: '#fff' }}>{review.reviewername}</p>
                                                                         <p style={{ marginBottom: '6px', color: '#f0c75e', fontSize: '13px' }}>
                                                                             {Array.from({ length: review.rating }).map((_, starIndex) => (

@@ -2,19 +2,19 @@ import React from 'react';
 
 const featuredProjects = [
     {
-        image: require('./../../images/projects/square/1.jpg'),
-        title: 'Gurugram Villa',
-        name: 'Gurugram Villa'
+        image: '/assets/media/images/delhi_villa.jpg',
+        title: 'Delhi Villa ',
+        name: 'Delhi Villa '
     },
     {
         image: '/assets/media/images/gym-photo.jpg',
-        title: 'Commercial Gym',
-        name: 'Commercial GYM'
+        title: 'Gurgaon Gym ',
+        name: 'Gurgaon Gym '
     },
     {
         image: require('./../../images/projects/square/3.jpg'),
-        title: 'London Home',
-        name: 'London Home'
+        title: 'London Home ',
+        name: 'London Home '
     },
     {
         image: require('./../../images/projects/square/4.jpg'),
@@ -32,7 +32,7 @@ export default function GlobalPortfolio() {
                 <div className="section-head">
                     <div className="sx-separator-outer separator-center">
                         <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ backgroundColor:'#e7e5e3' }}>
-                            <h3 style={{ border: 'none' , padding:"10px"}} className="">Featured Project</h3>
+                            <h3 style={{ border: 'none' , padding:"10px"}} className="">Featured Projects</h3>
                         </div>
                     </div>
                 </div>
@@ -44,12 +44,12 @@ export default function GlobalPortfolio() {
                                     <div className="image-effect-one" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                                         <img src={project.image} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                         <div className="figcaption">
-                                            <h4 style={{ fontSize: '20px', marginBottom: '10px', color: '#FFF' }}>{project.title}</h4>
+                                            <h4 style={{ fontSize: '16px', marginBottom: '10px', color: '#FFF' }}>{project.title}</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="p-t20 text-center">
-                                    <h4 className="m-b0">{project.name}</h4>
+                                    <h4 className="m-b0" style={{ fontSize: '18px' }}>{project.name}</h4>
                                 </div>
                             </div>
                         ))}

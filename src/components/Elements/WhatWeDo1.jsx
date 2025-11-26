@@ -6,28 +6,28 @@ var bgimg3 = require('./../../images/background/cross-line2.png');
 const services = [
     {
         count: '01',
-        title: 'Full Home Interior',
+        title: 'Home Interiors',
         image: require('./../../images/pic1.jpg')
     },
     {
         count: '02',
         title: 'Bespoke Furniture',
-        image: require('./../../images/pic3.jpg')
+        image: '/assets/media/images/furniture.jpg'
     },
     {
         count: '03',
-        title: 'Land Scapping',
+        title: 'Landscapping ',
         image: require('./../../images/pic2.jpg')
     },
     {
         count: '04',
-        title: 'Global NRI Design',
-        image: '/assets/media/images/nri.jpg'
+        title: 'NRI Designs ',
+        image: '/assets/media/images/NRI_Global.jpg'
     },
     {
         count: '05',
-        title: 'Boutique Commercial',
-        image: '/assets/media/images/botique.jpeg'
+        title: 'Commercial',
+        image: '/assets/media/images/Commercial.jpg'
     }
 ]
 
@@ -46,27 +46,17 @@ class WhatWeDo1 extends React.Component {
                             </div>
                         </div>
                         <div className="section-content">
-                            <div className="row" style={{ display: 'flex', flexWrap: 'nowrap', gap: '15px', alignItems: 'stretch' }}>
+                            <div className="row what-we-do-grid">
                                 {services.map((service) => (
-                                    <div key={service.title} style={{ display: 'flex', flexDirection: 'column', flex: '1 1 0%', minWidth: 0, height: '100%' }}>
+                                    <div key={service.title} className="what-we-do-card">
                                         <div className="number-block-one animate-in-to-top" style={{ display: 'flex', flexDirection: 'column', height: '100%', flex: '1 1 auto' }}>
-                                            <div style={{ width: '100%', aspectRatio: '4/3', minHeight: '250px', overflow: 'hidden', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#000' }}>
-                                                <img src={service.image} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }} />
+                                            <div style={{ width: '100%', aspectRatio: '4/3', minHeight: '210px', overflow: 'hidden', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                                <img src={service.image} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                                             </div> 
                                             <div className="figcaption bg-white text-center" style={{ padding: '15px 10px' }}>
-                                                <h4 className="m-a0" style={{ fontSize: '18px', margin: 0, lineHeight: '1.4', display: 'flex', flexDirection: 'column' }}>
-                                                    {(() => {
-                                                        const words = service.title.split(' ');
-                                                        const firstLine = words.slice(0, -1).join(' ');
-                                                        const lastWord = words[words.length - 1];
-                                                        return (
-                                                            <>
-                                                                <span>{firstLine}</span>
-                                                                <span>{lastWord}</span>
-                                                            </>
-                                                        );
-                                                    })()}
-                                                </h4>
+                                                <p className="m-a0" style={{ fontSize: '15px', margin: 0, lineHeight: '1.4', whiteSpace: 'nowrap', fontWeight: '600' }}>
+                                                    {service.title}
+                                                </p>
                                             </div>
                                             <div className="figcaption-number text-center sx-text-primary animate-in-to-top-content">
                                                 <span style={{ fontSize: '36px', fontWeight: 'bold' }}>{service.count}</span>

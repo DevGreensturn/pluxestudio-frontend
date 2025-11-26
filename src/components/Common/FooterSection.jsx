@@ -2,17 +2,17 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const quickLinks = [
-  { label: 'About', to: '/about' },
-  { label: 'Services', to: '/services-1' },
-  { label: 'Projects', to: '/project-grid-3-columns' },
-  { label: 'Blog', to: '/blog-grid' }
+  { label: 'About', to: '/about', isActive: true },
+  { label: 'Services', to: '#', isActive: false },
+  { label: 'Projects', to: '#', isActive: false },
+  { label: 'Blog', to: '#', isActive: false }
 ]
 
 const serviceLinks = [
-  { label: 'Luxury Residences', to: '/services-1' },
-  { label: 'Commercial Spaces', to: '/services-1' },
-  { label: 'Turnkey Execution', to: '/services-1' },
-  { label: 'Design Consultation', to: '/services-1' }
+  { label: 'Luxury Residences' },
+  { label: 'Commercial Spaces' },
+  { label: 'Turnkey Execution' },
+  { label: 'Design Consultation' }
 ]
 
 const contactDetails = [
@@ -38,6 +38,10 @@ export default function FooterSection() {
   const year = new Date().getFullYear()
 
   const handleNewsletter = (event) => {
+    event.preventDefault()
+  }
+
+  const blockClick = (event) => {
     event.preventDefault()
   }
 
@@ -88,17 +92,34 @@ export default function FooterSection() {
             <ul className="list-unstyled" style={{ margin: 0, padding: 0 }}>
               {quickLinks.map((item) => (
                 <li key={item.label} style={{ marginBottom: '12px' }}>
-                  <NavLink
-                    to={item.to}
-                    style={{
-                      color: 'rgba(255,255,255,0.75)',
-                      textDecoration: 'none',
-                      fontSize: '15px',
-                      letterSpacing: '0.5px'
-                    }}
-                  >
-                    {item.label}
-                  </NavLink>
+                  {item.isActive ? (
+                    <NavLink
+                      to={item.to}
+                      style={{
+                        color: 'rgba(255,255,255,0.75)',
+                        textDecoration: 'none',
+                        fontSize: '15px',
+                        letterSpacing: '0.5px'
+                      }}
+                    >
+                      {item.label}
+                    </NavLink>
+                  ) : (
+                    <a
+                      href="#"
+                      onClick={blockClick}
+                      aria-disabled="true"
+                      style={{
+                        color: 'rgba(255,255,255,0.6)',
+                        textDecoration: 'none',
+                        fontSize: '15px',
+                        letterSpacing: '0.5px',
+                        cursor: 'default'
+                      }}
+                    >
+                      {item.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
@@ -108,17 +129,20 @@ export default function FooterSection() {
             <ul className="list-unstyled" style={{ margin: 0, padding: 0 }}>
               {serviceLinks.map((item) => (
                 <li key={item.label} style={{ marginBottom: '12px' }}>
-                  <NavLink
-                    to={item.to}
+                  <a
+                    href="#"
+                    onClick={blockClick}
+                    aria-disabled="true"
                     style={{
-                      color: 'rgba(255,255,255,0.75)',
+                      color: 'rgba(255,255,255,0.6)',
                       textDecoration: 'none',
                       fontSize: '15px',
-                      letterSpacing: '0.5px'
+                      letterSpacing: '0.5px',
+                      cursor: 'default'
                     }}
                   >
                     {item.label}
-                  </NavLink>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -148,9 +172,9 @@ export default function FooterSection() {
           </div>
           <div className="col-md-6 col-sm-12">
             <div style={{ display: 'flex', justifyContent: 'flex-start', gap: '20px', color: 'rgba(255,255,255,0.6)' }}>
-              <NavLink to="/privacy-policy" style={{ color: 'inherit', textDecoration: 'none' }}>Privacy</NavLink>
-              <NavLink to="/terms" style={{ color: 'inherit', textDecoration: 'none' }}>Terms</NavLink>
-              <NavLink to="/contact-us" style={{ color: 'inherit', textDecoration: 'none' }}>Contact</NavLink>
+              <a href="#" onClick={blockClick} aria-disabled="true" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', cursor: 'default' }}>Privacy</a>
+              <a href="#" onClick={blockClick} aria-disabled="true" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', cursor: 'default' }}>Terms</a>
+              <a href="#" onClick={blockClick} aria-disabled="true" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', cursor: 'default' }}>Contact</a>
             </div>
           </div>
         </div>

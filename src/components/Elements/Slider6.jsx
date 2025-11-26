@@ -46,13 +46,6 @@ class Slider6 extends React.Component {
                         padding: 0 !important;
                         background: transparent !important;
                     }
-                    @media only screen and (max-width: 768px) {
-                        #welcome_wrapper.fullscreen-container,
-                        #slider-video.fullscreenbanner {
-                            height: 240px !important;
-                            max-height: 240px !important;
-                        }
-                    }
                     #slider-video_forcefullwidth {
                         height: 320px !important;
                         max-height: 320px !important;

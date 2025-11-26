@@ -17,25 +17,25 @@ class Statistics1 extends React.Component {
                                     <div className="row">
                                         <div className="col-xl-3 col-md-6 m-b30 ">
                                             <div className="sx-count text-white sx-icon-box-wraper bg-repeat p-a30" style={{ backgroundImage: 'url(' + bgimg2 + ')' }}>
-                                                <h2 className="m-t0 sx-text-primary text-right"><span className="counter"><CountUp end={54} duration={5} /></span>+</h2>
+                                                <h2 className="m-t0 sx-text-primary"><span className="counter"><CountUp end={54} duration={5} /></span>+</h2>
                                                 <h4 className="m-b0">Projects Completed</h4>
                                             </div>
                                         </div>
                                         <div className="col-xl-3 col-md-6 m-b30">
                                             <div className="sx-count  text-white sx-icon-box-wraper bg-repeat p-a30" style={{ backgroundImage: 'url(' + bgimg2 + ')' }}>
-                                                <h2 className="m-t0  sx-text-primary text-right"><span className="counter"><CountUp end={10} duration={5} /></span>+</h2>
+                                                <h2 className="m-t0  sx-text-primary"><span className="counter"><CountUp end={10} duration={5} /></span>+</h2>
                                                 <h4 className="m-b0">Years of Experience </h4>
                                             </div>
                                         </div>
                                         <div className="col-xl-3 col-md-6 m-b30">
                                             <div className="sx-count  text-white sx-icon-box-wraper bg-repeat p-a30" style={{ backgroundImage: 'url(' + bgimg2 + ')' }}>
-                                                <h2 className="m-t0  sx-text-primary text-right"><span className="counter"><CountUp end={98} duration={5} /></span>%</h2>
+                                                <h2 className="m-t0  sx-text-primary "><span className="counter"><CountUp end={98} duration={5} /></span>%</h2>
                                                 <h4 className="m-b0">Eco-Friendly Material used</h4>
                                             </div>
                                         </div>
                                         <div className="col-xl-3 col-md-6 m-b30">
                                             <div className="sx-count  text-white sx-icon-box-wraper bg-repeat  p-a30" style={{ backgroundImage: 'url(' + bgimg2 + ')' }}>
-                                                <h2 className="m-t0  sx-text-primary text-right"><span className="counter"><CountUp end={4.9} duration={5} /></span><span>*</span></h2>
+                                                <h2 className="m-t0  sx-text-primary "><span className="counter"><CountUp end={4.9} duration={5} /></span><span>*</span></h2>
                                                 <h4 className="m-b0">Based on real feedback </h4>
                                             </div>
                                         </div>

@@ -43,7 +43,7 @@ class About1 extends React.Component {
                         <div className="section-head">
                             <div className="sx-separator-outer separator-left">
                                 <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ backgroundImage: 'url(' + bgimg2 + ')', border: 'none' }}>
-                                    <h3 style={{ border: 'none' , padding:"10px"}} className="">Why Pluxe Studio?</h3>
+                                    <h3 style={{ border: 'none' , padding:"10px", }} className="">Why Pluxe Studio</h3>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +53,7 @@ class About1 extends React.Component {
                                 <div className="col-lg-5 col-md-12 col-sm-12">
                                     <div className="about-home-left" style={{ border: 'none' }}>
                                         <h4 className="m-t0 sx-tilte">Our Unique Value Proposition:</h4>
-                                       <ul className="list-angle-right anchor-line">
+                                       <ul className="list-angle-right anchor-line" style={{ fontSize: '14px' }}>
                                                                                 <li><strong>	Luxury Without Excess – </strong>Sophisticated design curated with restraint and elegance.</li>
                                                                                 <li><strong>Sustainable by Design  – </strong> We minimize waste, use responsibly sourced materials, and prioritize wellness.</li>
                                                                                 <li><strong>	Client-Centric Approach – </strong>Every space we create is a reflection of you, not us.</li>

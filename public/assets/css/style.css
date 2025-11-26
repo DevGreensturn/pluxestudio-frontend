@@ -15708,3 +15708,42 @@ form.woocommerce-ordering:after {
 		display: block;
 	}
 }
+
+.what-we-do-grid{
+	display:grid;
+	grid-template-columns:repeat(5,minmax(0,200px));
+	gap:30px;
+	align-items:stretch;
+	justify-content:center;
+}
+
+.what-we-do-card{
+	flex:1 1 calc(20% - 15px);
+	min-width:220px;
+	display:flex;
+	flex-direction:column;
+}
+
+@media (max-width:1199px){
+	.what-we-do-grid{
+		grid-template-columns:repeat(3,minmax(0,200px));
+		gap:28px;
+		padding:0 24px;
+	}
+}
+
+@media (max-width:767px){
+	.what-we-do-grid{
+		grid-template-columns:repeat(2,minmax(0,200px));
+		gap:20px;
+		padding:0 20px;
+	}
+}
+
+@media (max-width:479px){
+	.what-we-do-grid{
+		grid-template-columns:1fr;
+		gap:16px;
+		padding:0 16px;
+	}
+}

@@ -92,19 +92,18 @@ class HeroSection extends React.Component {
                             {/* LEFT TEXT */}
                             <div className="col-lg-7 col-md-12 col-sm-12">
                                 <div className="hero-content" style={{ paddingRight: '30px' }}>
-                                    <h1 style={{
-                                        fontSize: '40px',
-                                        fontWeight: 300,
+                                    <h3 style={{
+                                      fontWeight:400,
                                         color: '#000',
                                         marginBottom: '30px',
                                         lineHeight: '1.1    ',
                                         letterSpacing: '2px'
                                     }}>
                                         Timeless, Personalized, Luxury Interior Design.
-                                    </h1>
+                                    </h3>
 
                                     <p style={{
-                                        fontSize: '18px',
+                                        fontSize: '14px',
                                         color: '#333',
                                         marginBottom: '40px',
                                         lineHeight: '1.8'

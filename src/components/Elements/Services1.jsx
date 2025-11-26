@@ -71,7 +71,7 @@ class Services1 extends React.Component {
                                                 </div>
                                                 <div className="icon-content">
                                                     <h4 className="sx-tilte">{item.title}</h4>
-                                                    <p>{item.description}</p>
+                                                    <p style={{ fontSize: '14px' }}>{item.description}</p>
                                                     {/* <div className="text-left">
                                                         <NavLink to={"/services-detail"} className="site-button-link">Read More</NavLink>
                                                     </div> */}
