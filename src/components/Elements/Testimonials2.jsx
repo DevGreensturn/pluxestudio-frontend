@@ -8,41 +8,40 @@ const publicPhoneImage = process.env.PUBLIC_URL + '/assets/media/images/image-ph
 
 const testimonials = [
     {
-        device: publicPhoneImage,
-        reviews: [
-            {
-                reviewername: 'Mr. Sethi',
-                position: 'Client, DLF Phase 5, Gurgaon',
-                review: 'Pluxe Studio transformed our apartment into a serene, luxurious space. The attention to detail exceeded every expectation.',
-                rating: 5
-            },
-            {
-                reviewername: 'RWA President',
-                position: 'Residential Society Head, Gurgaon',
-                review: 'The liaison process with residents was effortless. The studio handled compliance and communication with professionalism.',
-                rating: 5
-            },
-            {
-                reviewername: 'Mr. Andre',
-                position: 'NRI Client, Dubai Marina',
-                review: 'We worked with Pluxe remotely and every milestone stayed seamless. Concepts, visuals, and execution felt world-class.',
-                rating: 5
-            },
-            {
-                reviewername: 'Ms. Lara',
-                position: 'NRI Client, Ealing, London',
-                review: 'Despite time zones, the process was effortless. The ideas were fresh, timeless, and perfectly aligned with our tastes.',
-                rating: 5
-            },
-            {
-                reviewername: 'Ms. Chopra',
-                position: 'Client, Golf Course Road, Gurgaon',
-                review: 'From creative direction to handover, everything was precise and collaborative. Zero-stress experience.',
-                rating: 5
-            }
-        ]
+        image: require('./../../images/testimonials/pic1.jpg'),
+        reviewername: 'Aarti Mehra',
+        position: 'Homeowner, New Delhi',
+        review: 'Elegant, warm, and perfectly styled — Pluxe turned my space into something truly personal',
+        rating: 5
     },
- 
+    {
+        image: require('./../../images/testimonials/pic2.jpg'),
+        reviewername: ' Neha Sinha ',
+        position: ' First-time Homebuyer, Gurugram',
+        review: 'Amazing fast delivery and excellent quality The team was willing to go mile for best service! Thanks!',
+        rating: 5
+    },
+    {
+        image: require('./../../images/testimonials/pic3.jpg'),
+        reviewername: 'Rohan Kapoor',
+        position: 'Entrepreneur, Gurgaon',
+        review: 'Loved the professionalism and design sensibility. The transformation was beyond what I imagined.',
+        rating: 5
+    },
+    {
+        image: require('./../../images/testimonials/pic4.jpg'),
+        reviewername: 'Aditya Menon ',
+        position: 'Senior Consultant, Bangalore',
+        review: 'Refined design, smooth execution. Pluxe Studio delivered exactly what my home needed.',
+        rating: 5
+    }
+];
+
+const groupedTestimonials = [
+    {
+        device: publicPhoneImage,
+        reviews: testimonials
+    }
 ];
 
 var bgimg2 = require('./../../images/background/cross-line2.png');
@@ -72,9 +71,10 @@ class Testimonials2 extends React.Component {
             background: '#4c403a',
             color: '#fdf8f0',
             borderRadius: '12px',
-            padding: '20px 18px',
+            padding: '24px 22px',
             boxShadow: '0 20px 40px rgba(0,0,0,0.16)',
-            margin: '0 10px'
+            margin: '0 10px',
+            minHeight: '220px'
         };
 
         return (
@@ -91,18 +91,19 @@ class Testimonials2 extends React.Component {
                                 </div>
                             </div>
                             <div className="testimonial-static-grid">
-                                {testimonials.map((item, index) => (
+                                {groupedTestimonials.map((item, index) => (
                                     <div className="item" key={index}>
                                         <div
                                             style={{
                                                 position: 'relative',
                                                 background: '#f6f2eb',
                                                 borderRadius: '40px',
-                                                minHeight: '620px',
+                                                minHeight: '720px',
                                                 boxShadow: '0 30px 70px rgba(0,0,0,0.1)',
                                                 overflow: 'hidden',
-                                                padding: '48px 60px',
-                                               
+                                                padding: '80px 60px 60px',
+                                                display: 'flex',
+                                                alignItems: 'center'
                                             }}
                                         >
                                             <div
@@ -123,40 +124,44 @@ class Testimonials2 extends React.Component {
                                                         background: '#4c403a',
                                                         color: '#fdf8f0',
                                                         borderRadius: '12px',
-                                                        padding: '12px 14px',
-                                                        width: '230px',
+                                                        padding: '16px 18px',
+                                                        width: '320px',
                                                         boxShadow: '0 20px 40px rgba(0,0,0,0.16)'
                                                     };
                                                     return (
-                                                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', padding: '0 24px' }}>
-                                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', alignItems: 'flex-end', marginRight: '-60px', zIndex: 3 }}>
+                                                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', padding: '0', marginTop: '0' }}>
+                                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'flex-end', marginRight: '-40px', zIndex: 3 }}>
                                                                 {leftCards.map((review, reviewIndex) => (
                                                                     <div key={`${review.reviewername}-left-${reviewIndex}`} style={cardStyle}>
-                                                                        <p style={{ fontSize: '14px', letterSpacing: '1.6px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px' }}>{review.position}</p>
-                                                                        <p style={{ fontSize: '13px', marginTop: '2px', marginBottom: '4px', color: '#fff' }}>{review.reviewername}</p>
+                                                                        <p style={{ fontSize: '14px', letterSpacing: '1.2px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px', whiteSpace: 'nowrap' }}>
+                                                                            {review.position}
+                                                                        </p>
+                                                                        <p style={{ fontSize: '14px', letterSpacing: '0.8px', color: '#fff', marginTop: '0', marginBottom: '6px', whiteSpace: 'nowrap' }}>{review.reviewername}</p>
                                                                         <p style={{ marginBottom: '6px', color: '#f0c75e', fontSize: '13px' }}>
                                                                             {Array.from({ length: review.rating }).map((_, starIndex) => (
                                                                                 <span key={starIndex} className="fa fa-star" />
                                                                             ))}
                                                                         </p>
-                                                                        <p style={{ fontSize: '13px', lineHeight: 1.4, margin: 0 }}>{review.review}</p>
+                                                                        <p style={{ fontSize: '14px', lineHeight: 1.4, margin: 0 }}>{review.review}</p>
                                                                     </div>
                                                                 ))}
                                                             </div>
-                                                            <div style={{ display: 'flex', justifyContent: 'center', maxWidth: '280px', zIndex: 2, margin: '0 20px' }}>
+                                                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '260px', zIndex: 2, margin: '0 0' }}>
                                                                 <img src={item.device} alt="Client showcase" style={{ width: '100%', height: 'auto', display: 'block', maxHeight: '560px' }} />
                                                             </div>
-                                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', alignItems: 'flex-start', marginLeft: '-60px', zIndex: 3 }}>
+                                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'flex-start', marginLeft: '-40px', zIndex: 3 }}>
                                                                 {rightCards.map((review, reviewIndex) => (
                                                                     <div key={`${review.reviewername}-right-${reviewIndex}`} style={cardStyle}>
-                                                                        <p style={{ fontSize: '14px', letterSpacing: '1.6px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px' }}>{review.position}</p>
-                                                                        <p style={{ fontSize: '13px', marginTop: '2px', marginBottom: '4px', color: '#fff' }}>{review.reviewername}</p>
+                                                                        <p style={{ fontSize: '14px', letterSpacing: '1.2px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px', whiteSpace: 'nowrap' }}>
+                                                                            {review.position}
+                                                                        </p>
+                                                                        <p style={{ fontSize: '14px', letterSpacing: '0.8px', color: '#fff', marginTop: '0', marginBottom: '6px', whiteSpace: 'nowrap' }}>{review.reviewername}</p>
                                                                         <p style={{ marginBottom: '6px', color: '#f0c75e', fontSize: '13px' }}>
                                                                             {Array.from({ length: review.rating }).map((_, starIndex) => (
                                                                                 <span key={starIndex} className="fa fa-star" />
                                                                             ))}
                                                                         </p>
-                                                                        <p style={{ fontSize: '13px', lineHeight: 1.4, margin: 0 }}>{review.review}</p>
+                                                                        <p style={{ fontSize: '14px', lineHeight: 1.4, margin: 0 }}>{review.review}</p>
                                                                     </div>
                                                                 ))}
                                                             </div>
@@ -201,19 +206,21 @@ class Testimonials2 extends React.Component {
                                     </p>
                                 </div>
                             </div>
-                            {testimonials.map((item, index) => (
+                            {groupedTestimonials.map((item, index) => (
                                 <div key={index}>
                                     <OwlCarousel className="owl-carousel" {...carouselOptions}>
                                         {item.reviews.map((review, reviewIndex) => (
                                             <div key={`${review.reviewername}-${reviewIndex}`} style={cardStyle}>
-                                                <p style={{ fontSize: '13px', letterSpacing: '1.6px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px' }}>{review.position}</p>
-                                                <p style={{ fontSize: '13px', marginTop: '2px', marginBottom: '6px', color: '#fff' }}>{review.reviewername}</p>
+                                                <p style={{ fontSize: '14px', letterSpacing: '1.2px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px', whiteSpace: 'nowrap' }}>
+                                                    {review.position}
+                                                </p>
+                                                <p style={{ fontSize: '14px', letterSpacing: '0.8px', color: '#fff', marginTop: '0', marginBottom: '8px', whiteSpace: 'nowrap' }}>{review.reviewername}</p>
                                                 <p style={{ marginBottom: '8px', color: '#f0c75e', fontSize: '13px' }}>
                                                     {Array.from({ length: review.rating }).map((_, starIndex) => (
                                                         <span key={starIndex} className="fa fa-star" />
                                                     ))}
                                                 </p>
-                                                <p style={{ fontSize: '13px', lineHeight: 1.45, margin: 0 }}>{review.review}</p>
+                                                <p style={{ fontSize: '14px', lineHeight: 1.45, margin: 0 }}>{review.review}</p>
                                             </div>
                                         ))}
                                     </OwlCarousel>

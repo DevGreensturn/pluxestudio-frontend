@@ -168,7 +168,7 @@ export default function FooterSection() {
         </div>
         <div className="row" style={{ paddingTop: '30px', paddingBottom: '30px' }}>
           <div className="col-md-6 col-sm-12" style={{ marginBottom: '15px' }}>
-            <span style={{ color: 'rgba(255,255,255,0.6)', letterSpacing: '1px' }}>© {year} Pluxe Studio. All rights reserved.</span>
+            <span style={{ color: 'rgba(255,255,255,0.6)', letterSpacing: '1px' }}>© 2021 Pluxe Studio. All rights reserved.</span>
           </div>
           <div className="col-md-6 col-sm-12">
             <div style={{ display: 'flex', justifyContent: 'flex-start', gap: '20px', color: 'rgba(255,255,255,0.6)' }}>
