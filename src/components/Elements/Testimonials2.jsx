@@ -9,31 +9,28 @@ const publicPhoneImage = process.env.PUBLIC_URL + '/assets/media/images/image-ph
 const testimonials = [
     {
         image: require('./../../images/testimonials/pic1.jpg'),
-        reviewername: 'Aarti Mehra',
-        position: 'Homeowner, New Delhi',
+       
+       
         review: 'Elegant, warm, and perfectly styled — Pluxe turned my space into something truly personal',
-        rating: 5
+       
     },
     {
         image: require('./../../images/testimonials/pic2.jpg'),
-        reviewername: ' Neha Sinha ',
-        position: ' First-time Homebuyer, Gurugram',
+       
         review: 'Amazing fast delivery and excellent quality The team was willing to go mile for best service! Thanks!',
-        rating: 5
+        
     },
     {
         image: require('./../../images/testimonials/pic3.jpg'),
-        reviewername: 'Rohan Kapoor',
-        position: 'Entrepreneur, Gurgaon',
+       
         review: 'Loved the professionalism and design sensibility. The transformation was beyond what I imagined.',
-        rating: 5
+        
     },
     {
         image: require('./../../images/testimonials/pic4.jpg'),
-        reviewername: 'Aditya Menon ',
-        position: 'Senior Consultant, Bangalore',
+       
         review: 'Refined design, smooth execution. Pluxe Studio delivered exactly what my home needed.',
-        rating: 5
+        
     }
 ];
 
@@ -74,7 +71,7 @@ class Testimonials2 extends React.Component {
             padding: '24px 22px',
             boxShadow: '0 20px 40px rgba(0,0,0,0.16)',
             margin: '0 10px',
-            minHeight: '220px'
+            minHeight: '180px'
         };
 
         return (
@@ -132,7 +129,13 @@ class Testimonials2 extends React.Component {
                                                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', padding: '0', marginTop: '0' }}>
                                                             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'flex-end', marginRight: '-40px', zIndex: 3 }}>
                                                                 {leftCards.map((review, reviewIndex) => (
-                                                                    <div key={`${review.reviewername}-left-${reviewIndex}`} style={cardStyle}>
+                                                                    <div
+                                                                        key={`${review.reviewername}-left-${reviewIndex}`}
+                                                                        style={{
+                                                                            ...cardStyle,
+                                                                            transform: reviewIndex % 2 === 0 ? 'translateY(-60px)' : 'translateY(-40px)'
+                                                                        }}
+                                                                    >
                                                                         <p style={{ fontSize: '14px', letterSpacing: '1.2px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px', whiteSpace: 'nowrap' }}>
                                                                             {review.position}
                                                                         </p>
@@ -151,7 +154,13 @@ class Testimonials2 extends React.Component {
                                                             </div>
                                                             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'flex-start', marginLeft: '-40px', zIndex: 3 }}>
                                                                 {rightCards.map((review, reviewIndex) => (
-                                                                    <div key={`${review.reviewername}-right-${reviewIndex}`} style={cardStyle}>
+                                                                    <div
+                                                                        key={`${review.reviewername}-right-${reviewIndex}`}
+                                                                        style={{
+                                                                            ...cardStyle,
+                                                                            transform: reviewIndex % 2 === 0 ? 'translateY(60px)' : 'translateY(80px)'
+                                                                        }}
+                                                                    >
                                                                         <p style={{ fontSize: '14px', letterSpacing: '1.2px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px', whiteSpace: 'nowrap' }}>
                                                                             {review.position}
                                                                         </p>
