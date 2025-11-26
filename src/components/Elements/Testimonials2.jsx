@@ -49,36 +49,7 @@ var bgimg2 = require('./../../images/background/cross-line2.png');
 var bgTexture = require('./../../images/background/bg6.jpg');
 
 class Testimonials2 extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { isMobile: false };
-        this.handleResize = this.handleResize.bind(this);
-    }
-
-    componentDidMount() {
-        this.handleResize();
-        if (typeof window !== 'undefined') {
-            window.addEventListener('resize', this.handleResize);
-        }
-    }
-
-    componentWillUnmount() {
-        if (typeof window !== 'undefined') {
-            window.removeEventListener('resize', this.handleResize);
-        }
-    }
-
-    handleResize() {
-        if (typeof window !== 'undefined') {
-            const isMobile = window.innerWidth <= 768;
-            if (isMobile !== this.state.isMobile) {
-                this.setState({ isMobile });
-            }
-        }
-    }
-
     render() {
-        const { isMobile } = this.state;
         
         const carouselOptions = {
             loop: true,
@@ -108,7 +79,7 @@ class Testimonials2 extends React.Component {
 
         return (
             <>
-                <div className="section-full mobile-page-padding bg-repeat p-t80 p-b80" style={{ backgroundColor: '#efece4', backgroundImage: 'url(' + bgTexture + ')', backgroundSize: 'cover', display: isMobile ? 'none' : 'block' }}>
+                <div className="section-full mobile-page-padding bg-repeat p-t80 p-b80 testimonials-desktop" style={{ backgroundColor: '#efece4', backgroundImage: 'url(' + bgTexture + ')', backgroundSize: 'cover' }}>
                     <div className="section-content">
                         <div className="container">
                             <div className="section-head" style={{ textAlign: 'center' }}>
@@ -220,59 +191,57 @@ class Testimonials2 extends React.Component {
                         </div>
                     </div>
                 </div>
-                {isMobile && (
-                    <div className="section-full mobile-page-padding bg-repeat p-t80 p-b80" style={{ backgroundColor: '#efece4', backgroundImage: 'url(' + bgTexture + ')', backgroundSize: 'cover' }}>
-                        <div className="section-content">
-                            <div className="container">
-                                <div className="section-head" style={{ textAlign: 'center' }}>
-                                    <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ display: 'inline-block', padding: '4px 14px', backgroundImage: 'url(' + bgimg2 + ')' }}>
-                                        <p style={{ border: 'none', padding: '0', fontSize: '13px', fontWeight: 400, letterSpacing: '6px', textTransform: 'uppercase', margin: 0 }}>
-                                            What our clients say
-                                        </p>
-                                    </div>
+                <div className="section-full mobile-page-padding bg-repeat p-t80 p-b80 testimonials-mobile" style={{ backgroundColor: '#efece4', backgroundImage: 'url(' + bgTexture + ')', backgroundSize: 'cover' }}>
+                    <div className="section-content">
+                        <div className="container">
+                            <div className="section-head" style={{ textAlign: 'center' }}>
+                                <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ display: 'inline-block', padding: '4px 14px', backgroundImage: 'url(' + bgimg2 + ')' }}>
+                                    <p style={{ border: 'none', padding: '0', fontSize: '13px', fontWeight: 400, letterSpacing: '6px', textTransform: 'uppercase', margin: 0 }}>
+                                        What our clients say
+                                    </p>
                                 </div>
-                                {testimonials.map((item, index) => (
-                                    <div key={index}>
-                                        <OwlCarousel className="owl-carousel" {...carouselOptions}>
-                                            {item.reviews.map((review, reviewIndex) => (
-                                                <div key={`${review.reviewername}-${reviewIndex}`} style={cardStyle}>
-                                                    <p style={{ fontSize: '13px', letterSpacing: '1.6px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px' }}>{review.position}</p>
-                                                    <p style={{ fontSize: '13px', marginTop: '2px', marginBottom: '6px', color: '#fff' }}>{review.reviewername}</p>
-                                                    <p style={{ marginBottom: '8px', color: '#f0c75e', fontSize: '13px' }}>
-                                                        {Array.from({ length: review.rating }).map((_, starIndex) => (
-                                                            <span key={starIndex} className="fa fa-star" />
-                                                        ))}
-                                                    </p>
-                                                    <p style={{ fontSize: '13px', lineHeight: 1.45, margin: 0 }}>{review.review}</p>
-                                                </div>
-                                            ))}
-                                        </OwlCarousel>
-                                    </div>
-                                ))}
-                                <div className="text-left" style={{ marginTop: '50px' }}>
-                                    <NavLink
-                                        to="#Contact"
-                                        className="site-button"
-                                        style={{
-                                            backgroundColor: "#000",
-                                            color: '#fff',
-                                            padding: '14px 32px',
-                                            fontSize: '13px',
-                                            letterSpacing: '3px',
-                                            textTransform: 'uppercase',
-                                            border: 'none',
-                                            display: 'inline-block',
-                                            textDecoration: 'none',
-                                            transition: 'background-color 0.3s ease'
-                                        }}
-                                    >
-                                        <p style={{ margin: 0, fontSize: '13px' }}>Book Free Consultation</p>
-                                    </NavLink>
+                            </div>
+                            {testimonials.map((item, index) => (
+                                <div key={index}>
+                                    <OwlCarousel className="owl-carousel" {...carouselOptions}>
+                                        {item.reviews.map((review, reviewIndex) => (
+                                            <div key={`${review.reviewername}-${reviewIndex}`} style={cardStyle}>
+                                                <p style={{ fontSize: '13px', letterSpacing: '1.6px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px' }}>{review.position}</p>
+                                                <p style={{ fontSize: '13px', marginTop: '2px', marginBottom: '6px', color: '#fff' }}>{review.reviewername}</p>
+                                                <p style={{ marginBottom: '8px', color: '#f0c75e', fontSize: '13px' }}>
+                                                    {Array.from({ length: review.rating }).map((_, starIndex) => (
+                                                        <span key={starIndex} className="fa fa-star" />
+                                                    ))}
+                                                </p>
+                                                <p style={{ fontSize: '13px', lineHeight: 1.45, margin: 0 }}>{review.review}</p>
+                                            </div>
+                                        ))}
+                                    </OwlCarousel>
                                 </div>
+                            ))}
+                            <div className="text-left" style={{ marginTop: '50px' }}>
+                                <NavLink
+                                    to="#Contact"
+                                    className="site-button"
+                                    style={{
+                                        backgroundColor: "#000",
+                                        color: '#fff',
+                                        padding: '14px 32px',
+                                        fontSize: '13px',
+                                        letterSpacing: '3px',
+                                        textTransform: 'uppercase',
+                                        border: 'none',
+                                        display: 'inline-block',
+                                        textDecoration: 'none',
+                                        transition: 'background-color 0.3s ease'
+                                    }}
+                                >
+                                    <p style={{ margin: 0, fontSize: '13px' }}>Book Free Consultation</p>
+                                </NavLink>
                             </div>
                         </div>
                     </div>
-                )}
+                </div>
             </>
         );
     }

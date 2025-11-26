@@ -15690,3 +15690,21 @@ form.woocommerce-ordering:after {
 }
 
 .woocommerce-result-count{font-weight: 600;}
+
+.testimonials-desktop {
+	display: block;
+}
+
+.testimonials-mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.testimonials-desktop {
+		display: none;
+	}
+
+	.testimonials-mobile {
+		display: block;
+	}
+}
