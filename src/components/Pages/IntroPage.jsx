@@ -4,29 +4,27 @@ export default function IntroPage() {
   return (
     <div className="section-full" style={{ background: '#f9f6f1', padding: '20px 0' }}>
       <div className="container">
-        <div className="row align-items-stretch">
+        <div className="row align-items-start">
           {/* Image Section */}
-          <div className="col-lg-5 col-md-10 m-b30 mx-auto" style={{ height: '100%' }}>
+          <div className="col-lg-5 col-md-10 m-b30 mx-auto" style={{ display: 'flex', alignItems: 'flex-start' }}>
             <div
               style={{
                 width: '100%',
-                height: '100%',
                 minHeight: '340px',
                 overflow: 'hidden',
                 borderRadius: '0',
                 boxShadow: '0 25px 70px rgba(128,128,128,0.3)',
                 border: '1px solid #f0e9dd',
-                transform: 'translateY(10px)',
                 margin: '0 auto',
               }}
             >
               <img
-      src="./../../assets/media/images/founder-image-removebg-preview.png"
+                src="./../../assets/media/images/founder-image-removebg-preview.png"
                 alt="Founder portrait"
                 style={{
                   width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
+                  height: 'auto',
+                  display: 'block',
                   borderRadius: '0',
                 }}
               />
@@ -34,8 +32,8 @@ export default function IntroPage() {
           </div>
 
           {/* Text Section */}
-          <div className="col-lg-7 col-md-12">
-            <div>
+          <div className="col-lg-7 col-md-12" style={{ display: 'flex', alignItems: 'flex-start' }}>
+            <div style={{ width: '100%' }}>
               {/* Name and Role */}
               <h3
                 style={{
@@ -44,6 +42,7 @@ export default function IntroPage() {
                   letterSpacing: '2px',
                   textTransform: 'uppercase',
                   marginBottom: '4px',
+                  marginTop: '-4px',
                   color: '#333',
                 }}
               >
@@ -67,7 +66,7 @@ export default function IntroPage() {
                   fontSize: '13px',
                   lineHeight: 1.4,
                   color: '#4a4a4a',
-                  marginBottom: '8px',
+                  marginBottom: '10px',
                 }}
               >
                 With over a decade of global exposure across the UK and the Middle East, I bring a refined, international perspective to modern Indian interior design. My passion for creating beautiful spaces began early in life—shaped by my early living in Doha, Qatar and London, UK, as well as enriched by extensive travel through the world's design capitals. These experiences helped me develop a deep understanding of global colour palettes, contemporary aesthetics, and timeless luxury.
@@ -77,7 +76,7 @@ export default function IntroPage() {
                   fontSize: '13px',
                   lineHeight: 1.4,
                   color: '#4a4a4a',
-                  marginBottom: '8px',
+                  marginBottom: '10px',
                 }}
               >
                 Much like many renowned designers, my journey into design unfolded organically—starting with creating elegant, personal spaces for friends, family, and my own home. What began as a personal passion soon evolved into a sought-after design practice, as my work drew attention for its modern sensibility, warmth, and understated sophistication.
@@ -92,7 +91,7 @@ export default function IntroPage() {
               >
                 Pluxe Studio was born from a desire to combine this global perspective with an intimate, personalised design approach. As the Founder and Creative Lead at Pluxe Studio, I work closely with every client — understanding their lifestyle, aspirations, and the emotions they want their home to evoke. My goal is to design spaces that balance modern sophistication with timeless charm, while ensuring a seamless, enjoyable experience throughout the project.
               </p>
-              <p
+              {/* <p
                  style={{
                   fontSize: '13px',
                   lineHeight: 1.4,
@@ -101,10 +100,10 @@ export default function IntroPage() {
                 }}
               >
                 Based in Gurgaon, at the heart of India's premium residential landscape, I intuitively understand the tastes of luxury homeowners and craft spaces that feel elevated, meaningful, and beautifully personal.
-              </p>
+              </p> */}
               <p
                  style={{
-                  fontSize: '13px',
+                  fontSize: '13px', 
                   lineHeight: 1.4,
                   color: '#4a4a4a',
                   marginBottom: '8px',
@@ -119,7 +118,7 @@ export default function IntroPage() {
                   fontSize: '13px',
                   lineHeight: 1.4,
                   color: '#4a4a4a',
-                  marginBottom: '8px',
+                  marginTop: '22px',
                   fontStyle: 'italic',
                 }}
               >
