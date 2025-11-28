@@ -7,7 +7,7 @@ const featuredProjects = [
         name: 'Delhi Villa '
     },
     {
-        image: '/assets/media/images/gym-photo.jpg',
+        image: '/assets/media/images/gym-pic.jpeg',
         title: 'Gurgaon Gym ',
         name: 'Gurgaon Gym '
     },

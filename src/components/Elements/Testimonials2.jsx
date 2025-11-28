@@ -71,7 +71,7 @@ class Testimonials2 extends React.Component {
             padding: '24px 22px',
             boxShadow: '0 20px 40px rgba(0,0,0,0.16)',
             margin: '0 10px',
-            minHeight: '180px'
+            minHeight: '100px'
         };
 
         return (

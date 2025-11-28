@@ -7,12 +7,12 @@ const services = [
     {
         count: '01',
         title: 'Home Interiors',
-        image: require('./../../images/pic1.jpg')
+             image: '/assets/media/images/NRI_Global.jpg'
     },
     {
         count: '02',
         title: 'Bespoke Furniture',
-        image: '/assets/media/images/furniture.jpg'
+        image: '/assets/media/images/furniture-pic.jpeg'
     },
     {
         count: '03',
@@ -22,7 +22,7 @@ const services = [
     {
         count: '04',
         title: 'NRI Designs ',
-        image: '/assets/media/images/NRI_Global.jpg'
+        image: require('./../../images/pic1.jpg')
     },
     {
         count: '05',

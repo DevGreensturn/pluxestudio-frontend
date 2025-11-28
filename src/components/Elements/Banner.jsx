@@ -5,9 +5,9 @@ class Banner extends React.Component {
     render() {
         return (
             <>
-                <div className="sx-bnr-inr overlay-wraper bg-parallax bg-top-center" data-stellar-background-ratio="0.5" style={{ backgroundImage: 'url(' + this.props.bgimage + ')' }}>
-                    <div className="overlay-main bg-black opacity-07" />
-                    <div className="container">
+                <div className="sx-bnr-inr overlay-wraper bg-parallax bg-top-center" data-stellar-background-ratio="0.5" style={{ backgroundImage: 'url(' + this.props.bgimage + ')', height: '380px', maxHeight: '380px', position: 'relative' }}>
+                    <div className="overlay-main" style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1 }} />
+                    <div className="container" style={{ position: 'relative', zIndex: 2 }}>
                         <div className="sx-bnr-inr-entry">
                             <div className="banner-title-outer">
                                 <div className="banner-title-name">
