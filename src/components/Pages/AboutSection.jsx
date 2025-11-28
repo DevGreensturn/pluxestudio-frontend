@@ -8,6 +8,7 @@ import FooterSection from './../Common/FooterSection';
 import AboutStory from '../Elements/AboutStory';
 import AboutMission from '../Elements/AboutMission';
 import AboutCore from '../Elements/AboutCore';
+import AboutProcess from '../Elements/AboutProcess';
 
 var bgimg3 = require('./../../images/background/cross-line2.png');
 var bgimg4 = require('./../../images/background/pic.jpg');
@@ -49,6 +50,7 @@ const AboutSection = () => {
              <AboutMission />
 
               <AboutCore />
+              <AboutProcess />
 
                 {/* <div className="section-full overlay-wraper sx-bg-secondry mobile-page-padding p-t80 p-b50 bg-parallax" data-stellar-background-ratio="0.5" style={{ backgroundImage: 'url(' + bgimg3 + ')' }}>
                     <div className="overlay-main bg-black opacity-0.10" />

@@ -42,15 +42,15 @@ export default function AboutCore() {
                             </div>
                         </div>
                         <div className="section-content m-t50">
-                            <div className="row">
+                            <div className="row" style={{ display: 'flex', flexWrap: 'wrap' }}>
                                 {values.map((item, index) => (
-                                    <div className="col-lg-3 col-md-6 col-sm-12 m-b30" key={index}>
-                                        <div className="sx-icon-box-wraper icon-count-2-outer">
-                                            <div className="icon-count-2 bg-white">
+                                    <div className="col-lg-3 col-md-6 col-sm-12 m-b30" key={index} style={{ display: 'flex', flexDirection: 'column' }}>
+                                        <div className="sx-icon-box-wraper icon-count-2-outer" style={{ height: '100%' }}>
+                                            <div className="icon-count-2 bg-white" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
                                                 <div className="icon-xl inline-icon m-b15 scale-in-center">
                                                     <span className="icon-cell"><i className={item.icon} /></span>
                                                 </div>
-                                                <div className="icon-content">
+                                                <div className="icon-content" style={{ flex: 1 }}>
                                                     <h4 className="sx-tilte">{item.title}</h4>
                                                     <p>{item.description}</p>
                                                 </div>
