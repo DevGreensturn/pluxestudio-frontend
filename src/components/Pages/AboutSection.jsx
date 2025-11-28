@@ -9,6 +9,7 @@ import AboutStory from '../Elements/AboutStory';
 import AboutMission from '../Elements/AboutMission';
 import AboutCore from '../Elements/AboutCore';
 import AboutProcess from '../Elements/AboutProcess';
+import AboutBanner from '../Elements/AboutBanner';
 
 var bgimg3 = require('./../../images/background/cross-line2.png');
 var bgimg4 = require('./../../images/background/pic.jpg');
@@ -44,7 +45,7 @@ const AboutSection = () => {
             <div className="page-content">
             <Banner title="About Us" pagename="About Us" description="Crafting extraordinary spaces that blend luxury, sustainability, and timeless elegance." bgimage="/assets/media/images/about.jpg" />
                 
-                
+                <AboutBanner />
                <AboutStory />
 
              <AboutMission />
