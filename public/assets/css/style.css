@@ -6329,7 +6329,7 @@ btn-half {cursor: pointer;	z-index: 0;	display: inline-block;	position: relative
 	content: "\f101";
 	margin-left: 7px;
 	font-family: 'FontAwesome';
-	color: #fff;
+	color: #000;
 	font-size: 16px;
 	font-weight: normal;
 }

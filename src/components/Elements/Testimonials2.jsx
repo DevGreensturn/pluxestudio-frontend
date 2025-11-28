@@ -8,29 +8,34 @@ const publicPhoneImage = process.env.PUBLIC_URL + '/assets/media/images/image-ph
 
 const testimonials = [
     {
-        image: require('./../../images/testimonials/pic1.jpg'),
-       
-       
-        review: 'Elegant, warm, and perfectly styled — Pluxe turned my space into something truly personal',
-       
+        reviewername: 'Mr. Sethi',
+        position: 'Client, DLF Phase 5, Gurgaon',
+        rating: 5,
+        review: 'Pluxe Studio transformed our apartment into a serene, luxurious space. The attention to detail, colour palette selection, and overall harmony exceeded every expectation. It truly feels like a home designed just for us.'
     },
     {
-        image: require('./../../images/testimonials/pic2.jpg'),
-       
-        review: 'Amazing fast delivery and excellent quality The team was willing to go mile for best service! Thanks!',
-        
+        reviewername: 'Mr. Andre',
+        position: 'NRI Client, Dubai Marina',
+        rating: 5,
+        review: 'We worked with Pluxe Studio entirely online, and the process was smoother than any design firm we\'ve worked with locally. The concepts, 3D visuals, and final execution were world-class. Our Dubai home finally feels like the calming, modern retreat we always wanted.'
     },
     {
-        image: require('./../../images/testimonials/pic3.jpg'),
-       
-        review: 'Loved the professionalism and design sensibility. The transformation was beyond what I imagined.',
-        
+        reviewername: 'Ms. Lara',
+        position: 'NRI Client, Ealing, London',
+        rating: 5,
+        review: 'Despite working across time zones, Pluxe Studio made the entire process effortless. The design ideas were fresh, timeless, and perfectly aligned with our taste. Truly global quality.'
     },
     {
-        image: require('./../../images/testimonials/pic4.jpg'),
-       
-        review: 'Refined design, smooth execution. Pluxe Studio delivered exactly what my home needed.',
-        
+        reviewername: 'Ms. Chopra',
+        position: 'Client, Golf Course Road, Gurgaon',
+        rating: 5,
+        review: 'From the smallest details to the overall design, everything was executed with creativity, precision, and passion by Pluxe Studio. Ms. Ahuja and her teams sense of aesthetics, practical approach, and commitment to delivering on time made the entire experience stress-free and enjoyable.'
+    },
+    {
+        reviewername: 'Ms. Chopra',
+        position: 'Client, Golf Course Road, Gurgaon',
+        rating: 5,
+        review: 'From the smallest details to the overall design, everything was executed with creativity, precision, and passion by Pluxe Studio. Ms. Ahuja and her teams sense of aesthetics, practical approach, and commitment to delivering on time made the entire experience stress-free and enjoyable.'
     }
 ];
 
@@ -83,8 +88,11 @@ class Testimonials2 extends React.Component {
                               
                                 <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ display: 'inline-block', padding: '4px 14px', backgroundImage: 'url(' + bgimg2 + ')' }}>
                                     <h3 style={{ border: 'none', padding: '0', fontWeight: "bold", letterSpacing: '6px', textTransform: 'uppercase', margin: 0 }}>
-                                        What Our Clients Say
+                                        REVIEWS
                                     </h3>
+                                    <p style={{ border: 'none', padding: '0', fontSize: '16px', fontWeight: 400, letterSpacing: '2px', textTransform: 'none', margin: '8px 0 0 0', fontStyle: 'italic' }}>
+                                        From our clients
+                                    </p>
                                 </div>
                             </div>
                             <div className="testimonial-static-grid">
@@ -95,12 +103,13 @@ class Testimonials2 extends React.Component {
                                                 position: 'relative',
                                                 background: '#f6f2eb',
                                                 borderRadius: '40px',
-                                                minHeight: '720px',
+                                                minHeight: '800px',
                                                 boxShadow: '0 30px 70px rgba(0,0,0,0.1)',
-                                                overflow: 'hidden',
+                                                overflow: 'visible',
                                                 padding: '80px 60px 60px',
                                                 display: 'flex',
-                                                alignItems: 'center'
+                                                alignItems: 'center',
+                                                justifyContent: 'center'
                                             }}
                                         >
                                             <div
@@ -114,29 +123,28 @@ class Testimonials2 extends React.Component {
                                             />
                                             <div style={{ position: 'relative', zIndex: 2 }}>
                                                 {(() => {
-                                                    const midpoint = Math.ceil(item.reviews.length / 2);
-                                                    const leftCards = item.reviews.slice(0, midpoint);
-                                                    const rightCards = item.reviews.slice(midpoint);
+                                                    const leftCards = item.reviews.slice(0, 3);
+                                                    const rightCards = item.reviews.slice(3, 5);
                                                     const cardStyle = {
                                                         background: '#4c403a',
                                                         color: '#fdf8f0',
                                                         borderRadius: '12px',
-                                                        padding: '16px 18px',
-                                                        width: '320px',
+                                                        padding: '14px 18px',
+                                                        width: '380px',
                                                         boxShadow: '0 20px 40px rgba(0,0,0,0.16)'
                                                     };
                                                     return (
-                                                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', padding: '0', marginTop: '0' }}>
-                                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'flex-end', marginRight: '-40px', zIndex: 3 }}>
+                                                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', padding: '0', marginTop: '0', width: '100%' }}>
+                                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', alignItems: 'flex-end', marginRight: '-50px', zIndex: 3 }}>
                                                                 {leftCards.map((review, reviewIndex) => (
                                                                     <div
                                                                         key={`${review.reviewername}-left-${reviewIndex}`}
                                                                         style={{
                                                                             ...cardStyle,
-                                                                            transform: reviewIndex % 2 === 0 ? 'translateY(-60px)' : 'translateY(-40px)'
+                                                                            transform: reviewIndex === 0 ? 'translateY(-80px)' : reviewIndex === 1 ? 'translateY(0px)' : 'translateY(80px)'
                                                                         }}
                                                                     >
-                                                                        <p style={{ fontSize: '14px', letterSpacing: '1.2px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px', whiteSpace: 'nowrap' }}>
+                                                                        <p style={{ fontSize: '13px', letterSpacing: '1.2px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px', whiteSpace: 'nowrap' }}>
                                                                             {review.position}
                                                                         </p>
                                                                         <p style={{ fontSize: '14px', letterSpacing: '0.8px', color: '#fff', marginTop: '0', marginBottom: '6px', whiteSpace: 'nowrap' }}>{review.reviewername}</p>
@@ -145,23 +153,23 @@ class Testimonials2 extends React.Component {
                                                                                 <span key={starIndex} className="fa fa-star" />
                                                                             ))}
                                                                         </p>
-                                                                        <p style={{ fontSize: '14px', lineHeight: 1.4, margin: 0 }}>{review.review}</p>
+                                                                        <p style={{ fontSize: '13px', lineHeight: 1.35, margin: 0 }}>{review.review}</p>
                                                                     </div>
                                                                 ))}
                                                             </div>
-                                                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '260px', zIndex: 2, margin: '0 0' }}>
-                                                                <img src={item.device} alt="Client showcase" style={{ width: '100%', height: 'auto', display: 'block', maxHeight: '560px' }} />
+                                                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '280px', zIndex: 2, margin: '0 20px' }}>
+                                                                <img src={item.device} alt="Client showcase" style={{ width: '100%', height: 'auto', display: 'block', maxHeight: '500px' }} />
                                                             </div>
-                                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'flex-start', marginLeft: '-40px', zIndex: 3 }}>
+                                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', alignItems: 'flex-start', marginLeft: '-50px', zIndex: 3 }}>
                                                                 {rightCards.map((review, reviewIndex) => (
                                                                     <div
                                                                         key={`${review.reviewername}-right-${reviewIndex}`}
                                                                         style={{
                                                                             ...cardStyle,
-                                                                            transform: reviewIndex % 2 === 0 ? 'translateY(60px)' : 'translateY(80px)'
+                                                                            transform: reviewIndex === 0 ? 'translateY(-80px)' : 'translateY(80px)'
                                                                         }}
                                                                     >
-                                                                        <p style={{ fontSize: '14px', letterSpacing: '1.2px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px', whiteSpace: 'nowrap' }}>
+                                                                        <p style={{ fontSize: '13px', letterSpacing: '1.2px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px', whiteSpace: 'nowrap' }}>
                                                                             {review.position}
                                                                         </p>
                                                                         <p style={{ fontSize: '14px', letterSpacing: '0.8px', color: '#fff', marginTop: '0', marginBottom: '6px', whiteSpace: 'nowrap' }}>{review.reviewername}</p>
@@ -170,7 +178,7 @@ class Testimonials2 extends React.Component {
                                                                                 <span key={starIndex} className="fa fa-star" />
                                                                             ))}
                                                                         </p>
-                                                                        <p style={{ fontSize: '14px', lineHeight: 1.4, margin: 0 }}>{review.review}</p>
+                                                                        <p style={{ fontSize: '13px', lineHeight: 1.35, margin: 0 }}>{review.review}</p>
                                                                     </div>
                                                                 ))}
                                                             </div>
@@ -211,7 +219,10 @@ class Testimonials2 extends React.Component {
                             <div className="section-head" style={{ textAlign: 'center' }}>
                                 <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ display: 'inline-block', padding: '4px 14px', backgroundImage: 'url(' + bgimg2 + ')' }}>
                                     <p style={{ border: 'none', padding: '0', fontSize: '13px', fontWeight: 400, letterSpacing: '6px', textTransform: 'uppercase', margin: 0 }}>
-                                        What our clients say
+                                        REVIEWS
+                                    </p>
+                                    <p style={{ border: 'none', padding: '0', fontSize: '14px', fontWeight: 400, letterSpacing: '2px', textTransform: 'none', margin: '8px 0 0 0', fontStyle: 'italic' }}>
+                                        From our clients
                                     </p>
                                 </div>
                             </div>

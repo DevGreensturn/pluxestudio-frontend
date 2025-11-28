@@ -18,16 +18,16 @@ class Banner extends React.Component {
                         <div className="sx-bnr-inr-entry">
                             <div className="banner-title-outer">
                                 <div className="banner-title-name">
-                                    <h2 className="m-tb0">{this.props.title}</h2>                                <p>
+                                    <h3 className="m-tb0" style={{ color: '#000' }}>{this.props.title}</h3>                                <p style={{ color: '#000' }}>
                                         {this.props.description}
                                     </p>
                                 </div>
                             </div>
                             {/* BREADCRUMB ROW */}
-                            <div>
-                                <ul className="sx-breadcrumb breadcrumb-style-2">
-                                <li><NavLink to={"./"}>Home</NavLink></li>
-                                    <li>{this.props.pagename}</li>
+                            <div >
+                                <ul className="sx-breadcrumb breadcrumb-style-2 text-black" style={{ color: '#000' }}>
+                                <li><NavLink to={"/"} style={{ color: '#000' }}>Home</NavLink></li>
+                                    <li style={{ color: '#000' }}>{this.props.pagename}</li>
                                 </ul>
                             </div>
                             {/* BREADCRUMB ROW END */}
