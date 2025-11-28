@@ -6,6 +6,7 @@ import CountUp from 'react-countup';
 import bnrimg from './../../images/banner/5.jpg';
 import FooterSection from './../Common/FooterSection';
 import AboutStory from '../Elements/AboutStory';
+import AboutMission from '../Elements/AboutMission';
 
 var bgimg1 = require('./../../images/background/cross-line2.png');
 var bgimg2 = require('./../../images/background/bg-4.png');
@@ -69,39 +70,7 @@ const AboutSection = () => {
                 
                <AboutStory />
 
-                <div className="section-full mobile-page-padding p-t80 p-b80 bg-gray">
-                    <div className="container">
-                        <div className="section-head text-center">
-                            <div className="sx-separator-outer separator-center">
-                                <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ backgroundImage: 'url(' + bgimg1 + ')' }}>
-                                    <h3 className="sep-line-one">Mission & Vision</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="section-content m-t50">
-                            <div className="row">
-                                <div className="col-lg-6 col-md-6 col-sm-12 m-b30">
-                                    <div className="sx-icon-box-wraper icon-count-2-outer bg-white p-a40">
-                                        <div className="icon-xl inline-icon m-b20">
-                                            <span className="icon-cell"><i className="flaticon-sketch" /></span>
-                                        </div>
-                                        <h4 className="sx-tilte m-b15">Our Mission</h4>
-                                        <p>To create extraordinary interior spaces that harmonize luxury, sustainability, and personal expression. We are committed to delivering exceptional design solutions that enhance quality of life while respecting our planet's resources. Through innovative approaches and meticulous attention to detail, we transform every project into a masterpiece that stands the test of time.</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 col-md-6 col-sm-12 m-b30">
-                                    <div className="sx-icon-box-wraper icon-count-2-outer bg-white p-a40">
-                                        <div className="icon-xl inline-icon m-b20">
-                                            <span className="icon-cell"><i className="flaticon-stairs" /></span>
-                                        </div>
-                                        <h4 className="sx-tilte m-b15">Our Vision</h4>
-                                        <p>To be the leading interior design studio recognized for setting new standards in sustainable luxury design. We envision a future where every space we create not only delights the senses but also contributes positively to the environment. Our goal is to inspire a movement towards conscious design that proves luxury and sustainability are not mutually exclusive—they are essential partners in creating spaces that truly matter.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+             <AboutMission />
 
                 <div className="section-full mobile-page-padding p-t80 p-b80 bg-white" style={{ backgroundImage: 'url(' + bgimg2 + ')', backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom left' }}>
                     <div className="container">
