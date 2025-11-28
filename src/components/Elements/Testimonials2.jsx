@@ -135,13 +135,13 @@ class Testimonials2 extends React.Component {
                                                     };
                                                     return (
                                                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', padding: '0', marginTop: '0', width: '100%' }}>
-                                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', alignItems: 'flex-end', marginRight: '-50px', zIndex: 3 }}>
+                                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '5px', alignItems: 'flex-end', marginRight: '-50px', zIndex: 3 }}>
                                                                 {leftCards.map((review, reviewIndex) => (
                                                                     <div
                                                                         key={`${review.reviewername}-left-${reviewIndex}`}
                                                                         style={{
                                                                             ...cardStyle,
-                                                                            transform: reviewIndex === 0 ? 'translateY(-80px)' : reviewIndex === 1 ? 'translateY(0px)' : 'translateY(80px)'
+                                                                            transform: reviewIndex === 0 ? 'translateY(-35px)' : reviewIndex === 1 ? 'translateY(0px)' : 'translateY(35px)'
                                                                         }}
                                                                     >
                                                                         <p style={{ fontSize: '13px', letterSpacing: '1.2px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px', whiteSpace: 'nowrap' }}>
@@ -160,13 +160,13 @@ class Testimonials2 extends React.Component {
                                                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '280px', zIndex: 2, margin: '0 20px' }}>
                                                                 <img src={item.device} alt="Client showcase" style={{ width: '100%', height: 'auto', display: 'block', maxHeight: '500px' }} />
                                                             </div>
-                                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', alignItems: 'flex-start', marginLeft: '-50px', zIndex: 3 }}>
+                                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '5px', alignItems: 'flex-start', marginLeft: '-50px', zIndex: 3 }}>
                                                                 {rightCards.map((review, reviewIndex) => (
                                                                     <div
                                                                         key={`${review.reviewername}-right-${reviewIndex}`}
                                                                         style={{
                                                                             ...cardStyle,
-                                                                            transform: reviewIndex === 0 ? 'translateY(-80px)' : 'translateY(80px)'
+                                                                            transform: reviewIndex === 0 ? 'translateY(-35px)' : 'translateY(35px)'
                                                                         }}
                                                                     >
                                                                         <p style={{ fontSize: '13px', letterSpacing: '1.2px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px', whiteSpace: 'nowrap' }}>
