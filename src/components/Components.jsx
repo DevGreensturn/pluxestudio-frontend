@@ -8,6 +8,7 @@ import Home5 from './Pages/Home5';
 import Home6 from './Pages/Home6';
 
 import AboutSection from './Pages/AboutSection';
+import Services from './Pages/Services';
 
 import Services1 from './Pages/Services1';
 import Services2 from './Pages/Services2';
@@ -65,6 +66,7 @@ class Components extends React.Component {
                         <Routes>
                             <Route path='/' element={<Home1/>} />
                             <Route path='/about' element={<AboutSection />} />
+                            <Route path='/services' element={<Services />} />
                             
                             <Route element={<Error/>} />
                         </Routes>

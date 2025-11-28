@@ -3,18 +3,22 @@ import { NavLink, useLocation } from 'react-router-dom';
 
 const NavigationContent = () => {
     const location = useLocation();
-    const isAboutActive = location.pathname === '/about';
     const isHomeActive = location.pathname === '/';
-    const disabledLinks = ['Services', 'Portfolio', 'NRI', 'Contact us', 'FAQ'];
+    const isAboutActive = location.pathname === '/about';
+    const isServicesActive = location.pathname === '/services';
+    const disabledLinks = ['Portfolio', 'NRI', 'Contact us', 'FAQ'];
     const handleDisabledLinkClick = (event) => event.preventDefault();
 
     return (
-        <ul className="nav navbar-nav">
+        <ul className='nav navbar-nav'>
             <li className={isHomeActive ? 'active' : ''}>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to='/'>Home</NavLink>
             </li>
             <li className={isAboutActive ? 'active' : ''}>
-                <NavLink to="/about">About us</NavLink>
+                <NavLink to='/about'>About us</NavLink>
+            </li>
+            <li className={isServicesActive ? 'active' : ''}>
+                <NavLink to='/services'>Services</NavLink>
             </li>
             {disabledLinks.map((link) => (
                 <li key={link}>
