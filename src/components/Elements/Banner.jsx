@@ -7,13 +7,13 @@ class Banner extends React.Component {
             <>
                 <style>{`
                     .sx-bnr-inr {
-                        height: 300px !important;
-                        max-height: 300px !important;
+                        height: 450px !important;
+                        max-height: 450px !important;
                         overflow: hidden !important;
                     }
                 `}</style>
-                <div className="sx-bnr-inr overlay-wraper bg-parallax bg-top-center" data-stellar-background-ratio="0.5" style={{ backgroundImage: 'url(' + this.props.bgimage + ')', height: '300px', maxHeight: '300px', position: 'relative', overflow: 'hidden' }}>
-                    <div className="overlay-main" style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1 }} />
+                <div className="sx-bnr-inr overlay-wraper bg-parallax bg-top-center" data-stellar-background-ratio="0.5" style={{ backgroundImage: 'url(' + this.props.bgimage + ')', height: '500px', maxHeight: '500px', position: 'relative', overflow: 'hidden' }}>
+                    <div className="overlay-main" style={{ backgroundColor: 'rgba(0, 0, 0, 0.9)', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1 }} />
                     <div className="container" style={{ position: 'relative', zIndex: 2 }}>
                         <div className="sx-bnr-inr-entry">
                             <div className="banner-title-outer">
@@ -25,7 +25,7 @@ class Banner extends React.Component {
                             </div>
                             {/* BREADCRUMB ROW */}
                             <div >
-                                <ul className="sx-breadcrumb breadcrumb-style-2 text-black" style={{ color: '#000' }}>
+                                <ul className="sx-breadcrumb breadcrumb-style-2 text-black" style={{ color: '#fff' }}>
                                 <li><NavLink to={"/"} style={{ color: '#000' }}>Home</NavLink></li>
                                     <li style={{ color: '#000' }}>{this.props.pagename}</li>
                                 </ul>

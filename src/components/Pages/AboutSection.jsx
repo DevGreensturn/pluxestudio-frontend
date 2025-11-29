@@ -43,7 +43,7 @@ const AboutSection = () => {
         <>
             <Header />
             <div className="page-content">
-            <Banner title="About Us" pagename="About Us" description="Crafting extraordinary spaces that blend luxury, sustainability, and timeless elegance." bgimage="/assets/media/images/about.jpg" />
+            <Banner title="About Us" pagename="About Us" description="Crafting extraordinary spaces that blend luxury, sustainability, and timeless elegance." bgimage="/assets/media/images/green-living-room-ideas.jpg" />
                 
                 <AboutBanner />
                <AboutStory />

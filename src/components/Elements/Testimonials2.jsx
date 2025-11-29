@@ -25,12 +25,12 @@ const testimonials = [
         rating: 5,
         review: 'Despite working across time zones, Pluxe Studio made the entire process effortless. The design ideas were fresh, timeless, and perfectly aligned with our taste. Truly global quality.'
     },
-    {
-        reviewername: 'RWA President',
-        position: 'Residential Society Head, Gurgaon',
-        rating: 5,
-        review: 'requested to keen narve premises ine residents were discussed and agreed that vice of rain harvesting experts should be taken to resolve the problem ater logging. Renovation of Community Centre: The structure of our Community Centre is a out years old and its renovation is required. Mrs. Preeti Ahuja (ML-15) is professional interior signer. She inspected the Community Centre and prepared a report advising work hat uld be done for renovation at Ground Floor and First Floor. She also preser and ex, and the details in GBM. The GBM agreed with the proposal which phased appro renovation GBM approved the first phase of renovation (Gvm wuth trilets will The estimated cost of renovation kse is F be renovateu'
-    },
+    // {
+    //     reviewername: 'RWA President',
+    //     position: 'Residential Society Head, Gurgaon',
+    //     rating: 5,
+    //     review: 'requested to keen narve premises ine residents were discussed and agreed that vice of rain harvesting experts should be taken to resolve the problem ater logging. Renovation of Community Centre: The structure of our Community Centre is a out years old and its renovation is required. Mrs. Preeti Ahuja (ML-15) is professional interior signer. She inspected the Community Centre and prepared a report advising work hat uld be done for renovation at Ground Floor and First Floor. She also preser and ex, and the details in GBM. The GBM agreed with the proposal which phased appro renovation GBM approved the first phase of renovation (Gvm wuth trilets will The estimated cost of renovation kse is F be renovateu'
+    // },
     {
         reviewername: 'Ms. Chopra',
         position: 'Client, Golf Course Road, Gurgaon',
