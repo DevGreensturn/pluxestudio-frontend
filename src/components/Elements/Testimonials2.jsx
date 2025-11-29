@@ -51,7 +51,7 @@ var bgTexture = require('./../../images/background/bg6.jpg');
 
 class Testimonials2 extends React.Component {
     render() {
-        
+
         const carouselOptions = {
             loop: true,
             autoplay: true,
@@ -85,14 +85,12 @@ class Testimonials2 extends React.Component {
                     <div className="section-content">
                         <div className="container">
                             <div className="section-head" style={{ textAlign: 'center' }}>
-                              
+
                                 <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ display: 'inline-block', padding: '4px 14px', backgroundImage: 'url(' + bgimg2 + ')' }}>
                                     <h3 style={{ border: 'none', padding: '0', fontWeight: "bold", letterSpacing: '6px', textTransform: 'uppercase', margin: 0 }}>
-                                        REVIEWS
+                                        What Our Clients Say
                                     </h3>
-                                    <p style={{ border: 'none', padding: '0', fontSize: '16px', fontWeight: 400, letterSpacing: '2px', textTransform: 'none', margin: '8px 0 0 0', fontStyle: 'italic' }}>
-                                        From our clients
-                                    </p>
+
                                 </div>
                             </div>
                             <div className="testimonial-static-grid">
@@ -144,13 +142,17 @@ class Testimonials2 extends React.Component {
                                                                             transform: reviewIndex === 0 ? 'translateY(-25px)' : reviewIndex === 1 ? 'translateY(0px)' : 'translateY(25px)'
                                                                         }}
                                                                     >
-                                                                        <p style={{ fontSize: '13px', letterSpacing: '1.2px', color: '#d8c5b1', textTransform: 'uppercase', marginBottom: '4px', whiteSpace: 'nowrap' }}>
-                                                                            {review.position}
+                                                                        <p style={{ fontSize: '13px', letterSpacing: '1.2px', color: '#', textTransform: 'uppercase', marginBottom: '2px', whiteSpace: 'nowrap' }}>
+                                                                        {review.reviewername}
                                                                         </p>
-                                                                        <p style={{ fontSize: '14px', letterSpacing: '0.8px', color: '#fff', marginTop: '0', marginBottom: '6px', whiteSpace: 'nowrap' }}>{review.reviewername}</p>
-                                                                        <p style={{ marginBottom: '6px', color: '#f0c75e', fontSize: '13px' }}>
+                                                                        <p style={{ fontSize: '14px', letterSpacing: '0.8px', color: '#fff', marginTop: '0', marginBottom: '2px', whiteSpace: 'nowrap' }}>
+                                                                        {review.position}
+                                                                        </p>
+                                                                        <p style={{ marginBottom: '2px', color: '#f0c75e', fontSize: '13px' }}>
                                                                             {Array.from({ length: review.rating }).map((_, starIndex) => (
-                                                                                <span key={starIndex} className="fa fa-star" />
+                                                                                <span key={starIndex} className="fa fa-star " style={{
+                                                                                    fontSize: '15px'
+                                                                                }}/>
                                                                             ))}
                                                                         </p>
                                                                         <p style={{ fontSize: '13px', lineHeight: 1.35, margin: 0 }}>{review.review}</p>
