@@ -26,10 +26,10 @@ const testimonials = [
         review: 'Despite working across time zones, Pluxe Studio made the entire process effortless. The design ideas were fresh, timeless, and perfectly aligned with our taste. Truly global quality.'
     },
     {
-        reviewername: 'Ms. Chopra',
-        position: 'Client, Golf Course Road, Gurgaon',
+        reviewername: 'RWA President',
+        position: 'Residential Society Head, Gurgaon',
         rating: 5,
-        review: 'From the smallest details to the overall design, everything was executed with creativity, precision, and passion by Pluxe Studio. Ms. Ahuja and her teams sense of aesthetics, practical approach, and commitment to delivering on time made the entire experience stress-free and enjoyable.'
+        review: 'Renovation of Community Centre\'s The structure of our community center is about '
     },
     {
         reviewername: 'Ms. Chopra',
@@ -142,7 +142,7 @@ class Testimonials2 extends React.Component {
                                                                             transform: reviewIndex === 0 ? 'translateY(-25px)' : reviewIndex === 1 ? 'translateY(0px)' : 'translateY(25px)'
                                                                         }}
                                                                     >
-                                                                        <p style={{ fontSize: '13px', letterSpacing: '1.2px', color: '#fff', marginBottom: '2px', whiteSpace: 'nowrap' }}>
+                                                                        <p style={{ fontSize: '13px', letterSpacing: '1.2px', color: '#fff', marginBottom: '0px', whiteSpace: 'nowrap' }}>
                                                                         {review.reviewername}
                                                                         </p>
                                                                         <p style={{ fontSize: '14px', letterSpacing: '0.8px', color: '#fff', marginTop: '0', marginBottom: '2px', whiteSpace: 'nowrap' }}>
@@ -151,7 +151,8 @@ class Testimonials2 extends React.Component {
                                                                         <p style={{ marginBottom: '2px', color: '#f0c75e', fontSize: '13px' }}>
                                                                             {Array.from({ length: review.rating }).map((_, starIndex) => (
                                                                                 <span key={starIndex} className="fa fa-star " style={{
-                                                                                    fontSize: '15px'
+                                                                                    fontSize: '15px',
+                                                                                    marginRight: '4px'
                                                                                 }}/>
                                                                             ))}
                                                                         </p>
@@ -180,7 +181,8 @@ class Testimonials2 extends React.Component {
                                                                         <p style={{ marginBottom: '2px', color: '#f0c75e', fontSize: '13px' }}>
                                                                             {Array.from({ length: review.rating }).map((_, starIndex) => (
                                                                                 <span key={starIndex} className="fa fa-star " style={{
-                                                                                    fontSize: '15px'
+                                                                                    fontSize: '15px',
+                                                                                    marginRight: '4px'
                                                                                 }}/>
                                                                             ))}
                                                                         </p>
@@ -243,7 +245,7 @@ class Testimonials2 extends React.Component {
                                                 <p style={{ fontSize: '14px', letterSpacing: '0.8px', color: '#fff', marginTop: '0', marginBottom: '8px', whiteSpace: 'nowrap' }}>{review.reviewername}</p>
                                                 <p style={{ marginBottom: '8px', color: '#f0c75e', fontSize: '13px' }}>
                                                     {Array.from({ length: review.rating }).map((_, starIndex) => (
-                                                        <span key={starIndex} className="fa fa-star" />
+                                                        <span key={starIndex} className="fa fa-star" style={{ marginRight: '4px' }} />
                                                     ))}
                                                 </p>
                                                 <p style={{ fontSize: '14px', lineHeight: 1.45, margin: 0 }}>{review.review}</p>
