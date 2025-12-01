@@ -51,7 +51,7 @@ export default function AboutBanner() {
                 fontSize: '13px'
               }}
             >
-             Book Our Consultation 
+            Book Free Consultation
             </NavLink>
           </div>
         </div>

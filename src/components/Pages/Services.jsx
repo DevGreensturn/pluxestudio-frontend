@@ -6,8 +6,9 @@ import Services1 from './../Elements/Services1';
 import WhatWeDo6 from './../Elements/WhatWeDo6';
 import Services7 from './../Elements/Services7';
 import FooterSection from './../Common/FooterSection';
+import ServiceDetailSection from './../Elements/ServiceDetailSection';
 
-var bnrimg = require('./../../images/banner/6.jpg');
+var bnrimg = '/assets/media/images/services.jpg';
 
 export default function Services() {
   return (
@@ -17,15 +18,21 @@ export default function Services() {
         <Banner 
           title="Our Services" 
           pagename="Services" 
-          description="Comprehensive interior design solutions that transform spaces into extraordinary experiences, blending luxury with sustainability." 
+          description="At Pluxe Studio, we offer a curated suite of luxury interior design services that combine refined aesthetics, modern functionality, and exceptional craftsmanship. Each project is tailored to create a harmonious, elegant, and personalised living experience." 
           bgimage={bnrimg} 
         />
-        <Services1 />
+        <ServiceDetailSection 
+          title="Full Home Interior Design"
+          description="Concept-to-completion interior design for modern homes seeking elegance, sophistication, and cohesive visual identity."
+          includes="Theme development • Space planning • Moodboards • 3D renders • Material selection • Furniture & décor curation • Vendor coordination • Final styling"
+        
+        />
+        {/* <Services1 />
         <WhatWeDo6 />
-        <Services7 />
+        <Services7 /> */}
       </div>
-      <FooterMain id="Contact" />
-      <FooterSection />
+      {/* <FooterMain id="Contact" />
+      <FooterSection /> */}
     </>
   );
 }

@@ -6,7 +6,7 @@ const NavigationContent = () => {
     const isHomeActive = location.pathname === '/';
     const isAboutActive = location.pathname === '/about';
     const isServicesActive = location.pathname === '/services';
-    const disabledLinks = ['Services', 'Portfolio', 'NRI', 'Contact us', 'FAQ'];
+    const disabledLinks = [ 'Portfolio', 'NRI', 'Contact us', 'FAQ'];
     const handleDisabledLinkClick = (event) => event.preventDefault();
 
     return (
@@ -17,9 +17,9 @@ const NavigationContent = () => {
             <li className={isAboutActive ? 'active' : ''}>
                 <NavLink to='/about'>About us</NavLink>
             </li>
-            {/* <li className={isServicesActive ? 'active' : ''}>
+            <li className={isServicesActive ? 'active' : ''}>
                 <NavLink to='/services'>Services</NavLink>
-            </li> */}
+            </li>
             {disabledLinks.map((link) => (
                 <li key={link}>
                     <a href="#!" onClick={handleDisabledLinkClick} aria-disabled="true" tabIndex={-1}>{link}</a>

@@ -4,24 +4,45 @@ import { NavLink } from 'react-router-dom';
 const services = [
     {
         count: '01',
-        title: 'Smartly Execute',
+        title: 'Bespoke Interior Designing',
         flaticon: 'flaticon-sketch',
         image: require('./../../images/services/service-projects/1.jpg'),
-        description: 'Our team also provides consultations on all architectural issues, even if you need.'
+        description: 'Custom interiors that echo your style and story—with rich palettes, layered textures, and premium finishes.'
     },
     {
         count: '02',
-        title: 'Perfect Design',
+        title: 'Sustainable Design Solutions',
         flaticon: 'flaticon-stairs',
         image: require('./../../images/services/service-projects/2.jpg'),
-        description: 'We combine Interior and Exterior Design services and often provide them as a single solution.'
+        description: 'Eco-friendly materials, green building practices, and energy-efficient systems that redefine responsible luxury.'
     },
     {
         count: '03',
-        title: 'Carefully planned',
+        title: 'Turnkey Project Execution',
         flaticon: 'flaticon-window',
         image: require('./../../images/services/service-projects/3.jpg'),
-        description: 'Landscape plans for drainage problems may also entail planting beds away'
+        description: 'From concept to completion—civil work, furniture, lighting, styling—executed with precision and peace of mind.'
+    },
+    {
+        count: '04',
+        title: 'Space Planning & Renovation',
+        flaticon: 'flaticon-skyline',
+        image: require('./../../images/services/service-projects/4.jpg'),
+        description: 'Maximizing comfort, utility, and elegance through intelligent layouts and smart refurbishments.'
+    },
+    {
+        count: '05',
+        title: 'Material & Finish Consulting',
+        flaticon: 'flaticon-bed',
+        image: require('./../../images/services/service-projects/5.jpg'),
+        description: 'Advisory on sustainable high-end materials: reclaimed wood, natural stone, jute, low-VOC paints and more'
+    },
+    {
+        count: '06',
+        title: 'Sourcing & Styling',
+        flaticon: 'flaticon-door',
+        image: require('./../../images/services/service-projects/6.jpg'),
+        description: 'Curated art, décor, textiles, and signature pieces tailored to your theme—from boho-luxe to urban contemporary.'
     }
 ]
 
