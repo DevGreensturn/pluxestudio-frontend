@@ -1,120 +1,97 @@
-import React, { useMemo } from 'react';
+import React from 'react'
 
-const containerTextStyle = {
-    fontSize: '16px',
-    lineHeight: '1.9',
-    color: '#4b5563',
-};
+const serviceDetails = [
+  {
+    title: 'Full Home Interior Design',
+    description: 'Concept-to-completion interior design for modern homes seeking elegance, sophistication, and cohesive visual identity.',
+    includes: 'Theme development • Space planning • Moodboards • 3D renders • Material selection • Furniture & décor curation • Vendor coordination • Final styling',
+    note: '→ Shared after consultation'
+  },
+  {
+    title: 'Room Design & Transformations',
+    description: 'Bespoke design solutions for individual rooms, tailored to enhance comfort, style, and daily living.',
+    includes: 'Concept design • Moodboards • Layouts • Colour palettes • Optional 3D renders • Décor & material guidance',
+    note: '→ Customised per project'
+  },
+  {
+    title: 'Modular Kitchens & Wardrobes',
+    description: 'Modern, efficient, and elegant modular systems crafted with precision and premium finishes.',
+    includes: 'Modular kitchens • Walk-in wardrobes • Built-in wardrobes • Storage units • TV units • Study areas • Hardware & material selection',
+    note: '→ Tailored to your home'
+  },
+  {
+    title: 'Customised Furniture',
+    description: 'Bespoke Furniture Design Handcrafted furniture pieces designed exclusively for your space — blending luxury, comfort, and craftsmanship.',
+    includes: 'Beds • Sofas • Consoles • Dining sets • Lounge seating • Custom cabinetry',
+    note: '→ Designed for your lifestyle'
+  },
+  {
+    title: ' Commercial & Boutique Spaces',
+    description: 'Luxury Commercial & Boutique Interiors Sophisticated interiors for offices, cafés, studios, and boutique brands, designed to reflect identity and elevate customer experience.',
+    includes: 'Brand-aligned concepts • Space optimisation • Lighting design • Execution-ready drawings',
+    note: '→ Bespoke commercial design'
+  },
+  {
+    title: 'Luxury Commercial & Boutique Interiors',
+    description: 'Elegant outdoor environments including balconies, terraces, gardens, and courtyards.',
+    includes: 'Outdoor layouts • Plant palette • Decking • Seating concepts • Lighting • Water features',
+    note: '→ Designed for serenity & beauty'
+  },
+  {
+    title: 'NRI & Global Interior Design',
+    description: 'Luxury virtual design for homes across the UAE, UK, US, Singapore, and beyond.',
+    includes: 'Virtual consultation • Layouts • 3D renders • Material & furniture guidance • Vendor-ready drawings • Remote supervision',
+    note: '→ For clients seeking global-quality design from anywhere'
+  },
+  {
+    title: 'Execution Management',
+    description: 'Complete onsite supervision for clients who prefer turnkey delivery.',
+    includes: 'Site coordination • Quality checks • Material management • Installation • Final styling',
+    note: '→ Optional service'
+  }
+]
 
-const includeCardOuterStyle = {
-    transition: 'transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease',
-};
+var bgimg1 = require('./../../images/background/cross-line2.png');
 
-const includeCardStyle = {
-    borderRadius: '14px',
-    border: '1px solid #e5e7eb',
-    padding: '18px 18px',
-    background: 'linear-gradient(135deg, #ffffff 0%, #f9fafb 100%)',
-    boxShadow: '0 8px 24px rgba(15, 23, 42, 0.06)',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    textAlign: 'center',
-    minHeight: '96px',
-};
-
-const includeTextStyle = {
-    fontSize: '14px',
-    fontWeight: '500',
-    lineHeight: '1.5',
-    color: '#111827',
-};
-
-const callToActionStyle = {
-    marginTop: '28px',
-    paddingTop: '16px',
-    borderTop: '1px dashed #e5e7eb',
-};
-
-const callToActionTextStyle = {
-    fontSize: '16px',
-    fontWeight: '600',
-    color: '#111827',
-};
-
-function IncludeCard({ text }) {
-    return (
-        <div className="col-lg-3 col-md-4 col-sm-6 m-b20" style={includeCardOuterStyle}>
-            <div className="include-card h-100" style={includeCardStyle}>
-                <div style={includeTextStyle}>{text}</div>
+export default function ServiceDetailSection() {
+  return (
+    <div className="section-full mobile-page-padding p-t60 p-b50" style={{ backgroundColor: '#f2f0ec' }}>
+      <div className="section-content">
+        <div className="container">
+          <div className="section-head">
+            <div className="sx-separator-outer separator-left">
+              <div className="sx-separator bg-white bg-moving bg-repeat-x" style={{ backgroundImage: 'url(' + bgimg1 + ')' }}>
+                <h3 style={{ border: 'none', padding: '10px' }} className=""> Services</h3>
+              </div>
             </div>
-        </div>
-    );
-}
-
-export default function ServiceDetailSection({ title, description, includes, callToAction }) {
-    const includesList = useMemo(() => {
-        if (!includes) return [];
-        if (Array.isArray(includes)) {
-            return includes.map(item => String(item).trim()).filter(Boolean);
-        }
-        return String(includes)
-            .split('•')
-            .map(item => item.trim())
-            .filter(Boolean);
-    }, [includes]);
-
-    return (
-        <div className="section-full mobile-page-padding p-t80 p-b50" style={{ backgroundColor: '#f9fafb' }}>
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-lg-11">
-                        <div
-                            className="service-detail-content"
-                            style={{
-                                borderRadius: '20px',
-                                backgroundColor: '#ffffff',
-                                boxShadow: '0 18px 45px rgba(15, 23, 42, 0.07)',
-                                padding: '36px 32px',
-                            }}
-                        >
-                            <div className="service-detail-card">
-                                <h3
-                                    className="m-b20"
-                                    style={{
-                                        fontSize: '28px',
-                                        fontWeight: 700,
-                                        color: '#0f172a',
-                                        letterSpacing: '-0.02em',
-                                    }}
-                                >
-                                    {title}
-                                </h3>
-                                <p className="m-b30" style={containerTextStyle}>
-                                    {description}
-                                </p>
-                                {includesList.length > 0 && (
-                                    <div className="m-b30">
-                                        <div className="row includes-list">
-                                            {includesList.map((item, index) => (
-                                                <IncludeCard key={index} text={item} />
-                                            ))}
-                                        </div>
-                                    </div>
-                                )}
-                                {callToAction && (
-                                    <div className="call-to-action" style={callToActionStyle}>
-                                        <p style={callToActionTextStyle}>
-                                            {callToAction}
-                                        </p>
-                                    </div>
-                                )}
-                            </div>
-                        </div>
+          </div>
+          <div className="row" style={{ display: 'flex', flexWrap: 'wrap' }}>
+            {serviceDetails.map((item, index) => (
+              <div className="col-lg-4 col-md-6 col-sm-12 m-b20" key={index} style={{ display: 'flex' }}>
+                <div className="sx-icon-box-wraper icon-count-2-outer" style={{ width: '100%', display: 'flex' }}>
+                  <div className="icon-count-2 bg-white" style={{ padding: '40px 35px', width: '100%', display: 'flex', flexDirection: 'column' }}>
+                    <div className="icon-content" style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
+                      <h4 className="sx-tilte" style={{ marginBottom: '20px' }}>{item.title}</h4>
+                      <p style={{ fontSize: '16px', color: '#595243', lineHeight: '1.7', marginBottom: '20px' }}>
+                        {item.description}
+                      </p>
+                      <div style={{ marginBottom: '20px', flex: 1 }}>
+                        <p style={{ fontSize: '16px', color: '#171513', fontWeight: '600', marginBottom: '10px' }}>Includes:</p>
+                        <p style={{ fontSize: '14px', color: '#595243', lineHeight: '1.8', marginBottom: '5px' }}>
+                          {item.includes}
+                        </p>
+                      </div>
+                      <p style={{ fontSize: '14px', color: '#595243', marginBottom: 0, marginTop: 'auto' }}>
+                        {item.note}
+                      </p>
                     </div>
+                  </div>
                 </div>
-            </div>
+              </div>
+            ))}
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  )
 }

@@ -461,7 +461,7 @@ Version: 1.0
 
 body {
 	background-color: #e7e5e3;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif !important;
 	font-size: 14px;
 	font-weight: 400;
 	color: #000;
@@ -489,7 +489,7 @@ a:focus {
 }
 
 p {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif !important;
 }
 
 p a {
@@ -644,21 +644,21 @@ h6 a.sx-text-white:hover {
 }
 
 h1 {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif !important;
 	font-weight: 600;
 	font-size: 50px;
 	color: #000;
 }
 
 h2 {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif !important;
 	font-weight: 600;
 	font-size: 44px;
 	color: #000;
 }
 
 h3 {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif !important;
 	font-weight: 600;
 	font-size: 38px;
 	color: #000;
@@ -666,7 +666,7 @@ h3 {
 }
 
 h4 {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif !important;
 	font-weight: 600;
 	font-size: 22px;
 	color: #000;
@@ -674,7 +674,7 @@ h4 {
 }
 
 h5 {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif !important;
 	font-weight: 600;
 	font-size: 18px;
 	color: #000;
@@ -682,7 +682,7 @@ h5 {
 }
 
 h6 {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif !important;
 	font-weight: 600;
 	font-size: 16px;
 	color: #000;
@@ -6329,7 +6329,7 @@ btn-half {cursor: pointer;	z-index: 0;	display: inline-block;	position: relative
 	content: "\f101";
 	margin-left: 7px;
 	font-family: 'FontAwesome';
-	color: #fff;
+	color: #000;
 	font-size: 16px;
 	font-weight: normal;
 }
@@ -15690,3 +15690,60 @@ form.woocommerce-ordering:after {
 }
 
 .woocommerce-result-count{font-weight: 600;}
+
+.testimonials-desktop {
+	display: block;
+}
+
+.testimonials-mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.testimonials-desktop {
+		display: none;
+	}
+
+	.testimonials-mobile {
+		display: block;
+	}
+}
+
+.what-we-do-grid{
+	display:grid;
+	grid-template-columns:repeat(5,minmax(0,200px));
+	gap:30px;
+	align-items:stretch;
+	justify-content:center;
+}
+
+.what-we-do-card{
+	flex:1 1 calc(20% - 15px);
+	min-width:220px;
+	display:flex;
+	flex-direction:column;
+}
+
+@media (max-width:1199px){
+	.what-we-do-grid{
+		grid-template-columns:repeat(3,minmax(0,200px));
+		gap:28px;
+		padding:0 24px;
+	}
+}
+
+@media (max-width:767px){
+	.what-we-do-grid{
+		grid-template-columns:repeat(2,minmax(0,200px));
+		gap:20px;
+		padding:0 20px;
+	}
+}
+
+@media (max-width:479px){
+	.what-we-do-grid{
+		grid-template-columns:1fr;
+		gap:16px;
+		padding:0 16px;
+	}
+}

@@ -8,6 +8,7 @@ import Services7 from './../Elements/Services7';
 import FooterSection from './../Common/FooterSection';
 import ServiceDetailSection from './../Elements/ServiceDetailSection';
 
+
 var bnrimg = '/assets/media/images/services.jpg';
 
 export default function Services() {
@@ -21,12 +22,7 @@ export default function Services() {
           description="At Pluxe Studio, we offer a curated suite of luxury interior design services that combine refined aesthetics, modern functionality, and exceptional craftsmanship. Each project is tailored to create a harmonious, elegant, and personalised living experience." 
           bgimage={bnrimg} 
         />
-        <ServiceDetailSection 
-          title="Full Home Interior Design"
-          description="Concept-to-completion interior design for modern homes seeking elegance, sophistication, and cohesive visual identity."
-          includes="Theme development • Space planning • Moodboards • 3D renders • Material selection • Furniture & décor curation • Vendor coordination • Final styling"
-        
-        />
+     <ServiceDetailSection />
         {/* <Services1 />
         <WhatWeDo6 />
         <Services7 /> */}
