@@ -27,8 +27,8 @@ export default function Services() {
         <WhatWeDo6 />
         <Services7 /> */}
       </div>
-      {/* <FooterMain id="Contact" />
-      <FooterSection /> */}
+      <FooterMain id="Contact" />
+      <FooterSection />
     </>
   );
 }
