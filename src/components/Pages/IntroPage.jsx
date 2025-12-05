@@ -4,26 +4,27 @@ export default function IntroPage() {
   return (
     <div className="section-full" style={{ background: '#f9f6f1', padding: '25px 0' }}>
       <div className="container">
-      <div className="row" style={{ alignItems: 'stretch' }}>
+      <div className="row" style={{ display: 'flex', alignItems: 'stretch', margin: '0' }}>
           {/* Image Section */}
           <div
             className="col-lg-5 col-md-10 m-b30 mx-auto"
-            style={{ display: 'flex', alignItems: 'stretch', height: '100%' }}
+            style={{ display: 'flex', flexDirection: 'column', padding: '0 15px', alignSelf: 'stretch' }}
           >
             <div
               style={{
                 width: '100%',
-                minHeight: '350px',
+                flex: '1 1 auto',
                 overflow: 'hidden',
                 borderRadius: '0',
                 boxShadow: '0 25px 70px rgba(128,128,128,0.3)',
                 border: '1px solid #f0e9dd',
                 margin: '0 auto',
-                height: '100%',
+                display: 'flex',
+                minHeight: '0',
               }}
             >
               <img
-                src="./../../assets/media/images/founder-image-removebg-preview.png"
+                src="./../../assets/media/images/intro-img.jpg"
                 alt="Founder portrait"
                 style={{
                   width: '100%',
@@ -35,13 +36,14 @@ export default function IntroPage() {
               />
             </div>
           </div>
+        
 
           {/* Text Section */}
           <div
             className="col-lg-7 col-md-12"
-            style={{ display: 'flex', alignItems: 'stretch', height: '100%' }}
+            style={{ display: 'flex', flexDirection: 'column', padding: '0 15px', alignSelf: 'stretch' }}
           >
-            <div style={{ width: '100%', height: '100%' }}>
+            <div style={{ width: '100%', flex: '1 1 auto', display: 'flex', flexDirection: 'column', minHeight: '0' }}>
               {/* Name and Role */}
               <h3
                 style={{
