@@ -10,6 +10,7 @@ import Home6 from './Pages/Home6';
 import AboutSection from './Pages/AboutSection';
 import Services from './Pages/Services';
 import Portfolio from './Pages/Portfolio';
+import GlobalNRI from './Pages/GlobalNRI';
 
 import Services1 from './Pages/Services1';
 import Services2 from './Pages/Services2';
@@ -69,6 +70,7 @@ class Components extends React.Component {
                             <Route path='/about' element={<AboutSection />} />
                             <Route path='/services' element={<Services />} />
                             <Route path='/portfolio' element={<Portfolio />} />
+                            <Route path='/nri' element={<GlobalNRI />} />
                             <Route element={<Error/>} />
                         </Routes>
                 </div>

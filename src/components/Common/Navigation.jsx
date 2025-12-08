@@ -7,7 +7,8 @@ const NavigationContent = () => {
     const isAboutActive = location.pathname === '/about';
     const isServicesActive = location.pathname === '/services';
     const isPortfolioActive = location.pathname === '/portfolio';
-    const disabledLinks = [ 'NRI', 'Contact us', 'FAQ'];
+    const isNRIActive = location.pathname === '/nri';
+    const disabledLinks = [ 'Contact us', 'FAQ'];
     const handleDisabledLinkClick = (event) => event.preventDefault();
 
     return (
@@ -23,6 +24,9 @@ const NavigationContent = () => {
             </li>
             <li className={isPortfolioActive ? 'active' : ''}>
                 <NavLink to='/portfolio'>Portfolio</NavLink>
+            </li>
+            <li className={isNRIActive ? 'active' : ''}>
+                <NavLink to='/nri'>NRI</NavLink>
             </li>
             {disabledLinks.map((link) => (
                 <li key={link}>

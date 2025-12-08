@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom'
 
 const quickLinks = [
   { label: 'About', to: '/about', isActive: true },
-  { label: 'Services', to: '#', isActive: false },
+  { label: 'Services', to: '/services', isActive: true },
   { label: 'Projects', to: '#', isActive: false },
-  { label: 'Blog', to: '#', isActive: false }
+  { label: 'Portfolio', to: '/portfolio', isActive: true }
 ]
 
 const serviceLinks = [
