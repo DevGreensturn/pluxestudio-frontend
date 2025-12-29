@@ -23,6 +23,17 @@ const NavigationContent = () => {
         }
     }, [location]);
 
+    useEffect(() => {
+        if (location.hash === '#faq') {
+            setTimeout(() => {
+                const faqSection = document.getElementById('faq');
+                if (faqSection) {
+                    faqSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        }
+    }, [location]);
+
     const handleContactUsClick = (e) => {
         e.preventDefault();
         if (location.pathname === '/' || location.pathname === '/home' || location.pathname === '') {
@@ -40,7 +51,24 @@ const NavigationContent = () => {
             }, 500);
         }
     };
-    
+
+    const handleFaqClick = (e) => {
+        e.preventDefault();
+        if (location.pathname === '/' || location.pathname === '/home' || location.pathname === '') {
+            const faqSection = document.getElementById('faq');
+            if (faqSection) {
+                faqSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            navigate('/');
+            setTimeout(() => {
+                const faqSection = document.getElementById('faq');
+                if (faqSection) {
+                    faqSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 500);
+        }
+    };
     const handleDisabledLinkClick = (event) => event.preventDefault();
 
     return (
@@ -66,6 +94,14 @@ const NavigationContent = () => {
                     onClick={handleContactUsClick}
                 >
                     Contact us
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#faq"
+                    onClick={handleFaqClick}
+                >
+                    FAQ
                 </a>
             </li>
             {/* <li>

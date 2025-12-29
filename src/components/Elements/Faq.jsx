@@ -6,8 +6,8 @@ class Faq extends React.Component {
     render() {
         return (
             <>
-                        <div className="section-full mobile-page-padding p-t80 p-b80" style={{ backgroundColor: '#e7e5e3' }}>
-                        <div id ="Faq" className="container">
+                        <div className="section-full mobile-page-padding p-t80 p-b80" id="faq"  style={{ backgroundColor: '#e7e5e3' }}>
+                        <div className="container">
                             <div className="faq-1">
                                 {/* TITLE START */}
                                 <div className="section-head">
