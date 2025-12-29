@@ -48,7 +48,7 @@ class About1 extends React.Component {
                             </div>
                         </div>
                         {/* TITLE END */}
-                        <div className="section-content">
+                        <div className="section-content" >
                             <div className="row">
                                 <div className="col-lg-5 col-md-12 col-sm-12">
                                     <div className="about-home-left" style={{ border: 'none' }}>

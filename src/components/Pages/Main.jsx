@@ -49,7 +49,7 @@ class Home6 extends React.Component {
                    
                 </div>
 
-                <FooterMain id="Contact" />
+                <FooterMain  />
                 <FooterSection />
             </>
         );
