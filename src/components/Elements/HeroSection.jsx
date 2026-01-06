@@ -1,8 +1,9 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 const portfolioItems = [
     {
@@ -43,7 +44,7 @@ const heroSliderImages = [
     require('./../../images/projects/square/3.jpg'),
     require('./../../images/projects/square/4.jpg'),
     require('./../../images/projects/square/5.jpg'),
-    require('./../../images/projects/square/6.jpg')
+            require('./../../images/projects/square/6.jpg')
 ];
 
 class HeroSection extends React.Component {
@@ -130,6 +131,7 @@ class HeroSection extends React.Component {
                                         }}
                                         onMouseEnter={() => this.setState({ buttonHover: true })}
                                         onMouseLeave={() => this.setState({ buttonHover: false })}
+                                        onClick={this.props.onContactClick}
                                     >
                                         Book Free Consultation
                                     </NavLink>
@@ -232,4 +234,30 @@ class HeroSection extends React.Component {
     }
 }
 
-export default HeroSection;
+const HeroSectionWrapper = (props) => {
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const handleContactUsClick = (e) => {
+        e.preventDefault();
+        if (location.pathname === '/' || location.pathname === '/home' || location.pathname === '') {
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            navigate('/');
+            setTimeout(() => {
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 500);
+        }
+    };
+
+    return <HeroSection {...props} onContactClick={handleContactUsClick} />;
+};
+
+export default HeroSectionWrapper;
+		

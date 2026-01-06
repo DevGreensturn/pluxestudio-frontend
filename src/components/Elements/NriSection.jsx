@@ -1,10 +1,30 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 const nrimg = '/assets/media/images/nri.jpg'
 const separator = require('./../../images/background/cross-line2.png')
 
 export default function NriSection() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleContactUsClick = (e) => {
+    e.preventDefault();
+    if (location.pathname === '/' || location.pathname === '/home' || location.pathname === '') {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 500);
+    }
+  };
   return (
     <div className="section-full mobile-page-padding p-t80 p-b80 bg-repeat overflow-hide" style={{ backgroundColor: '#f2f0ec' }}>
       <div className="container">
@@ -31,25 +51,26 @@ export default function NriSection() {
               </div>
             </div>
             <div className="text-left" style={{ marginTop: '50px' }}>
-                                <NavLink
-                                    to="#Contact"
-                                    className="site-button"
-                                    style={{
-                                        backgroundColor: "#000",
-                                        color: '#fff',
-                                        padding: '14px 32px',
-                                        fontSize: '13px',
-                                        letterSpacing: '3px',
-                                        textTransform: 'uppercase',
-                                        border: 'none',
-                                        display: 'inline-block',
-                                        textDecoration: 'none',
-                                        transition: 'background-color 0.3s ease'
-                                    }}
-                                >
-                                    <p style={{ margin: 0, fontSize: '13px' }}>Book Free Consultation</p>
-                                </NavLink>
-                            </div>
+              <NavLink
+                to="#contact"
+                className="site-button"
+                style={{
+                  backgroundColor: "#000",
+                  color: '#fff',
+                  padding: '14px 32px',
+                  fontSize: '13px',
+                  letterSpacing: '3px',
+                  textTransform: 'uppercase',
+                  border: 'none',
+                  display: 'inline-block',
+                  textDecoration: 'none',
+                  transition: 'background-color 0.3s ease'
+                }}
+                onClick={handleContactUsClick}
+              >
+                <p style={{ margin: 0, fontSize: '13px' }}>Book Free Consultation</p>
+              </NavLink>
+            </div>
           </div>
         </div>
       </div>

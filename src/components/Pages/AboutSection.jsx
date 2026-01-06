@@ -6,7 +6,7 @@ import CountUp from 'react-countup';
 import bnrimg from './../../images/banner/5.jpg';
 import FooterSection from './../Common/FooterSection';
 import AboutStory from '../Elements/AboutStory';
-import AboutMission from '../Elements/AboutMission';
+// import AboutMission from '../Elements/AboutMission';
 import AboutCore from '../Elements/AboutCore';
 import AboutProcess from '../Elements/AboutProcess';
 import AboutBanner from '../Elements/AboutBanner';
@@ -48,7 +48,7 @@ const AboutSection = () => {
                 <AboutBanner />
                <AboutStory />
 
-             <AboutMission />
+             {/* <AboutMission /> */}
 
               <AboutCore />
               <AboutProcess />

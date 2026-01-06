@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -200,7 +200,7 @@ class Testimonials2 extends React.Component {
                             </div>
                             <div className="text-left" style={{ marginTop: '50px' }}>
                                 <NavLink
-                                    to="#Contact"
+                                    to="#contact"
                                     className="site-button"
                                     style={{
                                         backgroundColor: "#000",
@@ -214,6 +214,7 @@ class Testimonials2 extends React.Component {
                                         textDecoration: 'none',
                                         transition: 'background-color 0.3s ease'
                                     }}
+                                    onClick={this.props.onContactClick}
                                 >
                                     <p style={{ margin: 0, fontSize: '13px' }}>Book Free Consultation</p>
                                 </NavLink>
@@ -256,7 +257,7 @@ class Testimonials2 extends React.Component {
                             ))}
                             <div className="text-left" style={{ marginTop: '50px' }}>
                                 <NavLink
-                                    to="#Contact"
+                                    to="#contact"
                                     className="site-button"
                                     style={{
                                         backgroundColor: "#000",
@@ -270,6 +271,7 @@ class Testimonials2 extends React.Component {
                                         textDecoration: 'none',
                                         transition: 'background-color 0.3s ease'
                                     }}
+                                    onClick={this.props.onContactClick}
                                 >
                                     <p style={{ margin: 0, fontSize: '13px' }}>Book Free Consultation</p>
                                 </NavLink>
@@ -282,4 +284,29 @@ class Testimonials2 extends React.Component {
     }
 };
 
-export default Testimonials2;
+const Testimonials2Wrapper = (props) => {
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const handleContactUsClick = (e) => {
+        e.preventDefault();
+        if (location.pathname === '/' || location.pathname === '/home' || location.pathname === '') {
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            navigate('/');
+            setTimeout(() => {
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 500);
+        }
+    };
+
+    return <Testimonials2 {...props} onContactClick={handleContactUsClick} />;
+};
+
+export default Testimonials2Wrapper;		

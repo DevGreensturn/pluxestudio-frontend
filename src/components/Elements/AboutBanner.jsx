@@ -1,7 +1,27 @@
 ﻿import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 
 export default function AboutBanner() {
+  const location = useLocation()
+  const navigate = useNavigate()
+
+  const handleContactUsClick = (e) => {
+    e.preventDefault()
+    if (location.pathname === '/' || location.pathname === '/home' || location.pathname === '') {
+      const contactSection = document.getElementById('contact')
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' })
+      }
+    } else {
+      navigate('/')
+      setTimeout(() => {
+        const contactSection = document.getElementById('contact')
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: 'smooth' })
+        }
+      }, 500)
+    }
+  }
   return (
     <section
       className='section-full'
@@ -38,7 +58,7 @@ export default function AboutBanner() {
           </div>
           <div className='col-lg-3 col-md-12 text-lg-right text-md-left mt-4 mt-lg-0'>
             <NavLink
-              to='#Contact'
+              to='#contact'
               className='site-button'
               style={{
                 backgroundColor: '#111010',
@@ -50,8 +70,9 @@ export default function AboutBanner() {
                 textTransform: 'uppercase',
                 fontSize: '13px'
               }}
+              onClick={handleContactUsClick}
             >
-            Book Free Consultation
+              Book Free Consultation
             </NavLink>
           </div>
         </div>

@@ -51,7 +51,7 @@ const portfolioProjects = [
     size: 'large'
   },
   {
-    image: require('./../../images/projects/square/6.jpg'),
+    image: '/assets/media/images/botique.png',
     title: 'Boutique Showroom',
     category: 'Commercial',
     location: 'Mumbai, India',
@@ -188,31 +188,6 @@ export default function PortfolioSections() {
                           </p>
                         </div>
                       </div>
-                      <div 
-                        className="portfolio-hover-icon"
-                        style={{
-                          position: 'absolute',
-                          top: '25px',
-                          right: '25px',
-                          width: '50px',
-                          height: '50px',
-                          backgroundColor: 'rgba(255,255,255,0.95)',
-                          borderRadius: '50%',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          opacity: 0,
-                          transform: 'scale(0.8)',
-                          transition: 'all 0.3s ease',
-                          boxShadow: '0 4px 15px rgba(0,0,0,0.2)'
-                        }}
-                        onMouseEnter={(e) => {
-                          e.currentTarget.style.opacity = '1'
-                          e.currentTarget.style.transform = 'scale(1)'
-                        }}
-                      >
-                        <i className="fa fa-arrow-right" style={{ color: '#171513', fontSize: '18px' }}></i>
-                      </div>
                     </div>
                   </div>
                   <div 
@@ -250,10 +225,6 @@ export default function PortfolioSections() {
         </div>
       </div>
       <style>{`
-        .portfolio-card-modern:hover .portfolio-hover-icon {
-          opacity: 1 !important;
-          transform: scale(1) !important;
-        }
         .portfolio-card-modern:hover .portfolio-overlay {
           background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.85) 100%) !important;
         }

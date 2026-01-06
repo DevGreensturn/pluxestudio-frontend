@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -60,7 +60,13 @@ class About1 extends React.Component {
                                                                                 <li><strong>	Detail-Driven Execution  – </strong>From design to final styling, we manage it all seamlessly.</li>
                                                                             </ul>
                                         <div className="text-left">
-                                            <NavLink to="#Contact" className="site-button-secondry btn-half"><span>Connect with us</span></NavLink>
+                                            <NavLink
+                                                to="#contact"
+                                                className="site-button-secondry btn-half"
+                                                onClick={this.props.onContactClick}
+                                            >
+                                                <span>Connect with us</span>
+                                            </NavLink>
                                         </div>
                                     </div>
                                 </div>
@@ -93,4 +99,29 @@ class About1 extends React.Component {
     }
 };
 
-export default About1;
+const About1Wrapper = (props) => {
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const handleContactUsClick = (e) => {
+        e.preventDefault();
+        if (location.pathname === '/' || location.pathname === '/home' || location.pathname === '') {
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            navigate('/');
+            setTimeout(() => {
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 500);
+        }
+    };
+
+    return <About1 {...props} onContactClick={handleContactUsClick} />;
+};
+
+export default About1Wrapper;

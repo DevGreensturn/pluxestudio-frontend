@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 const filters = [
     { label: "Bedroom", filter: ".cat-1" },
@@ -187,7 +187,13 @@ class Projects5 extends React.Component {
                             </ul>
                             {/* GALLERY CONTENT END */}
                             <div className="text-center load-more-btn-outer" style={{ backgroundImage: 'url(' + bgimg2 + ')' }}>
-                               <a href="#Contact"><button id="loadMorebtn-5" className="site-button-secondry btn-half"><span>Enquire Now</span></button></a>
+                                <button
+                                    id="loadMorebtn-5"
+                                    className="site-button-secondry btn-half"
+                                    onClick={this.props.onContactClick}
+                                >
+                                    <span>Enquire Now</span>
+                                </button>
                             </div>
                         </div>
                         {/* GALLERY CONTENT END */}
@@ -197,4 +203,29 @@ class Projects5 extends React.Component {
     }
 };
 
-export default Projects5;
+const Projects5Wrapper = (props) => {
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const handleContactUsClick = (e) => {
+        e.preventDefault();
+        if (location.pathname === '/' || location.pathname === '/home' || location.pathname === '') {
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            navigate('/');
+            setTimeout(() => {
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 500);
+        }
+    };
+
+    return <Projects5 {...props} onContactClick={handleContactUsClick} />;
+};
+
+export default Projects5Wrapper;
