@@ -30,6 +30,13 @@ class FooterMain extends React.Component {
 
     handleSubmit = async (e) => {
         const form = document.getElementById('leadForm');
+        const email = this.state.email.trim();
+        const Phone = this.state.phone.trim();
+
+        if (!email && !Phone) {
+            toast.error("Please enter either email or phone number");
+            return;
+        }
 
         if (!form.checkValidity()) {
             form.reportValidity();
@@ -38,16 +45,9 @@ class FooterMain extends React.Component {
 
         const username = document.querySelector('[name="username"]').value.trim();
         const message = document.querySelector('[name="message"]').value.trim();
-        const email = this.state.email.trim();
-        const Phone = this.state.phone.trim();
 
         if (!username || !message) {
             toast.error("Please fill in all required fields");
-            return;
-        }
-
-        if (!email && !Phone) {
-            toast.error("Please enter either email or phone number");
             return;
         }
 
@@ -77,8 +77,6 @@ class FooterMain extends React.Component {
     };
 
     render() {
-        const isEmailRequired = !this.state.phone;
-        const isPhoneRequired = !this.state.email;
         return (
             <>
                 <div className="whatsappdiv" >
@@ -112,7 +110,6 @@ class FooterMain extends React.Component {
                                                 name="email"
                                                 type="email"
                                                 className="form-control"
-                                                required={isEmailRequired}
                                                 placeholder="Email"
                                                 disabled={this.state.loading}
                                                 value={this.state.email}
@@ -124,7 +121,6 @@ class FooterMain extends React.Component {
                                                 name="Phone"
                                                 type="tel"
                                                 className="form-control"
-                                                required={isPhoneRequired}
                                                 placeholder="Phone "
                                                 disabled={this.state.loading}
                                                 value={this.state.phone}
