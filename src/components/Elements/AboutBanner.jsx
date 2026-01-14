@@ -57,7 +57,7 @@ export default function AboutBanner() {
             </p>
           </div>
           <div className='col-lg-3 col-md-12 text-lg-right text-md-left mt-4 mt-lg-0'>
-            <NavLink
+            {/* <NavLink
               to='#contact'
               className='site-button'
               style={{
@@ -73,7 +73,8 @@ export default function AboutBanner() {
               onClick={handleContactUsClick}
             >
               Book Free Consultation
-            </NavLink>
+            </NavLink> */}
+            <NavLink to='/contact' className='site-button' style={{ backgroundColor: '#111010', color: '#fdfbf7', padding: '16px 32px', border: 'none', display: 'inline-block', letterSpacing: '1px', textTransform: 'uppercase', fontSize: '13px' }}>Book Free Consultation</NavLink>
           </div>
         </div>
       </div>

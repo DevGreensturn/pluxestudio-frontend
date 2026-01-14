@@ -9,19 +9,20 @@ const NavigationContent = () => {
     const isServicesActive = location.pathname === '/services';
     const isPortfolioActive = location.pathname === '/portfolio';
     const isNRIActive = location.pathname === '/nri';
-    const isContactUsActive = location.pathname === '#Contact';
-    const disabledLinks = [ 'Contact us', 'FAQ'];
+    // const isContactUsActive = location.pathname === '#Contact';
+    const isContactUsActive = location.pathname === '/contact';
+    const disabledLinks = [ 'FAQ'];
     
-    useEffect(() => {
-        if (location.hash === '#contact') {
-            setTimeout(() => {
-                const contactSection = document.getElementById('contact');
-                if (contactSection) {
-                    contactSection.scrollIntoView({ behavior: 'smooth' });
-                }
-            }, 100);
-        }
-    }, [location]);
+    // useEffect(() => {
+    //     if (location.hash === '#contact') {
+    //         setTimeout(() => {
+    //             const contactSection = document.getElementById('contact');
+    //             if (contactSection) {
+    //                 contactSection.scrollIntoView({ behavior: 'smooth' });
+    //             }
+    //         }, 100);
+    //     }
+    // }, [location]);
 
     useEffect(() => {
         if (location.hash === '#faq') {
@@ -88,13 +89,14 @@ const NavigationContent = () => {
             <li className={isNRIActive ? 'active' : ''}>
                 <NavLink to='/nri'>NRI</NavLink>
             </li>
-            <li>
-                <a
-                    href="#contact"
+            <li className={isContactUsActive ? 'active' : ''}>
+                {/* <a
+                    href="/contact"
                     onClick={handleContactUsClick}
                 >
                     Contact us
-                </a>
+                </a> */}
+                <NavLink to='/contact'>Contact us</NavLink>
             </li>
             <li>
                 <a

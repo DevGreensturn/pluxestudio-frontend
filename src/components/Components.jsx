@@ -58,6 +58,7 @@ import ShopCheckout from './Pages/ShopCheckout';
 import Faq from './Pages/Faq';
 import ContactUs from './Pages/ContactUs';
 import ScrollToTop from './Common/ScrollToTop';
+import Contact from './Pages/Contact';
 
 class Components extends React.Component {
     render() {
@@ -71,6 +72,7 @@ class Components extends React.Component {
                             <Route path='/services' element={<Services />} />
                             <Route path='/portfolio' element={<Portfolio />} />
                             <Route path='/nri' element={<GlobalNRI />} />
+                            <Route path='/contact' element={<Contact />} />
                             <Route element={<Error/>} />
                         </Routes>
                 </div>

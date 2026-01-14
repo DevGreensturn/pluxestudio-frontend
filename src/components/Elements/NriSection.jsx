@@ -51,7 +51,7 @@ export default function NriSection() {
               </div>
             </div>
             <div className="text-left" style={{ marginTop: '50px' }}>
-              <NavLink
+              {/* <NavLink
                 to="#contact"
                 className="site-button"
                 style={{
@@ -69,7 +69,9 @@ export default function NriSection() {
                 onClick={handleContactUsClick}
               >
                 <p style={{ margin: 0, fontSize: '13px' }}>Book Free Consultation</p>
-              </NavLink>
+              </NavLink> */}
+              <NavLink to='/contact' className='site-button' style={{ backgroundColor: '#000', color: '#fff', padding: '14px 32px', fontSize: '13px', letterSpacing: '3px', textTransform: 'uppercase', border: 'none', display: 'inline-block', textDecoration: 'none', transition: 'background-color 0.3s ease' }}>Book Free Consultation</NavLink>
+               
             </div>
           </div>
         </div>

@@ -190,7 +190,7 @@ class Projects5 extends React.Component {
                                 <button
                                     id="loadMorebtn-5"
                                     className="site-button-secondry btn-half"
-                                    onClick={this.props.onContactClick}
+                                    onClick={() => this.props.navigate('/contact')}
                                 >
                                     <span>Enquire Now</span>
                                 </button>
@@ -225,7 +225,7 @@ const Projects5Wrapper = (props) => {
         }
     };
 
-    return <Projects5 {...props} onContactClick={handleContactUsClick} />;
+    return <Projects5 {...props} onContactClick={handleContactUsClick} navigate={navigate} />;
 };
 
 export default Projects5Wrapper;

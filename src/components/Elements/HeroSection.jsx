@@ -112,7 +112,7 @@ class HeroSection extends React.Component {
                                         Creating spaces that reflect your unique style with timeless elegance and personalized luxury.
                                     </p>
 
-                                    <NavLink
+                                    {/* <NavLink
                                         to="#Contact"
                                         className="site-button"
                                         style={{
@@ -134,7 +134,28 @@ class HeroSection extends React.Component {
                                         onClick={this.props.onContactClick}
                                     >
                                         Book Free Consultation
-                                    </NavLink>
+                                    </NavLink> */}
+                                    <button
+                                        className="site-button"
+                                        style={{
+                                            backgroundColor:"#000",
+                                            padding: '18px 40px',
+                                            fontSize: '14px',
+                                            letterSpacing: '3px',
+                                            color: '#fff',
+                                            textTransform: 'uppercase',
+                                            border: 'none',
+                                            display: 'inline-block',
+                                            textDecoration: 'none',
+                                            transition: 'background-color 0.3s ease',
+                                            cursor: 'pointer'
+                                        }}
+                                        onMouseEnter={() => this.setState({ buttonHover: true })}
+                                        onMouseLeave={() => this.setState({ buttonHover: false })}
+                                        onClick={() => this.props.navigate('/contact')}
+                                    >
+                                        Book Free Consultation
+                                    </button>
                                 </div>
                             </div>
 
@@ -256,7 +277,7 @@ const HeroSectionWrapper = (props) => {
         }
     };
 
-    return <HeroSection {...props} onContactClick={handleContactUsClick} />;
+    return <HeroSection {...props} onContactClick={handleContactUsClick} navigate={navigate} />;
 };
 
 export default HeroSectionWrapper;

@@ -143,17 +143,17 @@ class Testimonials2 extends React.Component {
                                                                         }}
                                                                     >
                                                                         <p style={{ fontSize: '13px', letterSpacing: '1.2px', color: '#fff', marginBottom: '0px', whiteSpace: 'nowrap' }}>
-                                                                        {review.reviewername}
+                                                                            {review.reviewername}
                                                                         </p>
                                                                         <p style={{ fontSize: '14px', letterSpacing: '0.8px', color: '#fff', marginTop: '0', marginBottom: '2px', whiteSpace: 'nowrap' }}>
-                                                                        {review.position}
+                                                                            {review.position}
                                                                         </p>
                                                                         <p style={{ marginBottom: '2px', color: '#f0c75e', fontSize: '13px' }}>
                                                                             {Array.from({ length: review.rating }).map((_, starIndex) => (
                                                                                 <span key={starIndex} className="fa fa-star " style={{
                                                                                     fontSize: '15px',
                                                                                     marginRight: '4px'
-                                                                                }}/>
+                                                                                }} />
                                                                             ))}
                                                                         </p>
                                                                         <p style={{ fontSize: '13px', lineHeight: 1.35, margin: 0 }}>{review.review}</p>
@@ -173,17 +173,17 @@ class Testimonials2 extends React.Component {
                                                                         }}
                                                                     >
                                                                         <p style={{ fontSize: '13px', letterSpacing: '1.2px', color: '#fff', marginBottom: '2px', whiteSpace: 'nowrap' }}>
-                                                                        {review.reviewername}
+                                                                            {review.reviewername}
                                                                         </p>
                                                                         <p style={{ fontSize: '14px', letterSpacing: '0.8px', color: '#fff', marginTop: '0', marginBottom: '2px', whiteSpace: 'nowrap' }}>
-                                                                        {review.position}
+                                                                            {review.position}
                                                                         </p>
                                                                         <p style={{ marginBottom: '2px', color: '#f0c75e', fontSize: '13px' }}>
                                                                             {Array.from({ length: review.rating }).map((_, starIndex) => (
                                                                                 <span key={starIndex} className="fa fa-star " style={{
                                                                                     fontSize: '15px',
                                                                                     marginRight: '4px'
-                                                                                }}/>
+                                                                                }} />
                                                                             ))}
                                                                         </p>
                                                                         <p style={{ fontSize: '13px', lineHeight: 1.35, margin: 0 }}>{review.review}</p>
@@ -199,7 +199,7 @@ class Testimonials2 extends React.Component {
                                 ))}
                             </div>
                             <div className="text-left" style={{ marginTop: '50px' }}>
-                                <NavLink
+                                {/* <NavLink
                                     to="#contact"
                                     className="site-button"
                                     style={{
@@ -216,6 +216,9 @@ class Testimonials2 extends React.Component {
                                     }}
                                     onClick={this.props.onContactClick}
                                 >
+                                    <p style={{ margin: 0, fontSize: '13px' }}>Book Free Consultation</p>
+                                </NavLink> */}
+                                <NavLink to='/contact' className="site-button" style={{ backgroundColor: "#000", color: '#fff', padding: '14px 32px', fontSize: '13px', letterSpacing: '3px', textTransform: 'uppercase', border: 'none', display: 'inline-block', textDecoration: 'none', transition: 'background-color 0.3s ease' }}>
                                     <p style={{ margin: 0, fontSize: '13px' }}>Book Free Consultation</p>
                                 </NavLink>
                             </div>
@@ -256,7 +259,7 @@ class Testimonials2 extends React.Component {
                                 </div>
                             ))}
                             <div className="text-left" style={{ marginTop: '50px' }}>
-                                <NavLink
+                                {/* <NavLink
                                     to="#contact"
                                     className="site-button"
                                     style={{
@@ -273,6 +276,9 @@ class Testimonials2 extends React.Component {
                                     }}
                                     onClick={this.props.onContactClick}
                                 >
+                                    <p style={{ margin: 0, fontSize: '13px' }}>Book Free Consultation</p>
+                                </NavLink> */}
+                                <NavLink to='/contact' className="site-button" style={{ backgroundColor: "#000", color: '#fff', padding: '14px 32px', fontSize: '13px', letterSpacing: '3px', textTransform: 'uppercase', border: 'none', display: 'inline-block', textDecoration: 'none', transition: 'background-color 0.3s ease' }}>
                                     <p style={{ margin: 0, fontSize: '13px' }}>Book Free Consultation</p>
                                 </NavLink>
                             </div>
