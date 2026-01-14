@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Header from './../Common/Header3';
 import FooterSection from './../Common/FooterSection';
@@ -14,17 +14,20 @@ class Contact extends React.Component {
         this.state = {
             loading: false,
             email: '',
-            phone: ''
+            phone: '',
+            emailError: '',
+            phoneError: '',
+            formError: ''
         };
     }
 
     handleEmailChange = (e) => {
-        this.setState({ email: e.target.value });
+        this.setState({ email: e.target.value, emailError: '' });
     };
 
     handlePhoneChange = (e) => {
         const onlyDigits = e.target.value.replace(/\D/g, '');
-        this.setState({ phone: onlyDigits });
+        this.setState({ phone: onlyDigits, phoneError: '' });
     };
 
     handleSubmit = async (e) => {
@@ -32,8 +35,23 @@ class Contact extends React.Component {
         const email = this.state.email.trim();
         const Phone = this.state.phone.trim();
 
+        this.setState({ emailError: '', phoneError: '', formError: '' });
+
         if (!email && !Phone) {
-            toast.error("Please enter either email or phone number");
+            this.setState({ formError: "Please enter either email or phone number" });
+            toast.error("Please enter either email or phone number", { containerId: 'form-toast' });
+            return;
+        }
+
+        if (Phone && Phone.length > 0 && Phone.length < 6) {
+            this.setState({ phoneError: "Phone number must be at least 6 digits" });
+            toast.error("Phone number must be at least 6 digits", { containerId: 'form-toast' });
+            return;
+        }
+
+        if (Phone && !/^\d+$/.test(Phone)) {
+            this.setState({ phoneError: "Phone number must contain digits only" });
+            toast.error("Phone number must contain digits only", { containerId: 'form-toast' });
             return;
         }
 
@@ -46,12 +64,8 @@ class Contact extends React.Component {
         const message = document.querySelector('[name="message"]').value.trim();
 
         if (!username || !message) {
-            toast.error("Please fill in all required fields");
-            return;
-        }
-
-        if (Phone && !/^\d+$/.test(Phone)) {
-            toast.error("Phone number must contain digits only");
+            this.setState({ formError: "Please fill in all required fields" });
+            toast.error("Please fill in all required fields", { containerId: 'form-toast' });
             return;
         }
 
@@ -65,26 +79,26 @@ class Contact extends React.Component {
                 message
             });
 
-            this.setState({ loading: false, email: '', phone: '' });
+            this.setState({ loading: false, email: '', phone: '', emailError: '', phoneError: '', formError: '' });
             form.reset();
-            toast.success("Email sent successfully!");
+            toast.success("Email sent successfully!", { containerId: 'form-toast' });
         } catch (err) {
             console.error(err);
             this.setState({ loading: false });
-            toast.error("Failed to send email");
+            toast.error("Failed to send email", { containerId: 'form-toast' });
         }
     };
 
     render() {
         return (
             <>
-            <Header />
-            <Banner 
-          title="Contact Us" 
-          pagename="Contact Us" 
-          description="Contact Us" 
-          bgimage={bnr} 
-        />
+                <Header />
+                <Banner
+                    title="Contact Us"
+                    pagename="Contact Us"
+                    description="Contact Us"
+                    bgimage={bnr}
+                />
                 <div className="whatsappdiv" >
                     <a href="https://api.whatsapp.com/send/?phone=919871077515&text=I+want+to+know+more+about+the+Pluxe+Studio+services" target="_blank" className="whatsapplink">
                         <img className="whatsappimg" style={{ position: 'fixed', left: '0', bottom: '0', width: '200px', zIndex: '100' }} src={wa} alt="whatsapp icon" />
@@ -95,6 +109,19 @@ class Contact extends React.Component {
                         <div className="row">
                             <div className="col-lg-8 col-md-12 col-sm-12">
                                 <form className="contact-form cons-contact-form bg-gray p-a30" method="post" action="#" id="leadForm" style={{ position: 'relative' }}>
+                                    <ToastContainer
+                                        containerId="form-toast"
+                                        position="top-center"
+                                        autoClose={3000}
+                                        hideProgressBar={false}
+                                        newestOnTop={false}
+                                        closeOnClick
+                                        rtl={false}
+                                        pauseOnFocusLoss
+                                        draggable
+                                        pauseOnHover
+                                        style={{ position: 'absolute', top: '20px', left: '50%', transform: 'translateX(-50%)', zIndex: 9999 }}
+                                    />
                                     {this.state.loading && (
                                         <div className="loading-cover" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(255, 255, 255, 0.8)' }}>
                                             <i className="fa fa-spinner fa-spin" style={{ fontSize: '30px', color: '#333' }}></i>
@@ -108,6 +135,13 @@ class Contact extends React.Component {
                                                 </div>
                                             </div>
                                         </div>
+                                        {this.state.formError && (
+                                            <div className="form-group">
+                                                <div style={{ color: '#dc3545', fontSize: '14px', marginTop: '-10px', marginBottom: '10px' }}>
+                                                    {this.state.formError}
+                                                </div>
+                                            </div>
+                                        )}
                                         <div className="form-group">
                                             <input name="username" type="text" required className="form-control" placeholder="Name" disabled={this.state.loading} />
                                         </div>
@@ -121,6 +155,11 @@ class Contact extends React.Component {
                                                 value={this.state.email}
                                                 onChange={this.handleEmailChange}
                                             />
+                                            {this.state.emailError && (
+                                                <div style={{ color: '#dc3545', fontSize: '14px', marginTop: '5px' }}>
+                                                    {this.state.emailError}
+                                                </div>
+                                            )}
                                         </div>
                                         <div className="form-group">
                                             <input
@@ -134,6 +173,11 @@ class Contact extends React.Component {
                                                 inputMode="numeric"
                                                 pattern="[0-9]*"
                                             />
+                                            {this.state.phoneError && (
+                                                <div style={{ color: '#dc3545', fontSize: '14px', marginTop: '5px' }}>
+                                                    {this.state.phoneError}
+                                                </div>
+                                            )}
                                         </div>
                                         <div className="form-group">
                                             <textarea name="message" rows={4} className="form-control " required placeholder="Message" defaultValue={""} disabled={this.state.loading} />

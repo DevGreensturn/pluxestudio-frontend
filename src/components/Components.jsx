@@ -73,6 +73,7 @@ class Components extends React.Component {
                             <Route path='/portfolio' element={<Portfolio />} />
                             <Route path='/nri' element={<GlobalNRI />} />
                             <Route path='/contact' element={<Contact />} />
+                            <Route path='/faq' element={<Faq />} />
                             <Route element={<Error/>} />
                         </Routes>
                 </div>

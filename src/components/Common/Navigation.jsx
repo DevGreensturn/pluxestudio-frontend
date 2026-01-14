@@ -11,6 +11,7 @@ const NavigationContent = () => {
     const isNRIActive = location.pathname === '/nri';
     // const isContactUsActive = location.pathname === '#Contact';
     const isContactUsActive = location.pathname === '/contact';
+    const isFaqActive = location.pathname === '/faq';
     const disabledLinks = [ 'FAQ'];
     
     // useEffect(() => {
@@ -98,17 +99,9 @@ const NavigationContent = () => {
                 </a> */}
                 <NavLink to='/contact'>Contact us</NavLink>
             </li>
-            <li>
-                <a
-                    href="#faq"
-                    onClick={handleFaqClick}
-                >
-                    FAQ
-                </a>
-            </li>
-            {/* <li>
+            <li className={isFaqActive ? 'active' : ''}>
                 <NavLink to='/faq'>FAQ</NavLink>
-            </li> */}
+            </li>
             {/* {disabledLinks.map((link) => (
                 <li key={link}>
                     <a href="#!" onClick={handleDisabledLinkClick} aria-disabled="true" tabIndex={-1}>{link}</a>
