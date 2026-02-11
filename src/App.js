@@ -5,7 +5,7 @@ import Loader from "./components/Elements/Loader";
 import { ToastContainer } from 'react-toastify';
 
 const App = () => {
-  
+   
   return (
     <div className="App">
       <Components />
